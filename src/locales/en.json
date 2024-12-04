@@ -1,0 +1,17 @@
+{
+  "HomePage": {
+    "header": {
+      "buttonEG": "EN",
+      "buttonUK": "UA",
+      "text": "Help and advice:",
+      "links": [
+        { "name": "About us", "id": "1", "href": "" },
+        { "name": "Payment", "id": "2", "href": "" },
+        { "name": "Delivery and assembly", "id": "3", "href": "" },
+        { "name": "Reviews", "id": "4", "href": "" },
+        { "name": "Blog", "id": "5", "href": "" },
+        { "name": "Contact", "id": "6", "href": "" }
+      ]
+    }
+  }
+}

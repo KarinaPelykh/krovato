@@ -1,5 +1,11 @@
-function App() {
-  return <h1 className="container text-blue-500  p-4">KROVATO</h1>;
-}
+import { MainPage } from "./pages/MainPage";
+
+const App = () => {
+  return (
+    <>
+      <MainPage />
+    </>
+  );
+};
 
 export default App;
