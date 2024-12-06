@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 type ButtonProps = {
   children: ReactNode;
-  className: string;
+  className?: string;
 };
 export const Button = ({ children, className }: ButtonProps) => {
   return <button className={clsx(className)}>{children}</button>;

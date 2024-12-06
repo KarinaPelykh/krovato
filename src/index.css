@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --text--gray: #535353;
+}
 body {
   font-family: "Proxima Nova", sans-serif;
   background-color: #f8f8f8;
+  color: var(--text--gray);
 }
 .container {
   max-width: 410px;
