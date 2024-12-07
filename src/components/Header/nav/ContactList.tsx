@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 const icons = ["whatsapp", "telegram", "viber"];
 
-export const ContactLast = () => {
+export const ContactList = () => {
   const { t } = useTranslation("translation", { keyPrefix: "HomePage.header" });
 
   return (
-    <ul className="flex gap-[10px] ml-auto mr-[30px] items-center">
-      <p className="">{t("text")}</p>
+    <ul className="flex gap-2.5 ml-auto mr-[30px] items-center">
+      <p className="text-base">{t("text")}</p>
       {icons.map((el, i) => (
         <li key={i}>
           <Link to="/">

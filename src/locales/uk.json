@@ -12,14 +12,27 @@
         { "name": "Блог", "id": "5", "href": "" },
         { "name": "Контакти", "id": "6", "href": "" }
       ],
-      "NavigationLinks": [
-        { "name": "Про нас", "id": "1", "href": "" },
-        { "name": "Оплата", "id": "2", "href": "" },
-        { "name": "Доставка та збірка", "id": "3", "href": "" },
-        { "name": "Відгуки", "id": "4", "href": "" },
-        { "name": "Блог", "id": "5", "href": "" },
-        { "name": "Контакти", "id": "6", "href": "" }
+      "buttonCatalog": "Каталог",
+      "schedule": "Щодня з 9:00 до 18:00",
+      "placeholder": "Пошук товарів",
+      "SpecialOffer": [
+        { "offer": "Акції", "icon": "akcii", "id": "1", "href": "" },
+        { "offer": "Розпродаж", "icon": "sale", "id": "2", "href": "" },
+        { "offer": "Купити в кредит", "icon": "credit", "id": "3", "href": "" }
+      ],
+      "Categories": [
+        "Дитяча",
+        "Кухня",
+        "Ванна",
+        "Спальня",
+        "Передпокій",
+        "Вітальня",
+        "Офіс"
       ]
+    },
+    "categories-section": {
+      "title": "Популярні категорії",
+      "category": "Ліжка"
     }
   }
 }

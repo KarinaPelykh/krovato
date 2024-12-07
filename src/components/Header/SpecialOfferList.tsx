@@ -1,19 +1,31 @@
+import { Link } from "react-router-dom";
 import icons from "/sprite.svg";
+import { useTranslation } from "react-i18next";
+
+type SpecialOfferList = {
+  icon: string;
+  offer: string;
+  id: string;
+};
+
 export const SpecialOfferList = () => {
-  const data = [
-    { icon: "akcii", offer: "Акції" },
-    { icon: "sale", offer: "Розпродаж" },
-    { icon: "credit", offer: "Купити в кредит" },
-  ];
+  const { t } = useTranslation("translation", { keyPrefix: "HomePage.header" });
+
+  const specialOffer = t("SpecialOffer", {
+    returnObjects: true,
+  }) as SpecialOfferList[];
+
   return (
-    <ul className="flex gap-10">
-      {data.map(({ icon, offer }, i) => {
+    <ul className="flex gap-4 mr-auto">
+      {specialOffer.map(({ icon, offer, id }) => {
         return (
-          <li key={i} className="flex gap-[10px] ">
-            <svg className="size-6">
-              <use xlinkHref={icons + `#${icon}`}></use>
-            </svg>
-            <p>{offer}</p>
+          <li key={id}>
+            <Link to="" className="flex gap-2.5 ">
+              <svg className="size-6">
+                <use xlinkHref={icons + `#${icon}`}></use>
+              </svg>
+              <p className="text-ms">{offer}</p>
+            </Link>
           </li>
         );
       })}

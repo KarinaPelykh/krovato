@@ -11,7 +11,29 @@
         { "name": "Reviews", "id": "4", "href": "" },
         { "name": "Blog", "id": "5", "href": "" },
         { "name": "Contact", "id": "6", "href": "" }
+      ],
+      "buttonCatalog": "Catalog",
+      "schedule": "Every day from 9:00 to 18:00",
+      "placeholder": "Search goods",
+
+      "SpecialOffer": [
+        { "offer": "Promotion", "icon": "akcii", "id": "1", "href": "" },
+        { "offer": "Sale", "icon": "sale", "id": "2", "href": "" },
+        { "offer": "Buy on credit", "icon": "credit", "id": "3", "href": "" }
+      ],
+      "Categories": [
+        "Children's Room",
+        "Kitchen",
+        "Bathroom",
+        "Bedroom",
+        "Hallway",
+        "Living Room",
+        "Office"
       ]
+    },
+    "categories-section": {
+      "title": "Popular categories",
+      "category": "Beds"
     }
   }
 }

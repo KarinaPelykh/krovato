@@ -7,11 +7,11 @@ export const Header = () => {
   return (
     <header className="pb-[70px]">
       <Nav />
-      <div className="bg-white  border-b border-[#F8F8F8]">
+      <div className="bg-white  border-b border-white-light">
         <MainControls />
       </div>
       <div className=" bg-white  ">
-        <div className="container  flex gap-[112px] !py-[18px]">
+        <div className="container hidden tablet:flex  !py-[18px]">
           <SpecialOfferList />
           <CategoriesList />
         </div>

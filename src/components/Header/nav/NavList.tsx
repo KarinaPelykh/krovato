@@ -16,7 +16,7 @@ export const NavList = () => {
     <ul className="flex gap-[30px] items-center">
       {links.map(({ name, id }) => (
         <li key={id}>
-          <Link to="/" className="text-gray">
+          <Link to="/" className="text-base">
             {name}
           </Link>
         </li>

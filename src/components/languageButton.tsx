@@ -10,7 +10,7 @@ export const LanguageButton = () => {
   return (
     <select
       onChange={handleLanguageChange}
-      className="bg-transparent outline-0 cursor-pointer	"
+      className="bg-transparent outline-0 cursor-pointer	text-ms"
     >
       <option value="uk">{t("HomePage.header.buttonUK")}</option>
       <option value="en">{t("HomePage.header.buttonEG")}</option>
