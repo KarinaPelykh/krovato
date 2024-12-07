@@ -7,7 +7,7 @@ export const Select = () => {
   });
 
   return (
-    <div className="h-[50px] w-[230px]  ">
+    <div className="h-[50px] w-[230px]  hidden desktop:flex">
       <div className=" flex gap-2.5">
         <svg className=" size-[50px] ">
           <use xlinkHref={Icons + "#tel"}></use>

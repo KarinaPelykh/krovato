@@ -33,6 +33,10 @@
     "categories-section": {
       "title": "Популярні категорії",
       "category": "Ліжка"
+    },
+    "popular-goods-section": {
+      "title": "Найпопулярніші товари",
+      "linkSeeAll": " Дивитись всі"
     }
   }
 }

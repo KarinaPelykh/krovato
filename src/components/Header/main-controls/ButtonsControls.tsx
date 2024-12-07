@@ -4,7 +4,7 @@ import icons from "/sprite.svg";
 const data = ["favorite", "basket"];
 
 export const ButtonsControls = () => (
-  <ul className="flex gap-5">
+  <ul className="hidden desktop:flex gap-5">
     {data.map((icon, i) => {
       return (
         <li key={i}>

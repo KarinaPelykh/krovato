@@ -1,6 +1,6 @@
 import { Header } from "../components/Header/Header";
-import { PopularGoodsSection } from "../components/popular-goods/PopularGoodsSection";
-import { CategoriesSection } from "../components/popular-section/CategoriesSection";
+import { CategoriesSection } from "../components/popular-category-section/CategoriesSection";
+import { PopularGoodsSection } from "../components/popular-goods-section/PopularGoodsSection";
 
 export const MainPage = () => (
   <>

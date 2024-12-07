@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        mobile: "320px",
+        mobile: "410px",
         tablet: "768px",
-        desktop: "1290px",
+        desktop: "1440px",
       },
       colors: {
         gray: "#535353",
@@ -17,19 +17,30 @@ module.exports = {
         blue: "#00B5FF",
         badge: "#FFBC00",
         dark: "#2B2929",
+        red: "#E03D3D",
       },
       fontSize: {
         xs: [" 13px", { lineHeight: "22px", fontWeight: 300 }],
         sm: ["14px", { lineHeight: "26px", fontWeight: 400 }],
         base: ["16px", { lineHeight: "30px", fontWeight: 400 }],
+        m: ["15px", { lineHeight: "23px", fontWeight: 400 }],
         ms: ["19px", { lineHeight: "24px", fontWeight: 500 }],
 
         xl: ["20px", { lineHeight: "28px", fontWeight: 600 }],
+        lg: [
+          "26px",
+          {
+            lineHeight: "35px",
+            fontMeight: 600,
+          },
+        ],
+        "1xl": ["30px", { lineHeight: "40px", fontWeight: 600 }],
         "2xl": ["40px", { lineHeight: "48px", fontWeight: 600 }],
       },
       borderRadius: {
         none: "0",
         xs: "8px",
+        full: "100%",
       },
     },
   },

@@ -11,7 +11,7 @@ export const Header = () => {
         <MainControls />
       </div>
       <div className=" bg-white  ">
-        <div className="container hidden tablet:flex  !py-[18px]">
+        <div className="container hidden desktop:flex  !py-[18px]">
           <SpecialOfferList />
           <CategoriesList />
         </div>
