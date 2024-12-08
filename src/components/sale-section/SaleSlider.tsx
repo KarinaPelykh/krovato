@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "./slider.css";
 
 export const SaleSlider = () => {
@@ -31,7 +31,7 @@ export const SaleSlider = () => {
             disableOnInteraction: false,
           }}
           pagination={{ clickable: true }}
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination]}
           spaceBetween={50}
           slidesPerView={1}
         >
