@@ -5,6 +5,7 @@ export const CategoriesSection = () => {
   const { t } = useTranslation("translation", {
     keyPrefix: "HomePage.categories-section",
   });
+
   return (
     <section className="pb-[60px]  desktop:pb-[70px]">
       <div className="container">
