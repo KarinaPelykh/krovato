@@ -1,6 +1,6 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "./slider.css";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Pagination } from "swiper/modules";
+// import "./slider.css";
 
 export const SaleSlider = () => {
   const images = [
@@ -23,7 +23,7 @@ export const SaleSlider = () => {
           </li>
         ))}
       </ul>
-      <div className="flex desktop:hidden">
+      {/* <div className="flex desktop:hidden">
         <Swiper
           className="slider h-[320px] "
           autoplay={{
@@ -49,7 +49,7 @@ export const SaleSlider = () => {
             ))}
           </ul>
         </Swiper>
-      </div>
+      </div> */}
     </>
   );
 };
