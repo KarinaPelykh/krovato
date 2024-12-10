@@ -1,12 +1,12 @@
-
 import {
   Header,
   PopularGoodsSection,
   CategoriesSection,
   ReviewsSection,
   SaleSection,
+  Footer,
+  NewsSection,
 } from "../components";
-
 
 export const MainPage = () => (
   <>
@@ -15,5 +15,7 @@ export const MainPage = () => (
     <PopularGoodsSection />
     <SaleSection />
     <ReviewsSection />
+    <NewsSection />
+    <Footer />
   </>
 );

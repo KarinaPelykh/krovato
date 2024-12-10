@@ -1,0 +1,15 @@
+@import url("swiper/css");
+@import url("swiper/css/pagination");
+@import url("swiper/css/scrollbar");
+.slider {
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #535353;
+    background-color: #f8f8f8;
+  }
+  .swiper-pagination-bullet-active {
+    border: 2px solid #ffffff;
+    background-color: #ffbc57;
+  }
+}
