@@ -1,4 +1,4 @@
-import icon from "/sprite.svg";
+import { Icon } from "../ui";
 export const ReviewSvgList = () => {
   const ratings = [1, 2, 3, 4, 5];
 
@@ -6,9 +6,7 @@ export const ReviewSvgList = () => {
     <ul className="flex ">
       {ratings.map((i) => (
         <li key={i}>
-          <svg className="size-6">
-            <use xlinkHref={icon + "#star"}></use>
-          </svg>
+          <Icon name="star" />
         </li>
       ))}
     </ul>

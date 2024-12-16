@@ -1,13 +1,11 @@
+import { Icon } from "../ui";
 import { ReviewSvgList } from "./RevievSvgList";
-import icon from "/sprite.svg";
 
 export const ReviewList = () => {
   return (
     <li className="bg-white p-[20px] desktop:p-[30px] rounded-xs w-full tablet:w-[450px]  h-[370px]">
       <div className="flex mb-[30px]">
-        <svg className="size-[50px] mr-[20px]">
-          <use xlinkHref={icon + "#avatar"}></use>
-        </svg>
+        <Icon className="size-[50px] mr-[20px]" name="avatar" />
         <div>
           <div className="flex gap-2.5 desktop:gap-20 justify-between items-center">
             <span className="text-black text-base ">Іван Стедниця</span>

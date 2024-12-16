@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import icons from "/sprite.svg";
 import { useTranslation } from "react-i18next";
+import { Icon } from "../ui";
 
 type SpecialOfferList = {
   icon: string;
@@ -21,9 +21,8 @@ export const SpecialOfferList = () => {
         return (
           <li key={id}>
             <Link to="" className="flex gap-2.5 ">
-              <svg className="size-6">
-                <use xlinkHref={icons + `#${icon}`}></use>
-              </svg>
+              <Icon name={icon} />
+
               <p className="text-ms">{offer}</p>
             </Link>
           </li>

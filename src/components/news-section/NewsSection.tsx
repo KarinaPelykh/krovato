@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { NewsList } from "./NewsList";
-import icon from "/sprite.svg";
+import { Icon } from "../ui";
 
 export const NewsSection = () => {
   return (
@@ -16,9 +16,7 @@ export const NewsSection = () => {
             className="text-yellow hidden desktop:flex gap-[10px] items-center"
           >
             Читати блог
-            <svg className="size-6 fill-white">
-              <use xlinkHref={icon + "#arrow-1"}></use>
-            </svg>
+            <Icon className="fill-white" name="arrow-1" />
           </Link>
         </div>
 

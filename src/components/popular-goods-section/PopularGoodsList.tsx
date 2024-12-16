@@ -1,6 +1,5 @@
-import { Button } from "../ui";
+import { Button, Icon } from "../ui";
 import { PopularGoodItem } from "./PopularGoodItem";
-import icon from "/sprite.svg";
 
 export const PopularGoodList = () => {
   const list = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -13,9 +12,7 @@ export const PopularGoodList = () => {
         ))}
       </ul>
       <Button className="bg-yellow p-[13px] flex gap-[12px] justify-center w-full items-center h-[50px] text-white text-ms rounded-xs tablet:hidden">
-        <svg className="size-6">
-          <use xlinkHref={icon + "#reload"}></use>
-        </svg>
+        <Icon name="reload" />
         Показати ще товари
       </Button>
     </>

@@ -1,5 +1,5 @@
+import { Icon } from "../../ui";
 import { Button } from "../../ui/Button";
-import icons from "/sprite.svg";
 
 const data = ["favorite", "basket"];
 
@@ -9,9 +9,7 @@ export const ButtonsControls = () => (
       return (
         <li key={i}>
           <Button>
-            <svg className="size-[50px]">
-              <use xlinkHref={icons + `#${icon}`}></use>
-            </svg>
+            <Icon className="size-[50px]" name={icon} />
           </Button>
         </li>
       );

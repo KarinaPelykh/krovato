@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import icon from "/sprite.svg";
 import { useTranslation } from "react-i18next";
+import { Icon } from "../ui";
 
 export const CategoryItem = () => {
   const { t } = useTranslation("translation", {
@@ -21,9 +21,7 @@ export const CategoryItem = () => {
         className="absolute  top-0   h-[240px] desktop:top-[11px]    desktop:h-[300px]"
       />
       <Link to="/" className="absolute right-5 bottom-5">
-        <svg className="size-[50px]">
-          <use xlinkHref={icon + "#arrow"}></use>
-        </svg>
+        <Icon className="size-[50px]" name="arrow" />
       </Link>
     </li>
   );

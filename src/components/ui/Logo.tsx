@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
-import Icon from "/sprite.svg";
-export const Logo = () => {
+import clsx from "clsx";
+import { Icon } from "./Icon";
+type LogoProps = {
+  nameLogo: string;
+  className?: string;
+};
+
+export const Logo = ({ nameLogo, className }: LogoProps) => {
   return (
-    <Link to="/">
-      <svg className="w-[249px] ">
-        <use xlinkHref={Icon + "#logo"}></use>
-      </svg>
+    <Link to="/" className={clsx(className)}>
+      <Icon className="w-[249px] h-[50px]" name={nameLogo} />
     </Link>
   );
 };

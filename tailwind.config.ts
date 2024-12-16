@@ -18,6 +18,7 @@ module.exports = {
         badge: "#FFBC00",
         dark: "#2B2929",
         red: "#E03D3D",
+        black: "#1A1A1A",
       },
       fontSize: {
         xs: [" 13px", { lineHeight: "22px", fontWeight: 300 }],

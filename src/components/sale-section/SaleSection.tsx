@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import icon from "/sprite.svg";
 import { SaleSlider } from "./SaleSlider";
+import { Icon } from "../ui";
 
 export const SaleSection = () => {
   return (
@@ -10,9 +10,7 @@ export const SaleSection = () => {
           <h2 className="text-black  text-1xl desktop:text-2xl">Акції</h2>
           <Link to="/" className="text-yellow flex gap-[10px] items-center">
             Дивитись всі
-            <svg className="size-6">
-              <use xlinkHref={icon + "#arrow-1"}></use>
-            </svg>
+            <Icon className="size-6" name="arrow-1" />
           </Link>
         </div>
         <SaleSlider />

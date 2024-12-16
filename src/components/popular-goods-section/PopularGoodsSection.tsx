@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import icon from "/sprite.svg";
 import { useTranslation } from "react-i18next";
 import { PopularGoodList } from "./PopularGoodsList";
+import { Icon } from "../ui";
 
 export const PopularGoodsSection = () => {
   const { t } = useTranslation("translation", {
@@ -17,9 +17,7 @@ export const PopularGoodsSection = () => {
           </h2>
           <Link to="/" className="text-yellow flex gap-[10px] items-center">
             {t("linkSeeAll")}
-            <svg className="size-6">
-              <use xlinkHref={icon + "#arrow-1"}></use>
-            </svg>
+            <Icon name="arrow-1" />
           </Link>
         </div>
         <PopularGoodList />

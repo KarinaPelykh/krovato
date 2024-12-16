@@ -1,5 +1,4 @@
-import { Button } from "../ui";
-import icon from "/sprite.svg";
+import { Button, Icon } from "../ui";
 
 export const PopularGoodItem = () => (
   <li className="p-5 bg-white h-[488px] rounded-xs">
@@ -13,10 +12,7 @@ export const PopularGoodItem = () => (
       Ліжко Спарта / Sparta з підйомним механізмом
     </p>
     <p className="mb-2.5  flex gap-[5px]">
-      <svg className="size-6">
-        <use xlinkHref={icon + "#check"}></use>
-      </svg>
-      В наявності
+      <Icon className="" name="check" />В наявності
     </p>
     <div className=" flex items-center justify-between">
       <p className="flex flex-col text-xl text-black">
@@ -27,15 +23,11 @@ export const PopularGoodItem = () => (
       </p>
       <div className="flex gap-2.5">
         <Button>
-          <svg className="size-[70px]">
-            <use xlinkHref={icon + "#obrane"}></use>
-          </svg>
+          <Icon className="size-[70px]" name="obrane" />
         </Button>
 
         <Button>
-          <svg className="size-[70px]">
-            <use xlinkHref={icon + "#korzina"}></use>
-          </svg>
+          <Icon className="size-[70px]" name="korzina" />
         </Button>
       </div>
     </div>
