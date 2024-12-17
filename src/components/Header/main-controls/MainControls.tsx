@@ -20,7 +20,7 @@ export const MainControls = () => {
           <Icon className="size-[50px]" name="menu" />
         </Button>
         <Logo nameLogo="logo" className="!w-[215]" />
-        <Button>
+        <Button className="desktop:hidden">
           <Icon className="size-[50px]" name="tel" />
         </Button>
       </div>
