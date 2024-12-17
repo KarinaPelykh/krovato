@@ -6,7 +6,7 @@ export const Form = () => {
     keyPrefix: "HomePage.header",
   });
   return (
-    <form className="relative w-fit">
+    <form className="hidden desktop:flex   relative w-fit">
       <input
         placeholder={t("placeholder")}
         className=" outline-none text-base py-2.5 px-[15px] rounded-xs border border-gray-light desktop:w-[421px]"

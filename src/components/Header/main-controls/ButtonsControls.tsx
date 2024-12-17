@@ -1,13 +1,13 @@
 import { Icon } from "../../ui";
 import { Button } from "../../ui/Button";
 
-const data = ["favorite", "basket"];
+const data = ["favorite", "basket", "poisk"];
 
 export const ButtonsControls = () => (
-  <ul className="hidden desktop:flex gap-5">
+  <ul className="  items-center  flex gap-5">
     {data.map((icon, i) => {
       return (
-        <li key={i}>
+        <li key={i} className="desktop:last:hidden">
           <Button>
             <Icon className="size-[50px]" name={icon} />
           </Button>
