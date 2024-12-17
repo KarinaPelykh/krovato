@@ -1,59 +1,46 @@
 import { Link } from "react-router-dom";
 import { ContactList } from "../Header/nav/ContactList";
 import { Icon, Logo } from "../ui";
-import { FooterInfo } from "./FooterInfo";
 import { PhoneNumbers } from "./PhoneNumbers";
+import { useTranslation } from "react-i18next";
+import { FooterWrapperList } from "./FooterWrapperLists";
 
 export const Footer = () => {
-  const category = [
-    "Ліжка",
-    "Матраци",
-    "М’які меблі",
-    "Шафи",
-    "Комоди",
-    "Тумби",
-    "Столи",
-    "Меблеві стіни",
-    "Кухні",
-  ];
+  const { t } = useTranslation("translation", { keyPrefix: "HomePage.footer" });
 
   return (
     <section className="bg-dark pt-10">
       <div className=" desktop:flex desktop:relative  desktop:justify-between container">
         <Logo
           nameLogo="logo-footer"
-          className="!mb-10  flex flex-col items-center"
+          className="!mb-10  flex flex-col items-center desktop:!mb-0"
         />
 
-        <div className="mb-10 desktop:flex desktop:gap-[83px]">
-          <FooterInfo category={category} title="Категорії" />
-          <FooterInfo category={category} title="Інформація" />
-          <FooterInfo category={category} title="Клієнтам" />
-        </div>
-        <div className="flex flex-col items-center gap-2.5 mb-[30px] desktop:items-start desktop:gap-[30px]">
+        <FooterWrapperList />
+        <div className="flex flex-col items-center gap-[30px] mb-[30px] desktop:items-start  ">
           <PhoneNumbers />
 
-          <div className="flex gap-[15px] ">
+          <div className=" desktop:flex desktop:gap-[15px] ">
             <Icon name="address" className=" size-[50px] hidden desktop:flex" />
             <p className="w-[148px] text-white text-xl font-semibold text-center desktop:w-[174px] desktop:text-start">
-              м. Київ, провулок Ізяславський 52, поверх 2
+              {t("address")}
             </p>
           </div>
 
-          <div className="flex gap-[15px]">
+          <div className=" desktop:flex desktop:gap-[15px] ">
             <Icon
               name="calendar"
               className=" size-[50px] hidden desktop:flex"
             />
-            <p className="w-[178px] mb-[30px] text-white text-xl font-semibold mx-auto text-center desktop:text-start">
-              Працюємо щодня з 9:00 до 18:00
+            <p className="w-[178px]  text-white text-xl font-semibold mx-auto text-center desktop:text-start">
+              {t("schedule")}
             </p>
           </div>
         </div>
 
-        <div className="desktop:absolute desktop:top-[133px] left-0">
+        <div className="desktop:absolute desktop:top-[133px] left-4">
           <div className="flex flex-col gap-2.5 mb-[30px] items-center desktop:items-start">
-            <p className="text-white text-ms ">Приєднуйтесь:</p>
+            <p className="text-white text-ms "> {t("joinAs")}</p>
             <div className="flex gap-2.5">
               <Link to="/">
                 <Icon className="!size-10" name="facebook" />
@@ -71,9 +58,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="border  border-t-gray border-x-transparent border-b-transparent !p-5 w-full">
-        <p className="text-gray text-m text-center">
-          © KROVATO - Технології сну - 2022. Всі права захищені.
-        </p>
+        <p className="text-gray text-m text-center">{t("askForAction")}</p>
       </div>
     </section>
   );

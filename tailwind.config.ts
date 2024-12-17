@@ -43,6 +43,9 @@ module.exports = {
         xs: "8px",
         full: "100%",
       },
+      boxShadow: {
+        custom: "-3px 0px 15px 0 rgba(0, 0, 0, 0.06)",
+      },
     },
   },
   plugins: [],

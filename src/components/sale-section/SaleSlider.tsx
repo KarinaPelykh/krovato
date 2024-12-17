@@ -39,11 +39,7 @@ export const SaleSlider = () => {
             {slides.map((img, i) => (
               <SwiperSlide key={i}>
                 <li className="flex justify-center">
-                  <img
-                    src={img}
-                    alt="sale"
-                    className="w-[410px] h-[280px] object-contain block "
-                  />
+                  <img src={img} alt="sale" className="object-contain block " />
                 </li>
               </SwiperSlide>
             ))}

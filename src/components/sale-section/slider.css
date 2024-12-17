@@ -1,5 +1,6 @@
 @import url("swiper/css");
 @import url("swiper/css/pagination");
+
 .slider {
   .swiper-pagination-bullet {
     width: 15px;

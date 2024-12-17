@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { Icon } from "../ui";
-import { List } from "./List";
+import { FooterLists } from "./FooterLists";
 import { clsx } from "clsx";
 
-type FooterInfoProps = { category: string[]; title: string };
+type FooterInfoProps = {
+  baseInfo: string[];
+  title: string;
+};
 
-export const FooterInfo = ({ category, title }: FooterInfoProps) => {
+export const FooterInfo = ({ baseInfo, title }: FooterInfoProps) => {
   const [isHide, setIsHide] = useState(false);
 
   const handleHideList = () => {
@@ -13,12 +16,17 @@ export const FooterInfo = ({ category, title }: FooterInfoProps) => {
   };
 
   return (
-    <div className="mb-[5px] w-full">
+    <div
+      className={clsx(
+        "mb-[5px]  overflow-hidden  desktop:mb-0  transition-[height] delay-300 duration-300 ease-linear desktop:!h-full",
+        isHide ? "h-full " : "h-[50px]"
+      )}
+    >
       <button
-        className="flex justify-center  gap-5 w-full py-[11px] bg-black text-white desktop:bg-transparent"
+        className="   desktop:disabled:cursor-pointer flex justify-center items-center bg-black  desktop:bg-transparent gap-5 w-full py-[11px]  desktop:justify-start"
         onClick={handleHideList}
       >
-        <p>{title}</p>
+        <p className="text-xl font-semibold text-white">{title}</p>
         <Icon
           name="select"
           className={clsx(
@@ -28,11 +36,14 @@ export const FooterInfo = ({ category, title }: FooterInfoProps) => {
         />
       </button>
       <div className="desktop:hidden">
-        {isHide && <List category={category} />}
+        <FooterLists
+          baseInfo={baseInfo}
+          isHide={isHide ? "translate-y-0" : "translate-y-full"}
+        />
       </div>
 
       <div className="hidden desktop:flex">
-        <List category={category} />
+        <FooterLists baseInfo={baseInfo} />
       </div>
     </div>
   );

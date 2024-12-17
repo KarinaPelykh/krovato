@@ -35,9 +35,77 @@
       "title": "Popular categories",
       "category": "Beds"
     },
+    "review-section": {
+      "mainTitle": "Latest Reviews",
+      "title": "Home Furniture Store «KROVATO»",
+      "reviews": "Based on reviews: ",
+      "writeReview": "Write a Review",
+      "allReviews": "All Reviews",
+      "nameClient": "Ivan Stednytsia",
+      "reviewDescription": "I want to highlight the coordinated and precise work of all the staff I interacted with during the selection and purchase of the Orange-Line Rodeo SF17-LX6-PLNGR sofa. The sales specialist Ulyana provided immense assistance in the selection...",
+      "product": "Orange-Line Rodeo SF Sofa..."
+    },
+
+    "news-section": {
+      "title": "Fresh Articles and Latest News",
+      "linkBlog": "Read Blog",
+      "subTitle": "Living Room Chairs: How to Choose the Right Ones?",
+      "linkForDetails": "Learn More"
+    },
     "popular-goods-section": {
       "title": "The most popular products",
-      "linkSeeAll": " See all"
+      "linkSeeAll": " See all",
+      "size": "Size: 61 x 184 x 2130 mm",
+      "subTitle": "Sparta Bed with a Lifting Mechanism",
+      "isAvailable": "In Stock",
+      "costs": "367.74 $",
+      "costsWithoutSale": "606.53$",
+      "showGoods": "Show more"
+    },
+    "sale-section": {
+      "title": "Sale",
+
+      "linkForDetails": "Learn More"
+    },
+
+    "footer": {
+      "category": [
+        "Bed",
+        "Mattresses",
+        "Upholstered furniture",
+        "Wardrobes",
+        "Dressers",
+        "Nightstands",
+        "Tables",
+        "Wall units",
+        "Kitchens"
+      ],
+      "informationForClients": [
+        "Promotions",
+        "Sale",
+        "Buy on credit",
+        "Exchange and return policy",
+        "Frequently asked questions",
+        "Terms of purchase",
+        "Privacy policy"
+      ],
+      "shopInformation": [
+        "About us",
+        "Payment",
+        "Delivery and assembly",
+        "Reviews",
+        "Blog",
+        "Contact",
+        "Sitemap"
+      ],
+      "titleCategory": "Category",
+      "titleInfo": "Information",
+      "titleClient": "Fro client",
+      "schedule": "We work everyday from 9:00 to 18:00",
+      "address": "Kyiv, Izyaslavskyi Lane 52, 2nd floor",
+      "askForCall": "Call me back.",
+      "joinAs": "Join us:",
+      "askForAction": "© KROVATO - Sleep Technologies - 2022. All rights reserved."
     }
   }
 }
