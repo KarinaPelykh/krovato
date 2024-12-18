@@ -24,8 +24,8 @@ export const MainControls = () => {
           <Icon className="size-[50px]" name="tel" />
         </Button>
       </div>
-      <div className=" flex items-center  py-[12px] border border-t-white-light border-b-0 border-l-0 border-r-0 desktop:p-0 desktop:border-0 ">
-        <Button className="bg-badge rounded-xs text-ms text-white flex gap-2.5 py-[11px] px-5 w-[145px] h-[46px] mr-auto ">
+      <div className=" flex items-center  py-[12px] border border-t-white-light border-b-0 border-x-0  desktop:p-0 desktop:border-0 desktop:gap-[30px] ">
+        <Button className="bg-badge rounded-xs text-ms text-white flex gap-2.5 py-[11px] px-5 w-[145px] h-[46px] mr-auto desktop:mr-0">
           <Icon name="menu-catalog" />
           {t("buttonCatalog")}
         </Button>

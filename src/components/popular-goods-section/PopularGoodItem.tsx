@@ -7,7 +7,7 @@ export const PopularGoodItem = () => {
   });
 
   return (
-    <li className="p-5 bg-white h-[488px] rounded-xs boxShadow-custom">
+    <li className="p-5 bg-white h-[488px] rounded-xs shadow-1xl">
       <img
         src="/sofa.png"
         alt="furniture"

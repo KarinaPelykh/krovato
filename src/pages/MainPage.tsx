@@ -4,6 +4,7 @@ import {
   ReviewsSection,
   SaleSection,
   NewsSection,
+  OurAdvantagesSection,
 } from "../components";
 
 export const MainPage = () => (
@@ -13,5 +14,6 @@ export const MainPage = () => (
     <SaleSection />
     <ReviewsSection />
     <NewsSection />
+    <OurAdvantagesSection />
   </>
 );

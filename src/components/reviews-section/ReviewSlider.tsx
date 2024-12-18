@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Scrollbar } from "swiper/modules";
-import { ReviewList } from "./ReviewList";
+import { Autoplay, Pagination, Scrollbar } from "swiper/modules";
+import { ReviewItem } from "./ReviewItem";
 
 export const ReviewSlider = () => {
   const slides = [1, 2, 3, 4, 5, 6, 7];
@@ -19,7 +19,7 @@ export const ReviewSlider = () => {
             spaceBetween: 130,
           },
         }}
-        className="h-[430px]  desktop:h-[410px] slider"
+        className="h-[430px]  desktop:h-[430px] slider"
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -28,15 +28,15 @@ export const ReviewSlider = () => {
           clickable: true,
         }}
         scrollbar={{ draggable: true }}
-        modules={[Pagination, Scrollbar]}
+        modules={[Autoplay, Pagination, Scrollbar]}
       >
-        <ul className="flex  ">
+        <ul className="flex  justify-center items-center desktop:justify-start ">
           {slides.map((i) => (
             <SwiperSlide
               key={i}
-              className="!flex  justify-center desktop:justify-start "
+              className="pt-3 pl-5 tablet:!flex  tablet:justify-center desktop:pl-[30px]    desktop:!w-fit   desktop:!m-0 "
             >
-              <ReviewList />
+              <ReviewItem />
             </SwiperSlide>
           ))}
         </ul>

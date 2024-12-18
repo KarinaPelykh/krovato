@@ -1,13 +1,13 @@
 import { Icon } from "../ui";
 import { ReviewSvgList } from "./RevievSvgList";
 import { useTranslation } from "react-i18next";
-export const ReviewList = () => {
+export const ReviewItem = () => {
   const { t } = useTranslation("translation", {
     keyPrefix: "HomePage.review-section",
   });
 
   return (
-    <li className="bg-white p-[20px] desktop:p-[30px] rounded-xs w-full tablet:w-[450px]  h-[370px]">
+    <li className="bg-white p-[20px] desktop:p-[30px] rounded-xs w-[350px] tablet:w-[450px]  h-[370px] desktop:w-fit shadow-1xl ">
       <div className="flex mb-[30px]">
         <Icon className="size-[50px] mr-[20px]" name="avatar" />
         <div>
@@ -21,7 +21,7 @@ export const ReviewList = () => {
           <ReviewSvgList />
         </div>
       </div>
-      <p className="mb-[30px] text-base  desktop:w-[370px]  h-[150px] overflow-y-auto text-ellipsis whitespace-wrap">
+      <p className="mb-[30px] text-base w-full  desktop:w-[370px]  h-[150px] overflow-y-auto text-ellipsis whitespace-wrap">
         {t("reviewDescription")}
       </p>
       <div className="flex items-center">

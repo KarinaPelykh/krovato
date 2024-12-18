@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,ts,tsx,mdx}"],
   theme: {
     extend: {
+      boxShadow: {
+        "1xl": "-3px 4px 15px 0 rgba(0,0,0,0.6)",
+      },
       screens: {
         mobile: "410px",
         tablet: "768px",
@@ -43,8 +46,9 @@ module.exports = {
         xs: "8px",
         full: "100%",
       },
-      boxShadow: {
-        custom: "-3px 0px 15px 0 rgba(0, 0, 0, 0.06)",
+
+      backgroundImage: {
+        md: " linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 33.85%, #fff 72.4%)",
       },
     },
   },

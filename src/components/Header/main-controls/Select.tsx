@@ -7,7 +7,7 @@ export const Select = () => {
   });
 
   return (
-    <div className="h-[50px] w-[230px]  hidden desktop:flex">
+    <div className="h-[50px]  hidden desktop:flex w-full">
       <div className=" flex gap-2.5">
         <Icon className="size-[50px]" name="tel" />
 

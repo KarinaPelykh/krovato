@@ -8,7 +8,7 @@ export const CategoryItem = () => {
   });
 
   return (
-    <li className="relative bg-white w-full mobile:w-[180px] h-[240px]  desktop:w-[250px] desktop:h-[300px] rounded-xs">
+    <li className="relative bg-white w-full mobile:w-[180px] h-[240px]  desktop:w-[250px] desktop:h-[300px] rounded-xs shadow-xl">
       <div className="flex justify-between items-center  desktop:mb-[60px] p-[15px]  desktop:p-5">
         <span className="text-ms  desktop:mr-[126px] desktop:text-xl text-black">
           {t("category")}

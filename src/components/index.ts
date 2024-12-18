@@ -7,3 +7,4 @@ export * from "./reviews-section/ReviewsSection";
 export * from "./sale-section/SaleSection";
 export * from "./footer/Footer";
 export * from "./news-section/NewsSection";
+export * from "./our-advantages-section/OurAdvantagesSection";
