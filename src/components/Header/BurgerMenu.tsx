@@ -12,7 +12,7 @@ export const BurgerMenu = ({ isOpen, handleCloseMenu }: BurgerMenuProps) => {
   return (
     <div
       className={clsx(
-        " w-full min-h-screen  fixed top-0 left-0 transform-all duration-300 delay-300 ease-out z-10",
+        " w-full h-full bg-black/80 fixed top-0 left-0 transform-all duration-300 delay-300 ease-out z-10",
         isOpen ? "translate-x-0" : "translate-x-full"
       )}
     >
