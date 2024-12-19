@@ -5,7 +5,7 @@ import { SpecialOfferList } from "./SpecialOfferList";
 
 export const Header = () => {
   return (
-    <header className="pb-[70px]">
+    <header className="pb-[70px] ">
       <Nav />
       <div className="bg-white  border-b border-white-light">
         <MainControls />

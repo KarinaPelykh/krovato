@@ -8,10 +8,19 @@ import { BurgerMenu } from "../BurgerMenu";
 
 export const MainControls = () => {
   const { t } = useTranslation("translation", { keyPrefix: "HomePage.header" });
+
   const [isOpen, setIsOpen] = useState(false);
+
+  const [isOpenCatalog, setIsOpenCatalog] = useState(false);
+
+  document.body.style.overflow = isOpenCatalog ? "hidden" : "auto";
 
   const handleCloseMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleCloseCatalog = () => {
+    setIsOpenCatalog(!isOpenCatalog);
   };
   return (
     <div className="tablet:flex items-center gap-[30px]  container desktop:!py-[25px]">
@@ -30,8 +39,19 @@ export const MainControls = () => {
           {t("buttonCatalog")}
         </Button>
         <Form />
+        {isOpenCatalog ? (
+          <div className="fixed z-10 w-full h-full top-[200px]  tablet:top-[100px] left-0  bg-black/80  desktop:hidden">
+            <div className="bg-white p-[35px]">
+              <Form className="!flex !w-full" />
+            </div>
+          </div>
+        ) : null}
+
         <Select />
-        <ButtonsControls />
+        <ButtonsControls
+          isOpenCatalog={isOpenCatalog}
+          onClick={handleCloseCatalog}
+        />
       </div>
       <BurgerMenu isOpen={isOpen} handleCloseMenu={handleCloseMenu} />
     </div>
