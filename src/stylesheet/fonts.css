@@ -1,6 +1,7 @@
 @font-face {
-  font-family: "Proxima Nova";
+  font-family: "Montserrat";
   font-weight: 400;
-  src: format("Proxima Nova"),
-    url(../fonts/proximanova_regular.ttf) format("opentype");
+  font-style: normal;
+  src: local("Montserrat"),
+    url("/fonts/Montserrat-Regular.ttf") format("opentype");
 }

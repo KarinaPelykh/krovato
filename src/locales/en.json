@@ -49,7 +49,7 @@
     "news-section": {
       "title": "Fresh Articles and Latest News",
       "linkBlog": "Read Blog",
-      "subTitle": "Living Room Chairs: How to Choose the Right Ones?",
+      "subTitle": "Living Room Chairs:How to Choose the Right?",
       "linkForDetails": "Learn More"
     },
     "popular-goods-section": {
@@ -67,7 +67,17 @@
 
       "linkForDetails": "Learn More"
     },
-
+    "our-advantages-section": {
+      "title": "KROVATO - when you need quality furniture at an affordable price!",
+      "text_1": "If you enter the query 'Buy a bed, wardrobe, sofa' into the browser's search bar, the system will display hundreds of sellers specializing in the sale of this product. However, not all stores and websites on the Internet can offer such a wide assortment as our company. Few can compete with our prices either. After all, we receive our goods directly from manufacturers, avoiding overpaying for intermediary services. Moreover,",
+      "text_2": ", we sell both online and in our showroom, while the prices for the online and offline assortment remain the same. We only collaborate with the best domestic and foreign factories and companies that have gained recognition from customers and furniture industry experts. It is important for us that the products we sell meet international quality standards, are made from certified materials – durable, beautiful, and environmentally friendly. We meticulously select offerings for our store, so we can guarantee their quality and confidently recommend them to our customers. With us, you will easily find furniture series in classic and modern styles, collections for designing your home in a romantic spirit or Scandinavian minimalism...",
+      "advantage-list": [
+        { "icon": "truck", "text": "Free delivery" },
+        { "icon": "box", "text": "Free assembly" },
+        { "icon": "headset", "text": "Post-warranty service" },
+        { "icon": "label", "text": "Customer discounts" }
+      ]
+    },
     "footer": {
       "category": [
         "Bed",

@@ -6,7 +6,7 @@
   --text--gray: #535353;
 }
 body {
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Montserrat";
   background-color: #f8f8f8;
   color: var(--text--gray);
 }
