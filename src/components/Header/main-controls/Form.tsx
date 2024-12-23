@@ -1,13 +1,16 @@
 import { useTranslation } from "react-i18next";
 import { Icon } from "../../ui";
 import clsx from "clsx";
+
 type FormProps = {
   className?: string;
 };
+
 export const Form = ({ className }: FormProps) => {
   const { t } = useTranslation("translation", {
     keyPrefix: "HomePage.header",
   });
+
   return (
     <form className={clsx("hidden desktop:flex   relative w-fit", className)}>
       <input

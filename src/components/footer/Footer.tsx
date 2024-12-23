@@ -28,11 +28,8 @@ export const Footer = () => {
           </div>
 
           <div className=" desktop:flex desktop:gap-[15px] ">
-            <Icon
-              name="calendar"
-              className=" size-[50px] hidden desktop:flex"
-            />
-            <p className="w-[178px]  text-white text-xl font-semibold mx-auto text-center desktop:text-start">
+            <Icon name="calendar" className="size-[50px] hidden desktop:flex" />
+            <p className="w-[178px] text-white text-xl font-semibold mx-auto text-center desktop:text-start">
               {t("schedule")}
             </p>
           </div>

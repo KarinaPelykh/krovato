@@ -1,7 +1,7 @@
-import { Icon } from "../../ui";
-import { Button } from "../../ui/Button";
+import { Icon, Button } from "../../ui";
 
 const data = ["poisk", "favorite", "basket"];
+
 type ButtonsControlsProps = {
   isOpenCatalog: boolean;
   onClick: () => void;
@@ -15,7 +15,7 @@ export const ButtonsControls = ({
     {data.map((icon, i) => {
       return (
         <li key={i} className="desktop:first:hidden">
-          <Button onClick={onClick}>
+          <Button onClick={icon === "poisk" ? onClick : undefined}>
             <Icon
               className="size-[50px]"
               name={isOpenCatalog && icon === "poisk" ? "close-1" : icon}

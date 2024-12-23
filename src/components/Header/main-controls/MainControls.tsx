@@ -22,6 +22,7 @@ export const MainControls = () => {
   const handleCloseCatalog = () => {
     setIsOpenCatalog(!isOpenCatalog);
   };
+
   return (
     <div className="tablet:flex items-center gap-[30px]  container desktop:!py-[25px]">
       <div className="  flex justify-between py-[33px] desktop:p-0">

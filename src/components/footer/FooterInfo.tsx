@@ -30,7 +30,7 @@ export const FooterInfo = ({ baseInfo, title }: FooterInfoProps) => {
         <Icon
           name="select"
           className={clsx(
-            "translate-all delay-300 duration-300 desktop:hidden",
+            "translate-all fill-white delay-300 duration-300 desktop:hidden",
             isHide ? "rotate-0" : "rotate-180"
           )}
         />

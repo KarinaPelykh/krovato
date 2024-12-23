@@ -1,4 +1,4 @@
-import { LanguageButton } from "../../languageButton";
+import { LanguageSelect } from "../../LanguageSelect";
 import { ContactList } from "./ContactList";
 import { NavList } from "./NavList";
 export const Nav = () => {
@@ -6,7 +6,7 @@ export const Nav = () => {
     <div className="hidden  desktop:flex !py-[15px] container">
       <NavList />
       <ContactList />
-      <LanguageButton />
+      <LanguageSelect />
     </div>
   );
 };
