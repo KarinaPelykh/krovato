@@ -24,6 +24,7 @@ module.exports = {
         black: "#1A1A1A",
       },
       fontSize: {
+        s: [" 10px", { lineHeight: "22px", fontWeight: 300 }],
         xs: [" 13px", { lineHeight: "22px", fontWeight: 300 }],
         sm: ["14px", { lineHeight: "26px", fontWeight: 400 }],
         base: ["16px", { lineHeight: "30px", fontWeight: 400 }],
