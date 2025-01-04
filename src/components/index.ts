@@ -8,3 +8,6 @@ export * from "./sale-section/SaleSection";
 export * from "./footer/Footer";
 export * from "./news-section/NewsSection";
 export * from "./our-advantages-section/OurAdvantagesSection";
+export * from "./about-as-section/AboutAsSection";
+export * from "./krovato-section/KrovatoSection";
+export * from "./invite-section/InviteSection";

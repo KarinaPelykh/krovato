@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainPage } from "./pages/MainPage";
 import { Layout } from "./components/Layout";
-import { CategoryPAge } from "./pages/CategoryPage";
+import { CatalogPage } from "./pages/CatalogPage";
+import { AboutAsPage } from "./pages/AboutAsPage";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -16,8 +17,13 @@ const App = () => {
           errorElement: <div>sorry, now it is not working</div>,
         },
         {
-          path: "category",
-          element: <CategoryPAge />,
+          path: "catalog",
+          element: <CatalogPage />,
+          errorElement: <div>sorry, now it is not working</div>,
+        },
+        {
+          path: "aboutas",
+          element: <AboutAsPage />,
           errorElement: <div>sorry, now it is not working</div>,
         },
       ],

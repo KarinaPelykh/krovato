@@ -20,7 +20,7 @@ export const CategoryItem = () => {
         src="/img.png"
         className="absolute  top-0   h-[240px] desktop:top-[11px]    desktop:h-[300px]"
       />
-      <Link to="/" className="absolute right-5 bottom-5">
+      <Link to="catalog" className="absolute right-5 bottom-5">
         <Icon className="size-[50px]" name="arrow" />
       </Link>
     </li>

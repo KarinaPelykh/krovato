@@ -6,7 +6,7 @@ export const PhoneNumbers = () => {
 
   return (
     <div className="mb-[30px] desktop:mb-0   desktop:flex desktop:gap-[15px]">
-      <Icon name="tel-footer" className=" size-[50px] hidden desktop:flex" />
+      <Icon name="tel-footer" className="size-[50px] hidden desktop:flex" />
       <div className="flex flex-col gap-2.5">
         <a
           className="text-xl font-semibold text-white"

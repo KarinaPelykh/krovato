@@ -7,13 +7,13 @@ export const CategoriesList = () => {
   const { t } = useTranslation("translation", { keyPrefix: "HomePage.header" });
 
   const categories = t("Categories", { returnObjects: true }) as Categories;
-  
+
   return (
     <ul className="flex gap-10 ">
       {categories.map((item, i) => {
         return (
           <li key={i} className="text-ms">
-            <Link to=""> {item}</Link>
+            <Link to="/blog"> {item}</Link>
           </li>
         );
       })}

@@ -6,6 +6,7 @@ type NavLink = {
   name: string;
   id: string;
   href: string;
+  path: string;
 };
 
 type NavLinkProps = {
@@ -19,9 +20,9 @@ export const NavList = ({ className }: NavLinkProps) => {
   const links = t("links", { returnObjects: true }) as NavLink[];
   return (
     <ul className={clsx("flex gap-[30px] items-center", className)}>
-      {links.map(({ name, id }) => (
+      {links.map(({ name, id, path }) => (
         <li key={id}>
-          <Link to="/" className="text-base">
+          <Link to={name === name ? path : ""} className="text-base">
             {name}
           </Link>
         </li>

@@ -5,7 +5,7 @@
       "buttonUK": "UA",
       "text": "Help and advice:",
       "links": [
-        { "name": "About us", "id": "1", "href": "" },
+        { "name": "About us", "id": "1", "href": "", "path": "aboutas" },
         { "name": "Payment", "id": "2", "href": "" },
         { "name": "Delivery and assembly", "id": "3", "href": "" },
         { "name": "Reviews", "id": "4", "href": "" },
@@ -116,6 +116,41 @@
       "askForCall": "Call me back.",
       "joinAs": "Join us:",
       "askForAction": "© KROVATO - Sleep Technologies - 2022. All rights reserved."
+    }
+  },
+  "AboutAsPage": {
+    "about-as-section": {
+      "title": "About Us",
+      "subtitle": "The Krovato home furniture store is a distributor of high-quality furniture.",
+      "description": "We work exclusively with leading manufacturers of beds and mattresses, such as EMM, Estella, Metakam, Legko, HighFoam, and ArborDrev."
+    },
+
+    "krovato-section": {
+      "title": "Krovato it is",
+      "krovato-list": [
+        {
+          "title": "In-house Production",
+          "text": "We also have our own production facilities, allowing us to create furniture tailored to your preferences: non-standard sizes, heights, and custom furniture based on your sketches. Beds, nightstands, dressers, wardrobes – all of these can be customized according to your wishes."
+        },
+        {
+          "title": "Professionals",
+          "text": "Our products are made using professional equipment from ash, alder, beech, oak, metal, and chipboard. Factories with a closed production cycle ensure quality control at every stage: from bringing wood to the workshop to assembling the bed at the client’s location."
+        },
+        {
+          "title": "Wide Selection",
+          "text": "On our website, you can easily find everything for a bedroom, living room, or children's room 'ready to go.' A huge selection of mattresses, beds, as well as nightstands and dressers, awaits you."
+        },
+        {
+          "title": "Quality Control",
+          "text": "Our experienced managers are happy to help you select furniture that will delight you for many years. Thanks to our own delivery and assembly service, we ensure quality control from production to the customer."
+        }
+      ]
+    },
+    "initiation-section": {
+      "title": "We Invite You to Visit Our Showroom",
+      "subtitle": "Our specialists will help you select materials and components based on your preferences.",
+      "description": "We have an exhibition where you can see the most popular models of beds and nightstands, as well as test various mattress models to choose the best mattress for a comfortable sleep. You can find the exhibition address and a map of how to get there in the 'Contacts' section.",
+      "button": "Open Contacts"
     }
   }
 }
