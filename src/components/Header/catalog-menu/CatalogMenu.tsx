@@ -170,7 +170,7 @@ export const CatalogMenu = ({ openCatalog }: CatalogMenuProps) => {
   return (
     <div
       className={clsx(
-        "fixed z-10 size-full pt-2.5 top-[198px] tablet:top-[100px] desktop:top-[150px]   left-0 bg-black/80 transition-all delay-300 ease-out ",
+        "fixed z-50 size-full pt-2.5 top-[198px] tablet:top-[100px] desktop:top-[150px]   left-0 bg-black/80 transition-all delay-300 ease-out ",
         openCatalog ? "translate-x-0" : "translate-x-full"
       )}
     >

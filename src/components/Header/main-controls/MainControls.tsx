@@ -52,7 +52,7 @@ export const MainControls = () => {
         </Button>
         <Form />
         {isOpenCatalog ? (
-          <div className="fixed z-10 w-full h-full top-[200px]  tablet:top-[100px] left-0  bg-black/80  desktop:hidden">
+          <div className="fixed z-50 w-full h-full top-[200px]  tablet:top-[100px] left-0  bg-black/80  desktop:hidden">
             <div className="bg-white p-[35px]">
               <Form className="!flex !w-full" />
             </div>
