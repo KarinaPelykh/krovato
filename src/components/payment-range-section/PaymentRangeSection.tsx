@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { Icon } from "../ui";
-import { PaymentDeliveryList } from "./PaymentDeliveryList";
 
 export const PaymentRangeSection = () => {
   const { t } = useTranslation("translation", {
@@ -12,7 +11,7 @@ export const PaymentRangeSection = () => {
         <h2 className="text-black font-semibold text-1xl mb-10">
           {t("title")}
         </h2>
-        <ul className="flex flex-col gap-5 desktop:flex-row mb-[60px] desktop:mb-[70px]">
+        <ul className="flex flex-col gap-5 desktop:flex-row desktop:items-start">
           <li className=" flex flex-col items-center justify-center text-center">
             <Icon
               isScenery={true}
@@ -59,7 +58,6 @@ export const PaymentRangeSection = () => {
           </li>
         </ul>
       </div>
-      <PaymentDeliveryList />
     </section>
   );
 };

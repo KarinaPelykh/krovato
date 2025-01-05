@@ -18,7 +18,7 @@ export const FaqSection = () => {
   return (
     <section>
       <div className="container">
-        <h2 className="text-black font-semibold text-1xl desktop:text-2xl mb-10">
+        <h2 className="text-black font-semibold text-1xl desktop:text-2xl mb-10 text-center">
           {t("title")}
         </h2>
         <ul className="flex flex-col gap-[15px]">

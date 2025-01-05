@@ -17,7 +17,7 @@ export const PaymentInfoSection = () => {
           <p className="text-black">{t("description")}</p>
         </div>
 
-        <div className="absolute top-0 left-0 object-center -z-10 w-full min-h-full bg-[url('/payment-section/mob-payment.png')] bg-contain  bg-no-repeat desktop:bg-[url('/payment-section/bg-desk-payment.png')] desktop:h-auto"></div>
+        <div className="absolute top-20 mobile:top-0 left-0 object-center -z-10 w-full min-h-full bg-[url('/payment-section/mob-payment.png')] bg-contain  bg-no-repeat desktop:bg-[url('/payment-section/bg-desk-payment.png')] desktop:h-auto"></div>
       </div>
     </section>
   );

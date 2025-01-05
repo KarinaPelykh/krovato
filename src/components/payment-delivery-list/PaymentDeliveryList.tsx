@@ -11,7 +11,7 @@ export const PaymentDeliveryList = () => {
         <ul className=" flex flex-col gap-[30px]">
           <li className="flex flex-col items-center gap-5 desktop:flex-row">
             <Icon name="map" className="size-[100px] " isScenery={true} />
-            <div>
+            <div className="text-center desktop:text-start">
               <h3 className="text-black font-semibold text-lg mb-2.5">
                 {t("subtitle_1")}
               </h3>
@@ -24,7 +24,7 @@ export const PaymentDeliveryList = () => {
               className="size-[100px] "
               isScenery={true}
             />
-            <div>
+            <div className="text-center desktop:text-start">
               <h3 className="text-black font-semibold text-lg mb-2.5">
                 {t("subtitle_2")}
               </h3>
@@ -37,7 +37,7 @@ export const PaymentDeliveryList = () => {
               className="size-[100px] "
               isScenery={true}
             />
-            <div>
+            <div className="text-center desktop:text-start">
               <h3 className="text-black font-semibold text-lg mb-2.5">
                 {t("subtitle_3")}
               </h3>
