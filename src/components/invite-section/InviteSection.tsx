@@ -8,7 +8,7 @@ export const InviteSection = () => {
   return (
     <section className="  pt-[60px] desktop:pt-[70px]">
       <div className="container  desktop:flex ">
-        <article className="mb-5  ">
+        <article>
           <h2 className=" text-black font-semibold  mb-[30px] text-1xl desktop:text-2xl">
             {t("title")}
           </h2>
@@ -20,7 +20,7 @@ export const InviteSection = () => {
           </p>
           <Button className=" text-white bg-yellow flex py-[13px] px-5 rounded-xs  mx-auto desktop:m-0">
             {t("button")}
-            <Icon className="ml-2.5 !fill-white" name="arrow-1" />
+            <Icon className="ml-2.5 fill-white" name="arrow-1" />
           </Button>
         </article>
         <img

@@ -30,7 +30,7 @@ export const NewsList = () => {
                 className="text-yellow text-ms flex gap-2.5 items-center"
               >
                 {t("linkForDetails")}
-                <Icon name="arrow-1" />
+                <Icon className="fill-yellow" name="arrow-1" />
               </Link>
             </div>
           </li>

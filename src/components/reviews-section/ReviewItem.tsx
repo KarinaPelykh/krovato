@@ -7,7 +7,7 @@ export const ReviewItem = () => {
   });
 
   return (
-    <li className="bg-white p-[20px] desktop:p-[30px] rounded-xs w-[350px] tablet:w-[450px]  h-[370px] desktop:w-fit shadow-1xl ">
+    <li className="bg-white p-[20px] desktop:p-[30px] rounded-xs w-[320px] mobile:w-[350px] tablet:w-[450px]  h-[370px] desktop:w-fit shadow-1xl ">
       <div className="flex mb-[30px]">
         <Icon className="size-[50px] mr-[20px]" name="avatar" />
         <div>

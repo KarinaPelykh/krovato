@@ -17,7 +17,7 @@ export const PopularGoodsSection = () => {
           </h2>
           <Link to="/" className="text-yellow flex gap-[10px] items-center">
             {t("linkSeeAll")}
-            <Icon name="arrow-1" />
+            <Icon className="fill-yellow" name="arrow-1" />
           </Link>
         </div>
         <PopularGoodList />

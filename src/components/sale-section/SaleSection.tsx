@@ -17,7 +17,7 @@ export const SaleSection = () => {
             </h2>
             <Link to="/" className="text-yellow flex gap-[10px] items-center">
               {t("linkForDetails")}
-              <Icon className="size-6" name="arrow-1" />
+              <Icon className="size-6 fill-yellow" name="arrow-1" />
             </Link>
           </div>
           <div className="hidden desktop:flex ">

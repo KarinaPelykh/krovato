@@ -6,7 +6,7 @@
       "text": "Help and advice:",
       "links": [
         { "name": "About us", "id": "1", "href": "", "path": "aboutas" },
-        { "name": "Payment", "id": "2", "href": "" },
+        { "name": "Payment", "id": "2", "href": "", "path": "payment" },
         { "name": "Delivery and assembly", "id": "3", "href": "" },
         { "name": "Reviews", "id": "4", "href": "" },
         { "name": "Blog", "id": "5", "href": "" },
@@ -151,6 +151,54 @@
       "subtitle": "Our specialists will help you select materials and components based on your preferences.",
       "description": "We have an exhibition where you can see the most popular models of beds and nightstands, as well as test various mattress models to choose the best mattress for a comfortable sleep. You can find the exhibition address and a map of how to get there in the 'Contacts' section.",
       "button": "Open Contacts"
+    }
+  },
+  "PaymentPage": {
+    "paymentInfo-section": {
+      "title": "Product Payment",
+      "subtitle": "Krovato customers can pay for products on the website with just one click.",
+      "description": "Cash on delivery, bank transfer, online payment with Visa or MasterCard, or credit – we offer it all!"
+    },
+
+    "payment-range-section": {
+      "title": "Payment in Kyiv:",
+      "subtitle_1": "Via terminal",
+      "text_1": "You can pay for your order with a card at our showroom at the address: 52 Izyaslavsky Lane, 2nd floor",
+      "subtitle_2": "To PrivatBank card",
+      "text_2": "You can do this via a self-service terminal or Privat24.",
+      "subtitle_3": "Bank transfer",
+      "text_3": "Payment can be made at the cash desk of any bank branch or from your company’s settlement account.",
+      "subtitle_4": "Cash on delivery",
+      "text_4": "Payment is made in cash directly upon receiving and inspecting the product from the courier."
+    },
+    "payment-delivery-list": {
+      "subtitle_1": "Payment in Ukraine",
+      "text_1": "Delivery across Ukraine is carried out by Nova Poshta. You can pay for your order upon receipt using cash on delivery. The cash on delivery fee is 35 UAH + 1-2% of the amount. You can also pay for your order to a PrivatBank card before the shipment.",
+      "subtitle_2": "Credit Installments",
+      "text_2": "At our showroom, you can pay for your order using PrivatBank’s services 'Instant Installments' and 'Installment Payment', with minimal interest rates.",
+      "subtitle_3": "Prepayment",
+      "text_3": "Due to frequent cases of 'customers' placing orders but not intending to pick them up, a decision has been made to introduce a minimum prepayment of 20% (for standard orders). The remaining amount (80%) is paid upon receipt after assembly. For non-standard and large orders, the prepayment is 50%. For non-standard mattresses, the prepayment is 100%."
+    },
+    "faq-section": {
+      "title": "Do you still have questions?",
+      "list-question": [
+        {
+          "question": "How to return or exchange an order?",
+          "answer": "We will try to help you, even though according to the Ukrainian Consumer Protection Law, when returning goods or refusing a service, the customer must submit a request for a refund, along with the receipt, sales receipt, invoice, or any other document confirming the purchase (service provision). We keep a record of all orders, so the customer only needs to know the order number, write a request, and provide the details of the person who placed the order so we can identify the purchase."
+        },
+        {
+          "question": "Can I return/exchange the item if I lost the receipt?",
+          "answer": "Yes, we can find your purchase in our system by the order number or other details. However, it’s important to have some proof of purchase."
+        },
+        {
+          "question": "How long will it take to refund the money?",
+          "answer": "Refunds usually take 3 to 7 business days after the request is confirmed and processed by the bank."
+        },
+        {
+          "question": "Can I refund the money to a different card?",
+          "answer": "No, refunds can only be made to the card that was used for the payment, according to banking regulations."
+        }
+      ]
     }
   }
 }
