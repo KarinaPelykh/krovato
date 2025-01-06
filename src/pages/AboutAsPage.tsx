@@ -3,8 +3,8 @@ import {
   AboutAsSection,
   KrovatoSection,
   InviteSection,
+  OurServicesList,
 } from "../components";
-import { OurServicesList } from "../components/our-advantages-section/OurServicesList";
 
 export const AboutAsPage = () => {
   return (

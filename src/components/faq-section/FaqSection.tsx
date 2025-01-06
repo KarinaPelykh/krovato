@@ -16,7 +16,7 @@ export const FaqSection = () => {
   }) as FaqList[];
 
   return (
-    <section>
+    <section className="pt-[60px] desktop:pt-[70px]">
       <div className="container">
         <h2 className="text-black font-semibold text-1xl desktop:text-2xl mb-10 text-center">
           {t("title")}

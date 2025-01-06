@@ -11,3 +11,8 @@ export * from "./our-advantages-section/OurAdvantagesSection";
 export * from "./about-as-section/AboutAsSection";
 export * from "./krovato-section/KrovatoSection";
 export * from "./invite-section/InviteSection";
+export * from "./faq-section/FaqSection";
+export * from "./payment-delivery-list/PaymentDeliveryList";
+export * from "./our-advantages-section/OurServicesList";
+export * from "./payment-info-section/PaymentInfoSection";
+export * from "./payment-range-section/PaymentRangeSection";

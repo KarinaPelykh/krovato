@@ -7,7 +7,12 @@
       "links": [
         { "name": "About us", "id": "1", "href": "", "path": "aboutas" },
         { "name": "Payment", "id": "2", "href": "", "path": "payment" },
-        { "name": "Delivery and assembly", "id": "3", "href": "" },
+        {
+          "name": "Delivery and assembly",
+          "id": "3",
+          "href": "",
+          "path": "delivery"
+        },
         { "name": "Reviews", "id": "4", "href": "" },
         { "name": "Blog", "id": "5", "href": "" },
         { "name": "Contact", "id": "6", "href": "" }
@@ -199,6 +204,37 @@
           "answer": "No, refunds can only be made to the card that was used for the payment, according to banking regulations."
         }
       ]
+    }
+  },
+  "DeliveryPage": {
+    "delivery-section": {
+      "title": "Delivery and Assembly",
+      "subtitle": "Online order delivery across Ukraine.",
+      "description": "We deliver using our own transport and to all active Nova Poshta branches. Payment for delivery and assembly is made upon receiving the goods."
+    },
+    "delivery-info-section": {
+      "title": "Delivery in Kyiv and Kyiv Region:",
+      "list": [
+        "Delivery of a bed or mattress costing over 6000 UAH is free within Kyiv.",
+        "Delivery includes elevator transportation and carrying into the apartment (staircase carrying is charged extra).",
+        "Delivery of a sofa to the entrance of a building in Kyiv is free."
+      ],
+      "text": "Delivery is also free to: Vyshneve, Petropavlivska Borshchahivka, Sofiivska Borshchahivka, Novosilky, Chaiky, Kotsiubynske.",
+      "description": "Delivery to the following cities: Vyshhorod - 200 UAH, Brovary - 250 UAH, Boryspil - 300 UAH, Irpin - 200 UAH, Bucha - 250 UAH, Hostomel - 300 UAH.",
+      "text_2": "Delivery beyond 5 km from Kyiv's city boundary is charged at 16 UAH per km.",
+      "text_3": "For purchases under 6000 UAH, delivery within Kyiv is paid by the customer at a rate of 250 UAH.",
+      "adition-info": ""
+    },
+    "delivery-info-into-ua-section": {
+      "title": "Delivery Across Ukraine:",
+      "list": [
+        "Delivery across Ukraine is paid by the customer and can be made to a branch or directly to the customer's address using carriers such as Nova Poshta, Mist Express, or Autolux.",
+        "Metal beds are delivered beyond Kyiv region via Nova Poshta to the customer’s address at the customer’s expense (estimated delivery cost is 250–300 UAH).",
+        "‘Additional’ shipments, such as drawers, bedside tables, or dressers, are paid for by the customer."
+      ],
+      "description": "The 'Cash on Delivery' service (payment upon receipt of the order) incurs an additional fee of +1.5–2% of the order cost, depending on the selected freight carrier. The 'Old Furniture Disposal' service is calculated based on the dimensions of the furniture or mattress and ranges from 50 to 400 UAH. Carrying out furniture is charged additionally according to the agreed rates for carrying and delivery services.",
+      "text": "When shipping products across Ukraine, promotions such as free carrying, a complimentary mattress protector, or free assembly do not apply.",
+      "addition-info": "*In all cases, the indicated delivery cost covers delivery to the entrance of the building (or the gate of a private house). The basic delivery fee does not include carrying furniture inside. Carrying the goods upstairs/to the apartment is subject to separate payment and agreement. <br /> **Additional packaging of the product is always paid for by the customer! Attention! The delivery cost covers only delivery to the entrance of the building (or the gate of a private house) and does not include carrying the goods inside. Carrying the goods inside is subject to separate payment and agreement according to the applicable rates."
     }
   }
 }

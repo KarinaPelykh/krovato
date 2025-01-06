@@ -4,6 +4,7 @@ import { Layout } from "./components/Layout";
 import { CatalogPage } from "./pages/CatalogPage";
 import { AboutAsPage } from "./pages/AboutAsPage";
 import { PaymentPage } from "./pages/PaymentPage";
+import { DeliveryPage } from "./pages/DeliveryPage";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -30,7 +31,12 @@ const App = () => {
         {
           path: "payment",
           element: <PaymentPage />,
-          errorElement: <div>sorr,now it is not working</div>,
+          errorElement: <div>sorry,now it is not working</div>,
+        },
+        {
+          path: "delivery",
+          element: <DeliveryPage />,
+          errorElement: <div>sorry,now it is not working</div>,
         },
       ],
     },
