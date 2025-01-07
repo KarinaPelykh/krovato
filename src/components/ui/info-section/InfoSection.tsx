@@ -25,7 +25,7 @@ export const InfoSection = ({
         </div>
         <div
           className={clsx(
-            "absolute left-0  object-center -z-10  bg-contain  bg-no-repeat",
+            "absolute left-0  object-center -z-10  bg-center bg-contain  bg-no-repeat",
             bgClassName
           )}
         ></div>

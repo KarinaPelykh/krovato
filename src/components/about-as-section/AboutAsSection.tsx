@@ -11,7 +11,7 @@ export const AboutAsSection = () => {
       title={t("title")}
       subtitle={t("subtitle")}
       description={t("description")}
-      bgClassName=" top-[70px] w-full   h-[520px] bg-[url('/bg-about-as.png')]    desktop:bg-[url('/img-about-1.png')]  desktop:top-0 desktop:h-[454px]"
+      bgClassName=" top-0 w-full min-h-full   bg-[url('/bg-about-as.png')]    desktop:bg-[url('/bg-about-us-desktop.png')]  desktop:h-auto"
     />
   );
 };

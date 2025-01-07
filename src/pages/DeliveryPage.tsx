@@ -2,6 +2,8 @@ import { useTranslation } from "react-i18next";
 import { FaqSection, OurServicesList } from "../components";
 import { DeliveryInfoSection } from "../components/delivery-info-section/DeliveryInfoSection";
 import { DeliverySection } from "../components/delivery-section/DeliverySection";
+import { DeliverSaleSection } from "../components/deliver-sale-section/DeliverSaleSection";
+import { ServicesSection } from "../components/services-section/ServicesSection";
 
 export const DeliveryPage = () => {
   const { t: localInfo } = useTranslation("translation", {
@@ -41,6 +43,8 @@ export const DeliveryPage = () => {
         textClassName="flex"
         info={t("addition-info")}
       />
+      <DeliverSaleSection />
+      <ServicesSection />
       <FaqSection />
       <OurServicesList />
     </>
