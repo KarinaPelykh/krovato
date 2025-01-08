@@ -8,8 +8,8 @@ type FaqList = {
 };
 
 type FaqSectionProps = {
-  title: string;
-  listQuestion: FaqList[];
+  title?: string;
+  listQuestion?: FaqList[];
 };
 
 export const FaqSection = ({ title, listQuestion }: FaqSectionProps) => {
