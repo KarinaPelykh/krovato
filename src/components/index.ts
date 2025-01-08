@@ -16,3 +16,7 @@ export * from "./payment-delivery-list/PaymentDeliveryList";
 export * from "./our-advantages-section/OurServicesList";
 export * from "./payment-info-section/PaymentInfoSection";
 export * from "./payment-range-section/PaymentRangeSection";
+export * from "./deliver-sale-section/DeliverSaleSection";
+export * from "./delivery-info-section/DeliveryInfoSection";
+export * from "./delivery-section/DeliverySection";
+export * from "./services-section/ServicesSection";

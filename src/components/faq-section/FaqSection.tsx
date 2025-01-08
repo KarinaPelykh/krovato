@@ -1,12 +1,18 @@
 import { useTranslation } from "react-i18next";
 import { FaqList } from "./FaqList";
+import { sizeWindow } from "../../hook/sizeWIndow";
 
 type FaqList = {
   question: string;
   answer: string;
 };
 
-export const FaqSection = () => {
+type FaqSectionProps = {
+  title: string;
+  listQuestion: FaqList[];
+};
+
+export const FaqSection = ({ title, listQuestion }: FaqSectionProps) => {
   const { t } = useTranslation("translation", {
     keyPrefix: "PaymentPage.faq-section",
   });
@@ -15,16 +21,22 @@ export const FaqSection = () => {
     returnObjects: true,
   }) as FaqList[];
 
+  const { size } = sizeWindow();
+
+  const isNotDesktop = size < 1440;
+
   return (
     <section className="pt-[60px] desktop:pt-[70px]">
       <div className="container">
         <h2 className="text-black font-semibold text-1xl desktop:text-2xl mb-10 text-center">
-          {t("title")}
+          {title && isNotDesktop ? title : t("title")}
         </h2>
         <ul className="flex flex-col gap-[15px]">
-          {list.map(({ question, answer }, i) => (
-            <FaqList key={i} question={question} answer={answer} />
-          ))}
+          {(listQuestion && isNotDesktop ? listQuestion : list).map(
+            ({ question, answer }, i) => (
+              <FaqList key={i} question={question} answer={answer} />
+            )
+          )}
         </ul>
       </div>
     </section>

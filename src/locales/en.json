@@ -212,7 +212,7 @@
       "subtitle": "Online order delivery across Ukraine.",
       "description": "We deliver using our own transport and to all active Nova Poshta branches. Payment for delivery and assembly is made upon receiving the goods."
     },
-    "delivery-info-section": {
+    "local-delivery": {
       "title": "Delivery in Kyiv and Kyiv Region:",
       "list": [
         "Delivery of a bed or mattress costing over 6000 UAH is free within Kyiv.",
@@ -225,7 +225,7 @@
       "text_3": "For purchases under 6000 UAH, delivery within Kyiv is paid by the customer at a rate of 250 UAH.",
       "adition-info": ""
     },
-    "delivery-info-into-ua-section": {
+    "nationwide-delivery": {
       "title": "Delivery Across Ukraine:",
       "list": [
         "Delivery across Ukraine is paid by the customer and can be made to a branch or directly to the customer's address using carriers such as Nova Poshta, Mist Express, or Autolux.",
@@ -235,6 +235,140 @@
       "description": "The 'Cash on Delivery' service (payment upon receipt of the order) incurs an additional fee of +1.5–2% of the order cost, depending on the selected freight carrier. The 'Old Furniture Disposal' service is calculated based on the dimensions of the furniture or mattress and ranges from 50 to 400 UAH. Carrying out furniture is charged additionally according to the agreed rates for carrying and delivery services.",
       "text": "When shipping products across Ukraine, promotions such as free carrying, a complimentary mattress protector, or free assembly do not apply.",
       "addition-info": "*In all cases, the indicated delivery cost covers delivery to the entrance of the building (or the gate of a private house). The basic delivery fee does not include carrying furniture inside. Carrying the goods upstairs/to the apartment is subject to separate payment and agreement. <br /> **Additional packaging of the product is always paid for by the customer! Attention! The delivery cost covers only delivery to the entrance of the building (or the gate of a private house) and does not include carrying the goods inside. Carrying the goods inside is subject to separate payment and agreement according to the applicable rates."
+    },
+    "delivery-sale-section": {
+      "title": "Delivery Promotions",
+      "list-sale": [
+        "When purchasing a bed with a mattress worth over 7000 UAH (mattress price), elevator delivery and assembly are FREE *",
+        "When purchasing a bed with a mattress worth over 10,000 UAH, get a 5% discount on the mattress + FREE delivery, elevator delivery, and assembly *",
+        "When purchasing a mattress worth over 7000 UAH, delivery and elevator delivery are FREE *",
+        "When purchasing a mattress worth over 10,000 UAH, delivery and elevator delivery are FREE * + 5% discount on the mattress",
+        "When purchasing a table and 2 chairs, delivery and elevator delivery are FREE *"
+      ],
+      "detail": "  * When purchasing a bed with a mattress up to the amount 'N', it refers to the mattress price. ** Carrying is done via elevator (carrying upstairs is paid separately). * Beds with built-in mattresses are not included in the promotion. * The discount on mattresses from the Sonline brand cannot be combined with other promotions."
+    },
+    "service-section": {
+      "service": "Service",
+      "title_1": "Assembly",
+      "title_2": "Carrying",
+      "subtitle": "Has an elevator",
+      "subtitle_2": "No elevator/not working/something doesn't fit",
+      "serviceInfo": [
+        {
+          "service": "Carrying one lifting unit* of the bed (1 box)",
+          "isFree": "Free",
+          "price": "30 UAH/level"
+        },
+        {
+          "service": "Carrying the mattress",
+          "isFree": "Free",
+          "price": "30 UAH/level"
+        },
+        {
+          "service": "Carrying the bed frame (assembled)",
+          "isFree": "Free",
+          "price": "30 UAH/level"
+        },
+        {
+          "service": "Carrying a straight sofa**",
+          "isFree": "150 UAH",
+          "price": "30 UAH/level (per lifting unit)"
+        },
+        {
+          "service": "Carrying a corner sofa",
+          "isFree": "200 UAH",
+          "price": "30 UAH/level (per lifting unit)"
+        },
+        {
+          "service": "Carrying a dresser",
+          "isFree": "Free",
+          "price": "50 UAH"
+        },
+        {
+          "service": "Carrying a nightstand",
+          "isFree": "Free",
+          "price": "10 UAH"
+        },
+        {
+          "service": "Carrying a chair",
+          "isFree": "Free",
+          "price": "15 UAH"
+        },
+        {
+          "service": "Carrying a table",
+          "isFree": "Free",
+          "price": "50 UAH"
+        }
+      ],
+
+      "items": [
+        {
+          "service": "Assembly of a regular bed",
+          "price": "300 UAH"
+        },
+        {
+          "service": "Assembly of a bed with a built-in mattress",
+          "price": "350 UAH"
+        },
+        {
+          "service": "Assembly of a regular bed",
+          "price": "300 UAH"
+        },
+        {
+          "service": "Assembly of a bed with a built-in mattress",
+          "price": "350 UAH"
+        },
+        {
+          "service": "Assembly of a bed with a lifting mechanism",
+          "price": "500 UAH"
+        },
+        {
+          "service": "Assembly of a straight sofa",
+          "price": "150 UAH"
+        },
+        {
+          "service": "Assembly of a corner sofa",
+          "price": "200 UAH"
+        },
+        {
+          "service": "Assembly of a dresser",
+          "price": "250 UAH"
+        },
+        {
+          "service": "Assembly of a nightstand",
+          "price": "150 UAH"
+        },
+        {
+          "service": "Assembly of a table",
+          "price": "250 UAH"
+        }
+      ],
+      "detail": " * Carrying large items, where the length exceeds 160*90 cm or the weight exceeds 20 kg, costs 30 UAH/level. ** Carrying a sofa that consists of 1 lifting unit is 70 UAH/level without an elevator. *** If there is no free access to the entrance, the delivery service will independently calculate the cost of carrying to the door."
+    },
+    "deliver-faq-section": {
+      "title": "Frequently Asked Questions about Beds",
+      "list-question": [
+        {
+          "question": "Which bed is best suited for a 'Khrushchyovka'?",
+          "answer": "A compact or folding bed with a width of up to 140 cm."
+        },
+        {
+          "question": "How to choose the right bed size?",
+          "answer": "A single bed is the optimal option for one person. They come in several standard widths: 80-90 cm, less commonly 100 cm. A one-and-a-half bed is similar to a single bed but wider, typically 120-140 cm. These are suitable for larger individuals or a slender couple. A double bed provides ample space and comfort for two adults, as well as families where children like to sleep with their parents. The width of a standard double bed starts from 160 cm, and king-size beds are over 200 cm wide."
+        },
+        {
+          "question": "Does the bed purchase include delivery, assembly, and installation in the room?",
+          "answer": "It depends on the store. Check the purchase terms."
+        },
+        {
+          "question": "Are the cheapest beds always of poor quality?",
+          "answer": "Not necessarily. The quality depends on the materials and manufacturer."
+        },
+        {
+          "question": "Can I order a bed in custom dimensions?",
+          "answer": "Yes, many manufacturers offer custom orders."
+        }
+      ]
     }
   }
 }

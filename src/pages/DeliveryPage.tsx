@@ -1,51 +1,63 @@
 import { useTranslation } from "react-i18next";
-import { FaqSection, OurServicesList } from "../components";
-import { DeliveryInfoSection } from "../components/delivery-info-section/DeliveryInfoSection";
-import { DeliverySection } from "../components/delivery-section/DeliverySection";
-import { DeliverSaleSection } from "../components/deliver-sale-section/DeliverSaleSection";
-import { ServicesSection } from "../components/services-section/ServicesSection";
+import {
+  DeliverSaleSection,
+  DeliveryInfoSection,
+  DeliverySection,
+  FaqSection,
+  OurServicesList,
+  ServicesSection,
+} from "../components";
+
+type ListQuestion = {
+  question: string;
+  answer: string;
+};
 
 export const DeliveryPage = () => {
-  const { t: localInfo } = useTranslation("translation", {
-    keyPrefix: "DeliveryPage.delivery-info-section",
-  });
-
   const { t } = useTranslation("translation", {
-    keyPrefix: "DeliveryPage.delivery-info-into-ua-section",
+    keyPrefix: "DeliveryPage",
   });
 
-  const list = localInfo("list", {
+  const list = t("local-delivery.list", {
     returnObjects: true,
   }) as string[];
 
-  const listInfoDelivery = t("list", {
+  const deliveryInfoList = t("nationwide-delivery.list", {
     returnObjects: true,
   }) as string[];
+
+  const listQuestion = t("deliver-faq-section.list-question", {
+    returnObjects: true,
+  }) as ListQuestion[];
+
   return (
     <>
       <DeliverySection />
       <DeliveryInfoSection
-        title={localInfo("title")}
+        title={t("local-delivery.title")}
         list={list}
-        description={localInfo("description")}
-        text={localInfo("text")}
-        text2={localInfo("text_2")}
-        text3={localInfo("text_3")}
+        description={t("local-delivery.description")}
+        text={t("local-delivery.text")}
+        text2={t("local-delivery.text_2")}
+        text3={t("local-delivery.text_3")}
         images="/delivery-section/map.png"
       />
       <DeliveryInfoSection
         bgClassName="bg-white pt-[60] desktop:pt-[70px]"
-        title={t("title")}
-        list={listInfoDelivery}
-        description={t("description")}
-        text3={t("text")}
+        title={t("nationwide-delivery.title")}
+        list={deliveryInfoList}
+        description={t("nationwide-delivery.description")}
+        text3={t("nationwide-delivery.text")}
         images="/delivery-section/ua-map.png"
         textClassName="flex"
-        info={t("addition-info")}
+        info={t("nationwide-delivery.addition-info")}
       />
       <DeliverSaleSection />
       <ServicesSection />
-      <FaqSection />
+      <FaqSection
+        title={t("deliver-faq-section.title")}
+        listQuestion={listQuestion}
+      />
       <OurServicesList />
     </>
   );
