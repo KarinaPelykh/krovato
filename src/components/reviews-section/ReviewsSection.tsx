@@ -18,7 +18,7 @@ export const ReviewsSection = () => {
               <p className="text-black text-xl mb-10 w-[300px]">{t("title")}</p>
               <div className=" flex gap-2.5">
                 <span className="text-yellow text-ms">0.5</span>
-                <ReviewSvgList />
+                <ReviewSvgList className="fill-yellow" />
               </div>
               <p> {t("reviews")}269</p>
             </div>

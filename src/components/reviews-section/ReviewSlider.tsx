@@ -1,10 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Scrollbar } from "swiper/modules";
-import { ReviewItem } from "./ReviewItem";
+import { useTranslation } from "react-i18next";
+import { Card } from "../ui/Card/Card";
 
 export const ReviewSlider = () => {
   const slides = [1, 2, 3, 4, 5, 6, 7];
 
+  const { t } = useTranslation("translation", {
+    keyPrefix: "HomePage.review-section",
+  });
   return (
     <div className="w-full  flex justify-center">
       <Swiper
@@ -36,7 +40,11 @@ export const ReviewSlider = () => {
               key={i}
               className="pt-3 pl-5 tablet:!flex  tablet:justify-center desktop:pl-[30px]    desktop:!w-fit   desktop:!m-0 "
             >
-              <ReviewItem />
+              <Card
+                name={t("nameClient")}
+                description={t("reviewDescription")}
+                product={t("product")}
+              />
             </SwiperSlide>
           ))}
         </ul>
