@@ -36,6 +36,18 @@
         "Office"
       ]
     },
+    "Breadcrumb": {
+      "title": "Home",
+
+      "path-list": [
+        { "path": "blog", "name": "Blog" },
+        { "path": "reviews", "name": "Review" },
+        { "path": "delivery", "name": "Delivery and assembly" },
+        { "path": "payment", "name": "Payment" },
+        { "path": "aboutas", "name": "About as" }
+      ]
+    },
+
     "categories-section": {
       "title": "Popular categories",
       "category": "Beds"
@@ -85,37 +97,42 @@
     },
     "footer": {
       "category": [
-        "Bed",
-        "Mattresses",
-        "Upholstered furniture",
-        "Wardrobes",
-        "Dressers",
-        "Nightstands",
-        "Tables",
-        "Wall units",
-        "Kitchens"
+        { "name": "Beds", "id": "1", "path": "" },
+        { "name": "Mattresses", "id": "2", "path": "" },
+        { "name": "Upholstered Furniture", "id": "3", "path": "" },
+        { "name": "Wardrobes", "id": "4", "path": "" },
+        { "name": "Dressers", "id": "5", "path": "" },
+        { "name": "Nightstands", "id": "6", "path": "" },
+        { "name": "Tables", "id": "7", "path": "" },
+        { "name": "Furniture Walls", "id": "8", "path": "" },
+        { "name": "Kitchens", "id": "9", "path": "" }
       ],
       "informationForClients": [
-        "Promotions",
-        "Sale",
-        "Buy on credit",
-        "Exchange and return policy",
-        "Frequently asked questions",
-        "Terms of purchase",
-        "Privacy policy"
+        { "name": "Promotions", "id": "1", "path": "" },
+        { "name": "Sale", "id": "2", "path": "" },
+        { "name": "Buy on Credit", "id": "3", "path": "" },
+        { "name": "Exchange and Return Policy", "id": "4", "path": "" },
+        { "name": "Frequently Asked Questions", "id": "5", "path": "" },
+        { "name": "Terms of Purchase", "id": "6", "path": "" },
+        { "name": "Privacy Policy", "id": "7", "path": "" }
       ],
       "shopInformation": [
-        "About us",
-        "Payment",
-        "Delivery and assembly",
-        "Reviews",
-        "Blog",
-        "Contact",
-        "Sitemap"
+        { "name": "About us", "id": "1", "path": "aboutas" },
+        { "name": "Payment", "id": "2", "path": "payment" },
+        {
+          "name": "Delivery and assembly",
+          "id": "3",
+
+          "path": "delivery"
+        },
+        { "name": "Reviews", "id": "4", "path": "reviews" },
+        { "name": "Blog", "id": "5", "path": "blog" },
+        { "name": "Contact", "id": "6" },
+        { "name": "Sitemap", "id": "7" }
       ],
       "titleCategory": "Category",
       "titleInfo": "Information",
-      "titleClient": "Fro client",
+      "titleClient": "For client",
       "schedule": "We work everyday from 9:00 to 18:00",
       "address": "Kyiv, Izyaslavskyi Lane 52, 2nd floor",
       "askForCall": "Call me back.",

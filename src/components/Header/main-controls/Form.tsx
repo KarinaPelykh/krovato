@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Icon } from "../../ui";
+import { Button, Icon } from "../../ui";
 import clsx from "clsx";
 
 type FormProps = {
@@ -17,8 +17,9 @@ export const Form = ({ className }: FormProps) => {
         placeholder={t("placeholder")}
         className=" outline-none w-full text-base py-2.5 px-[15px] rounded-xs border border-gray-light desktop:w-[421px]"
       />
-
-      <Icon className="absolute top-2.5 right-[15px]  " name="search" />
+      <Button className="absolute top-3.5 right-[15px]  ">
+        <Icon name="search" />
+      </Button>
     </form>
   );
 };

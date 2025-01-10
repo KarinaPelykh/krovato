@@ -1,8 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { Icon } from "../../ui";
+import clsx from "clsx";
 
 export const Select = () => {
-  const { t } = useTranslation("translation", {
+  const { t, i18n } = useTranslation("translation", {
     keyPrefix: "HomePage.header",
   });
 
@@ -13,7 +14,14 @@ export const Select = () => {
 
         <div className="flex items-center">
           <div>
-            <span className="block text-xs">{t("schedule")}</span>
+            <span
+              className={clsx(
+                "block ",
+                i18n.language === "en" ? "text-s" : "text-xs"
+              )}
+            >
+              {t("schedule")}
+            </span>
             <a className="text-xl text-dark" href="tel:+067 929-45-45">
               067 929-45-45
             </a>

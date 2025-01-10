@@ -12,8 +12,9 @@ type SpecialOfferList = {
 type SpecialOfferListProps = { className?: string };
 
 export const SpecialOfferList = ({ className }: SpecialOfferListProps) => {
-  const { t } = useTranslation("translation", { keyPrefix: "HomePage.header" });
-
+  const { t } = useTranslation("translation", {
+    keyPrefix: "HomePage.header",
+  });
   const specialOffer = t("SpecialOffer", {
     returnObjects: true,
   }) as SpecialOfferList[];

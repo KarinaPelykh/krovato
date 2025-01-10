@@ -2,9 +2,13 @@ import { useState } from "react";
 import { Icon } from "../ui";
 import { FooterLists } from "./FooterLists";
 import { clsx } from "clsx";
-
+type FooterInfoList = {
+  name: string;
+  id: string;
+  path: string;
+};
 type FooterInfoProps = {
-  baseInfo: string[];
+  baseInfo: FooterInfoList[];
   title: string;
 };
 

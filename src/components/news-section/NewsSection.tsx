@@ -22,7 +22,7 @@ export const NewsSection = () => {
           >
             {t("linkBlog")}
 
-            <Icon className="fill-white" name="arrow-1" />
+            <Icon className="fill-yellow" name="arrow-1" />
           </Link>
         </div>
 

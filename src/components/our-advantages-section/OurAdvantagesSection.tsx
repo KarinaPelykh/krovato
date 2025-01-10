@@ -14,9 +14,9 @@ export const OurAdvantagesSection = () => {
   });
 
   return (
-    <section className="pt-10 desktop:pt-[70px] bg-white">
+    <section className="pt-10 desktop:py-[70px] bg-white">
       <div className="container">
-        <div className="mx-auto desktop:max-w-[1070px] relative">
+        <div className="mx-auto desktop:max-w-[1070px] relative   mt-10 desktop:my-[70px]">
           <h2 className="text-black text-3xl  text-start font-semibold mb-10 desktop:mb-[30px] desktop:text-2xl desktop:text-center">
             {t("title")}
           </h2>
@@ -24,8 +24,8 @@ export const OurAdvantagesSection = () => {
           <div
             className={clsx(
               isOpen
-                ? "overflow-auto h-auto"
-                : "  overflow-hidden !whitespace-wrap  text-ellipsis h-[350px] "
+                ? " h-auto"
+                : "overflow-hidden !whitespace-wrap  text-ellipsis   "
             )}
           >
             <p className="text-black  text-base desktop:mb-5">
@@ -34,14 +34,14 @@ export const OurAdvantagesSection = () => {
             </p>
             <div
               className={clsx(
-                "absolute  z-0 -bottom-12 left-0  h-[145px] desktop:-bottom-10 w-full",
+                "absolute  z-0 bottom-0 left-0  h-[145px]  w-full",
                 isOpen ? "bg-transparent" : "bg-md"
               )}
             ></div>
             <Button
               className={clsx(
-                "absolute -bottom-12  left-[45%] z-10  desktop:-bottom-12  desktop:left-[50%]    transition-all duration-300",
-                isOpen ? "rotate-180" : "rotate-0"
+                "transition-all duration-300 flex mx-auto",
+                isOpen ? "rotate-180" : "rotate-0 "
               )}
               onClick={() => setOpen(!isOpen)}
             >

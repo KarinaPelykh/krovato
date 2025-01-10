@@ -29,7 +29,6 @@ export const ServiceList = ({
       </p>
       <ul className="flex gap-2.5 flex-col mb-10">
         {data.map(({ service, price, isFree }, i) => {
-          console.log(service, price, isFree);
           return (
             <li
               className="flex justify-between gap-2.5 items-center p-[15px] flex-col desktop:flex-row odd:bg-white-light odd:rounded-lg "

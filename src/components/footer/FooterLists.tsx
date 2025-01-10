@@ -1,8 +1,13 @@
 import clsx from "clsx";
 import { Link } from "react-router-dom";
 
+type FooterInfoList = {
+  name: string;
+  id: string;
+  path: string;
+};
 type ListProps = {
-  baseInfo: string[];
+  baseInfo: FooterInfoList[];
   isHide?: string;
 };
 export const FooterLists = ({ baseInfo, isHide }: ListProps) => {
@@ -13,9 +18,9 @@ export const FooterLists = ({ baseInfo, isHide }: ListProps) => {
         isHide
       )}
     >
-      {baseInfo?.map((item, i) => (
-        <li key={i} className="first:mt-5  mb-5 text-white-light">
-          <Link to="/"> {item}</Link>
+      {baseInfo?.map(({ name, path, id }) => (
+        <li key={id} className="first:mt-5  mb-5 text-white-light">
+          <Link to={path}> {name}</Link>
         </li>
       ))}
     </ul>
