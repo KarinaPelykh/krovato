@@ -43,9 +43,9 @@ export const ReviewForm = () => {
   return (
     <div>
       <div className="flex mb-[30px] justify-center desktop:justify-start">
-        <Icon className=" size-[80px] mr-[30px]" name="ava" />
+        <Icon className="size-[80px] mr-[30px]" name="ava" />
         <div>
-          <p className="text-black text-xl mb-10 w-[300px]">
+          <p className=" text-base text-black tablet:text-xl mb-10 tablet:w-[300px]">
             Магазин меблів для дому «KROVATO»
           </p>
           <div className="flex gap-2.5">

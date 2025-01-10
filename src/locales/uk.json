@@ -14,7 +14,7 @@
           "path": "delivery"
         },
         { "name": "Відгуки", "id": "4", "href": "", "path": "reviews" },
-        { "name": "Блог", "id": "5", "href": "" },
+        { "name": "Блог", "id": "5", "href": "", "path": "blog" },
         { "name": "Контакти", "id": "6", "href": "" }
       ],
       "buttonCatalog": "Каталог",

@@ -14,7 +14,7 @@
           "path": "delivery"
         },
         { "name": "Reviews", "id": "4", "href": "", "path": "reviews" },
-        { "name": "Blog", "id": "5", "href": "" },
+        { "name": "Blog", "id": "5", "href": "", "path": "blog" },
         { "name": "Contact", "id": "6", "href": "" }
       ],
       "buttonCatalog": "Catalog",

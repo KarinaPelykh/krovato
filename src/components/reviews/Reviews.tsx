@@ -7,7 +7,7 @@ export const Reviews = () => {
     <section>
       <div className="container desktop:flex desktop:gap-[30px]">
         <div className="mb-[60px] desktop:mb-0">
-          <h1 className="text-black text-center font-semibold text-1xl  mb-5 desktop:mb-10 desktop:text-2xl">
+          <h1 className="text-black text-center desktop:text-start font-semibold text-1xl  mb-5 desktop:mb-10 desktop:text-2xl">
             Відгуки
           </h1>
 

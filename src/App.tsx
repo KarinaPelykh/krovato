@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainPage } from "./pages/MainPage";
 import { Layout } from "./components/Layout";
-import { CatalogPage } from "./pages/CatalogPage";
+import { BlogPage } from "./pages/Blog";
 import { AboutAsPage } from "./pages/AboutAsPage";
 import { PaymentPage } from "./pages/PaymentPage";
 import { DeliveryPage } from "./pages/DeliveryPage";
@@ -20,8 +20,8 @@ const App = () => {
           errorElement: <div>sorry, now it is not working</div>,
         },
         {
-          path: "catalog",
-          element: <CatalogPage />,
+          path: "blog",
+          element: <BlogPage />,
           errorElement: <div>sorry, now it is not working</div>,
         },
         {
