@@ -1,14 +1,13 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { ReviewSvgList } from "../reviews-section/RevievSvgList";
 import { Button, Icon } from "../ui";
-import clsx from "clsx";
 
 export const ReviewForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
-  //   const [star, setStar] = useState(0);
-  const [isSelected, setIsSelected] = useState(false);
+  const [rate, setRate] = useState<number>(0);
+
   const handleName = (e: ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
   };
@@ -21,25 +20,26 @@ export const ReviewForm = () => {
     setText(e.target.value);
   };
 
+  const handelRate = (currentRate: number) => {
+    setRate(currentRate);
+  };
+
   const handleGetReview = (e?: FormEvent) => {
     e?.preventDefault();
     const data = {
       name,
       email,
       text,
+      rate,
     };
 
     console.log(data);
     setName("");
     setEmail("");
     setText("");
+    setRate(0);
   };
 
-  const handleIsSelected = (i: number) => {
-    console.log(i);
-
-    setIsSelected(!isSelected);
-  };
   return (
     <div>
       <div className="flex mb-[30px] justify-center desktop:justify-start">
@@ -91,12 +91,9 @@ export const ReviewForm = () => {
             Ваша оцінка:
           </span>
           <ReviewSvgList
-            className={clsx(
-              isSelected
-                ? "fill-yellow stroke-none"
-                : "stroke-gray fill-transparent"
-            )}
-            toggle={handleIsSelected}
+            className="stroke-gray fill-transparent"
+            handelRate={handelRate}
+            rate={rate}
           />
         </div>
         <Button

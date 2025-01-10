@@ -6,13 +6,17 @@ export const Reviews = () => {
   return (
     <section>
       <div className="container desktop:flex desktop:gap-[30px]">
-        <div>
-          <h1 className="text-black font-semibold text-1xl mb-10 desktop:text-2xl">
+        <div className="mb-[60px] desktop:mb-0">
+          <h1 className="text-black text-center font-semibold text-1xl  mb-5 desktop:mb-10 desktop:text-2xl">
             Відгуки
           </h1>
+
+          <Button className="flex justify-center  mx-auto gap-[15px] bg-yellow text-white mb-[60px] p-[13px] w-full text-ms font-semibold rounded-lg desktop:hidden">
+            Залишити відгук
+          </Button>
           <div className="mb-10">
-            <ul className=" flex gap-[30px] text-black mb-5">
-              <li>Всі відгуки</li>
+            <ul className="text-xs  tablet:text-base flex gap-[30px] text-black mb-5">
+              <li className="text-yellow">Всі відгуки</li>
               <li>Про товари</li>
               <li>Про Магазин</li>
             </ul>
