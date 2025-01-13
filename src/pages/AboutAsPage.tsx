@@ -3,7 +3,6 @@ import {
   AboutAsSection,
   KrovatoSection,
   InviteSection,
-  OurServicesList,
 } from "../components";
 
 export const AboutAsPage = () => {
@@ -13,7 +12,7 @@ export const AboutAsPage = () => {
       <KrovatoSection />
       <ReviewsSection />
       <InviteSection />
-      <OurServicesList />
+     
     </>
   );
 };

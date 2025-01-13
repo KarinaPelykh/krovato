@@ -1,6 +1,5 @@
 import {
   FaqSection,
-  OurServicesList,
   PaymentDeliveryList,
   PaymentInfoSection,
   PaymentRangeSection,
@@ -13,7 +12,6 @@ export const PaymentPage = () => {
       <PaymentRangeSection />
       <PaymentDeliveryList />
       <FaqSection />
-      <OurServicesList />
     </>
   );
 };

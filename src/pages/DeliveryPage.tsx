@@ -4,7 +4,6 @@ import {
   DeliveryInfoSection,
   DeliverySection,
   FaqSection,
-  OurServicesList,
   ServicesSection,
 } from "../components";
 
@@ -58,7 +57,6 @@ export const DeliveryPage = () => {
         title={t("deliver-faq-section.title")}
         listQuestion={listQuestion}
       />
-      <OurServicesList />
     </>
   );
 };

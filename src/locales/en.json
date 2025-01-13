@@ -15,7 +15,7 @@
         },
         { "name": "Reviews", "id": "4", "href": "", "path": "reviews" },
         { "name": "Blog", "id": "5", "href": "", "path": "blog" },
-        { "name": "Contact", "id": "6", "href": "" }
+        { "name": "Contact", "id": "6", "href": "", "path": "contact" }
       ],
       "buttonCatalog": "Catalog",
       "schedule": "Every day from 9:00 to 18:00",
@@ -44,7 +44,8 @@
         { "path": "reviews", "name": "Review" },
         { "path": "delivery", "name": "Delivery and assembly" },
         { "path": "payment", "name": "Payment" },
-        { "path": "aboutas", "name": "About as" }
+        { "path": "aboutas", "name": "About as" },
+        { "path": "contact", "name": "Contact" }
       ]
     },
 
