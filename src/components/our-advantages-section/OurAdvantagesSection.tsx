@@ -6,7 +6,7 @@ import { sizeWindow } from "../../hook/sizeWIndow";
 import { useTranslation } from "react-i18next";
 
 type OurAdvantagesSectionProps = {
-  className: string;
+  className?: string;
 };
 export const OurAdvantagesSection = ({
   className,
