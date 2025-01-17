@@ -4,7 +4,13 @@ import clsx from "clsx";
 import { OurServicesList } from "./OurServicesList";
 import { sizeWindow } from "../../hook/sizeWIndow";
 import { useTranslation } from "react-i18next";
-export const OurAdvantagesSection = () => {
+
+type OurAdvantagesSectionProps = {
+  className: string;
+};
+export const OurAdvantagesSection = ({
+  className,
+}: OurAdvantagesSectionProps) => {
   const [isOpen, setOpen] = useState(false);
 
   const { size } = sizeWindow();
@@ -14,7 +20,12 @@ export const OurAdvantagesSection = () => {
   });
 
   return (
-    <section className="pt-10 desktop:pt-[70px] bg-white">
+    <section
+      className={clsx(
+        "pt-10 desktop:pt-[70px] bg-white",
+        className && "py-10 desktop:py-[70px] "
+      )}
+    >
       <div className="container">
         <div className="mx-auto desktop:max-w-[1070px] relative   mt-10 desktop:my-[70px]">
           <h2 className="text-black text-3xl  text-start font-semibold mb-10 desktop:mb-[30px] desktop:text-2xl desktop:text-center">
@@ -49,7 +60,9 @@ export const OurAdvantagesSection = () => {
             </Button>
           </div>
         </div>
-        <OurServicesList />
+        <div className={clsx(className)}>
+          <OurServicesList />
+        </div>
       </div>
     </section>
   );

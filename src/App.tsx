@@ -7,6 +7,7 @@ import { PaymentPage } from "./pages/PaymentPage";
 import { DeliveryPage } from "./pages/DeliveryPage";
 import { ReviewsPage } from "./pages/ReviewsPage";
 import { ContactPage } from "./pages/ContactPage";
+import { ProductPage } from "./pages/ProductPage";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -48,6 +49,11 @@ const App = () => {
         {
           path: "contact",
           element: <ContactPage />,
+          errorElement: <div>sorry,now it is not working</div>,
+        },
+        {
+          path: "product",
+          element: <ProductPage />,
           errorElement: <div>sorry,now it is not working</div>,
         },
       ],

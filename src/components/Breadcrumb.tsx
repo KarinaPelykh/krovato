@@ -35,7 +35,9 @@ export const Breadcrumb = () => {
             return (
               <span key={to} className="flex">
                 <Icon className="fill-gray rotate-90" name="select" />
-                <NavLink to={value}>{path[0].name}</NavLink>
+                <NavLink to={value}>
+                  {path.length !== 0 ? path[0].name : value}
+                </NavLink>
               </span>
             );
           })}
