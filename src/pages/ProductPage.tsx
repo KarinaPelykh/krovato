@@ -1,10 +1,11 @@
 import { useTranslation } from "react-i18next";
 import {
-  CategoriesSection,
   FaqSection,
   OurAdvantagesSection,
   ReviewsSection,
 } from "../components";
+import { ProductsSection } from "../components/products/ProductsSection";
+import { SelectedProducts } from "../components/selected-products/Selected-Products";
 type ListQuestion = {
   question: string;
   answer: string;
@@ -19,7 +20,8 @@ export const ProductPage = () => {
   }) as ListQuestion[];
   return (
     <>
-      <CategoriesSection />
+      <ProductsSection />
+      <SelectedProducts />
       <OurAdvantagesSection className="hidden" />
       <ReviewsSection />
       <FaqSection
