@@ -8,6 +8,7 @@ import { DeliveryPage } from "./pages/DeliveryPage";
 import { ReviewsPage } from "./pages/ReviewsPage";
 import { ContactPage } from "./pages/ContactPage";
 import { ProductPage } from "./pages/ProductPage";
+import { BlogPost } from "./components/blog-post/BlogPost";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -24,6 +25,11 @@ const App = () => {
         {
           path: "blog",
           element: <BlogPage />,
+          errorElement: <div>sorry, now it is not working</div>,
+        },
+        {
+          path: "blog/:id",
+          element: <BlogPost />,
           errorElement: <div>sorry, now it is not working</div>,
         },
         {
