@@ -55,7 +55,7 @@ export const DirectionSection = () => {
             </p>
           </li>
         </ul>
-        <Button className="bg-yellow text-white rounded-lg p-[13px] w-full flex justify-center items-center tablet:mx-auto gap-[15px] tablet:w-[410px]">
+        <Button className=" p-[13px] items-center tablet:mx-auto gap-[15px] tablet:w-[410px]">
           <Icon name="map" />
           Прокласти маршрут
         </Button>

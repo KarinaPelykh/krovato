@@ -15,7 +15,10 @@ export const ButtonsControls = ({
     {data.map((icon, i) => {
       return (
         <li key={i} className="desktop:first:hidden">
-          <Button onClick={icon === "poisk" ? onClick : undefined}>
+          <Button
+            className="!bg-transparent"
+            onClick={icon === "poisk" ? onClick : undefined}
+          >
             <Icon
               className="size-[50px]"
               name={isOpenCatalog && icon === "poisk" ? "close-1" : icon}

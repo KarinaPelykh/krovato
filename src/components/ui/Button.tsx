@@ -9,7 +9,14 @@ type ButtonProps = {
 };
 export const Button = ({ children, className, onClick, type }: ButtonProps) => {
   return (
-    <button className={clsx(className)} onClick={onClick} type={type}>
+    <button
+      className={clsx(
+        "bg-yellow flex  justify-center w-full items-center text-white text-ms rounded-xs ",
+        className && className
+      )}
+      onClick={onClick}
+      type={type}
+    >
       {children}
     </button>
   );

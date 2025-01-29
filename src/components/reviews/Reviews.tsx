@@ -11,7 +11,7 @@ export const Reviews = () => {
             Відгуки
           </h1>
 
-          <Button className="flex justify-center  mx-auto gap-[15px] bg-yellow text-white mb-[60px] p-[13px] w-full text-ms font-semibold rounded-lg desktop:hidden">
+          <Button className="mx-auto gap-[15px] mb-[60px] p-[13px] font-semibold  desktop:hidden">
             Залишити відгук
           </Button>
           <div className="mb-10">
@@ -36,7 +36,7 @@ export const Reviews = () => {
               </li>
             ))}
           </ul>
-          <Button className="flex justify-center  mx-auto gap-[15px] bg-yellow text-white p-[13px] w-full text-ms font-semibold rounded-lg desktop:w-[300px]">
+          <Button className="mx-auto gap-[15px]  p-[13px]  font-semibold  desktop:w-[300px]">
             <Icon name="reload" className="size-[24px]" />
             Показати ще відгуки
           </Button>

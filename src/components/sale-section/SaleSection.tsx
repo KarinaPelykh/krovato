@@ -21,10 +21,10 @@ export const SaleSection = () => {
             </Link>
           </div>
           <div className="hidden desktop:flex ">
-            <Button className="mr-[30px]">
+            <Button className="mr-[30px] !bg-transparent">
               <Icon className="size-[50px]" name="arrow-left" />
             </Button>
-            <Button>
+            <Button className="!bg-transparent">
               <Icon className="size-[50px] rotate-180" name="arrow-left" />
             </Button>
           </div>

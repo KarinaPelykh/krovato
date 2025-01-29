@@ -17,7 +17,7 @@ export const Form = ({ className }: FormProps) => {
         placeholder={t("placeholder")}
         className=" outline-none w-full text-base py-2.5 px-[15px] rounded-xs border border-gray-light desktop:w-[421px]"
       />
-      <Button className="absolute top-3.5 right-[15px]  ">
+      <Button className="absolute top-3.5 right-[15px] !w-fit !bg-transparent">
         <Icon name="search" />
       </Button>
     </form>

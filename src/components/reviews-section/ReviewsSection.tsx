@@ -24,11 +24,11 @@ export const ReviewsSection = () => {
             </div>
           </div>
           <div className="flex  justify-center desktop:justify-start">
-            <Button className="bg-yellow flex p-[13px]  justify-center items-center rounded-xs text-white mr-[30px]">
+            <Button className=" p-[13px] mr-[30px] !w-fit">
               <Icon className="mr-[17px]" name="add" />
               {t("writeReview")}
             </Button>
-            <Button className="bg-transparent flex justify-center items-center ">
+            <Button className="!bg-transparent !w-fit">
               <Icon name="chat" />
               {t("allReviews")}
             </Button>

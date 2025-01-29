@@ -31,7 +31,7 @@ export const BlogSection = () => {
             </Link>
           ))}
         </ul>
-        <Button className="flex justify-center  mx-auto gap-[15px] bg-yellow text-white p-[13px] w-full text-ms font-semibold rounded-lg desktop:w-[300px]">
+        <Button className="mx-auto gap-[15px]  p-[13px]  font-semibold  desktop:w-[300px]">
           <Icon name="reload" className="size-[24px]" />
           Показати ще статті
         </Button>

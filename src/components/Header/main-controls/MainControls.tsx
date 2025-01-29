@@ -34,17 +34,20 @@ export const MainControls = () => {
   return (
     <div className="tablet:flex items-center gap-5  container desktop:!py-[25px]">
       <div className="  flex justify-between py-[33px] desktop:p-0">
-        <Button onClick={handleCloseMenu} className="desktop:hidden">
+        <Button
+          onClick={handleCloseMenu}
+          className="desktop:hidden !bg-transparent"
+        >
           <Icon className="size-[50px]" name="menu" />
         </Button>
         <Logo nameLogo="logo" className="!w-[215]" />
-        <Button className="desktop:hidden">
+        <Button className="desktop:hidden !bg-transparent">
           <Icon className="size-[50px]" name="tel" />
         </Button>
       </div>
       <div className="flex items-center  py-[12px] border border-t-white-light border-b-0 border-x-0  desktop:p-0 desktop:border-0 desktop:gap-5 ">
         <Button
-          className="bg-badge rounded-xs text-ms text-white flex gap-2.5 py-[11px] px-5 w-[145px] h-[46px] mr-auto desktop:mr-0"
+          className="bg-badge gap-2.5 py-[11px] px-5 !w-[145px] !h-[46px] mr-auto desktop:mr-0"
           onClick={handleCatalog}
         >
           <Icon name={openCatalog ? "close-catalog" : "menu-catalog"} />

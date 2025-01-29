@@ -111,14 +111,14 @@ export const BlogPost = () => {
         <div className="flex flex-col gap-10 desktop:gap-0 items-center desktop:justify-between desktop:flex-row ">
           <Button
             onClick={() => handelNavigation(currentBlog - 1)}
-            className="flex justify-center   gap-[15px] bg-yellow text-white p-[13px] text-ms font-semibold rounded-lg w-[300px]"
+            className="gap-[15px]  p-[13px]  font-semibold  !w-[300px]"
           >
             <Icon name="arrow-1" className="rotate-[225deg] fill-white" />
             Попередня стаття
           </Button>
           <Button
             onClick={() => handelNavigation(currentBlog + 1)}
-            className="flex justify-center   gap-[15px] bg-yellow text-white p-[13px] text-ms font-semibold rounded-lg w-[300px]"
+            className="  gap-[15px]  p-[13px] font-semibold  !w-[300px]"
           >
             Наступна стаття
             <Icon name="arrow-1" className="rotate-45 fill-white" />

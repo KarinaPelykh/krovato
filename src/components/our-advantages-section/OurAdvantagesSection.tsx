@@ -51,7 +51,7 @@ export const OurAdvantagesSection = ({
             ></div>
             <Button
               className={clsx(
-                "transition-all duration-300 flex mx-auto",
+                "transition-all duration-300 flex mx-auto !bg-transparent",
                 isOpen ? "rotate-180" : "rotate-0 "
               )}
               onClick={() => setOpen(!isOpen)}
