@@ -16,7 +16,7 @@ export const ButtonsControls = ({
       return (
         <li key={i} className="desktop:first:hidden">
           <Button
-            className="!bg-transparent"
+            className="!bg-transparent !p-0"
             onClick={icon === "poisk" ? onClick : undefined}
           >
             <Icon

@@ -18,7 +18,7 @@ export const InviteSection = () => {
           <p className=" text-black font-semibold  mb-10 text-ms">
             {t("description")}
           </p>
-          <Button className=" text-white bg-yellow flex py-[13px] px-5 rounded-xs  mx-auto desktop:m-0">
+          <Button className="  py-[13px] px-5  mx-auto desktop:m-0">
             {t("button")}
             <Icon className="ml-2.5 fill-white" name="arrow-1" />
           </Button>

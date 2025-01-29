@@ -16,7 +16,7 @@ export const PopularGoodList = () => {
           <PopularGoodItem key={i} />
         ))}
       </ul>
-      <Button className=" p-[13px] gap-[12px]  h-[50px]   tablet:hidden">
+      <Button className="h-[50px] tablet:hidden">
         <Icon name="reload" />
         {t("showGoods")}
       </Button>

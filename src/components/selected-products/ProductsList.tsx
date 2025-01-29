@@ -20,7 +20,7 @@ export const ProductsList = () => {
           />
         ))}
       </ul>
-      <Button className="flex justify-center  mx-auto gap-[15px] bg-yellow text-white p-[13px] w-full text-ms font-semibold rounded-lg desktop:w-[300px]">
+      <Button className="mx-auto font-semibold desktop:w-[300px]">
         <Icon name="reload" className="size-[24px]" />
         Показати ще відгуки
       </Button>

@@ -36,7 +36,7 @@ export const NewsList = () => {
           </li>
         ))}
       </ul>
-      <Button className="bg-yellow p-[13px] flex gap-[12px] justify-center w-full items-center h-[50px] text-white text-ms rounded-xs tablet:hidden">
+      <Button className="gap-[12px]  items-center h-[50px] tablet:hidden">
         <Icon className="fill-white" name="read" />
         {t("linkBlog")}
       </Button>

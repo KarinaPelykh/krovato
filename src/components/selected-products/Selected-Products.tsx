@@ -4,7 +4,7 @@ import { ProductsList } from "./ProductsList";
 
 export const SelectedProducts = () => {
   return (
-    <section>
+    <section className="py-[60px] desktop:py-[70px]">
       <div className="container desktop:flex desktop:gap-[30px]">
         <FilterProduct />
         <div className="flex flex-col">

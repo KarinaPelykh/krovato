@@ -1,8 +1,9 @@
 import { Button, Icon } from "../ui";
+import { HeadingFilter } from "./HedingFilter";
 
 export const FilterProduct = () => {
   return (
-    <div className="w-[300px]  border border-t-0 border-gray-light rounded-lg">
+    <div className="w-[300px] border border-t-0 border-gray-light rounded-lg">
       <div>
         <div className="flex items-center gap-2.5 bg-white p-5   border border-x-0 border-gray-light rounded-t-lg">
           <Icon className="mr-[15px]" name="filter" />
@@ -10,10 +11,7 @@ export const FilterProduct = () => {
             Фільтр пошуку
           </span>
         </div>
-        <div className="flex items-center justify-between  p-5">
-          <span className="text-black font-semibold text-ms">Ціна, грн</span>
-          <Icon className="mr-[15px]" name="close" />
-        </div>
+        <HeadingFilter title="Ціна, грн" />
         <div className="bg-white p-5">
           <div className="flex justify-between items-center">
             <span className=" text-black py-2 px-4 w-fit rounded-lg border border-gray">
@@ -22,185 +20,178 @@ export const FilterProduct = () => {
             <span className=" text-black py-2 px-4 w-fit rounded-lg border border-gray">
               0
             </span>
-            <Button className="bg-yellow text-white py-2 px-4 w-fit rounded-lg">
-              OK
-            </Button>
+            <Button className=" py-2 px-4 !w-fit ">OK</Button>
           </div>
           <input type="range" min="16" max="96" className="mt-[15px] w-full" />
         </div>
       </div>
 
       <div>
-        <div className="flex items-center justify-between  p-5">
-          <span className="text-black font-semibold text-ms">Наявність</span>
-          <Icon className="mr-[15px]" name="close" />
-        </div>
+        <HeadingFilter title="Наявність" />
         <div className="bg-white p-5 flex flex-col">
           <label className=" flex items-center gap-2.5 text-base text-black">
-            <input type="checkbox" className=" " />В наявності
+            <input type="checkbox" />В наявності
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Під замовлення
           </label>
         </div>
       </div>
 
       <div>
-        <div className="flex items-center justify-between  p-5">
-          <span className="text-black font-semibold text-ms">Наявність</span>
-          <Icon className="mr-[15px]" name="close" />
-        </div>
+        <HeadingFilter title="Виробник" />
         <div className="bg-white p-5 flex flex-col">
           <label className=" flex items-center gap-2.5 text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Corners
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Estella
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Green Line
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Legko
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             MiroMark
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Novelty
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Soft-line
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Venger
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Арбор Древ
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Городок мебель
           </label>
-          <Button className="text-yellow text-start">Показати всі</Button>
+          <Button className="text-yellow !bg-transparent text-start !w-fit">
+            Показати всі
+          </Button>
         </div>
       </div>
 
       <div>
-        <div className="flex items-center justify-between  p-5">
-          <span className="text-black font-semibold text-ms">Тип ліжка</span>
-          <Icon className="mr-[15px]" name="close" />
-        </div>
+        <HeadingFilter title="Тип ліжка" />
         <div className="bg-white p-5 flex flex-col">
           <label className=" flex items-center gap-2.5 text-base text-black">
-            <input type="checkbox" className=" " /> Без узголов'я
+            <input type="checkbox" /> Без узголов'я
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />З узголів'ям
+            <input type="checkbox" />З узголів'ям
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Двоярусні
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Розкладачки
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             Шафи
           </label>
         </div>
       </div>
 
       <div>
-        <div className="flex items-center justify-between  p-5">
-          <span className="text-black font-semibold text-ms block w-[234px]">
-            Розмір спального місця
-          </span>
-          <Icon className="mr-2.5" name="close" />
-        </div>
+        <HeadingFilter
+          title="Розмір спального місця"
+          textClassName="block w-[234px]"
+          iconClassName="mr-2.5"
+        />
         <div className="bg-white p-5 flex flex-col">
           <label className=" flex items-center gap-2.5 text-base text-black">
-            <input type="checkbox" className=" " /> 200x210 см
+            <input type="checkbox" /> 200x210 см
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             200x200 см
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             180x200 см
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             160x200 см
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             110x190 см
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             160x190 см
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " />
+            <input type="checkbox" />
             150x200 см
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " /> 140x200 см
+            <input type="checkbox" /> 140x200 см
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " /> 140x190 см
+            <input type="checkbox" /> 140x190 см
           </label>
           <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" className=" " /> 120x200 см
+            <input type="checkbox" /> 120x200 см
           </label>
-          <Button className="text-yellow text-start">Показати всі</Button>
+          <Button className="text-yellow text-start !w-fit !bg-transparent">
+            Показати всі
+          </Button>
         </div>
       </div>
+      <HeadingFilter
+        textClassName="block w-[234px]"
+        title="Ширина спального місця"
+        isBorder={true}
+        iconClassName="mr-2.5"
+      />
+      <HeadingFilter
+        textClassName=" block w-[234px]"
+        title="Довжина спального місця"
+        isBorder={true}
+        iconClassName="mr-2.5"
+      />
+      <HeadingFilter
+        textClassName=" block w-[234px]"
+        title="Форма"
+        isBorder={true}
+        iconClassName="mr-2.5"
+      />
 
-      <div className="flex items-center justify-between border border-x-0 border-b-0 border-t-gray-light p-5">
-        <span className="text-black font-semibold text-ms block w-[234px]">
-          Ширина спального місця
-        </span>
-        <Icon className="mr-2.5" name="close" />
-      </div>
-      <div className="flex items-center justify-between border border-x-0  border-b-0 border-t-gray-light  p-5">
-        <span className="text-black font-semibold text-ms block w-[234px]">
-          Довжина спального місця
-        </span>
-        <Icon className="mr-2.5" name="close" />
-      </div>
-      <div className="flex items-center justify-between  p-5 border border-x-0 border-b-0 border-t-gray-light">
-        <span className="text-black font-semibold text-ms block w-[234px]">
-          Форма
-        </span>
-        <Icon className="mr-2.5" name="close" />
-      </div>
-      <div className="flex items-center justify-between  p-5 border border-x-0 border-b-0 border-t-gray-light">
-        <span className="text-black font-semibold text-ms block w-[234px]">
-          Матеріал корпусу
-        </span>
-        <Icon className="mr-2.5" name="close" />
-      </div>
-      <div className="flex items-center justify-between  p-5 border border-x-0 border-b-0 border-t-gray-light">
-        <span className="text-black font-semibold text-ms block w-[234px]">
-          Основа для матраца
-        </span>
-        <Icon className="mr-2.5" name="close" />
-      </div>
+      <HeadingFilter
+        textClassName="block w-[234px]"
+        title="Матеріал корпусу"
+        isBorder={true}
+        iconClassName="mr-2.5"
+      />
+
+      <HeadingFilter
+        textClassName="block w-[234px] "
+        title="Основа для матраца"
+        isBorder={true}
+        iconClassName="mr-2.5"
+      />
     </div>
   );
 };

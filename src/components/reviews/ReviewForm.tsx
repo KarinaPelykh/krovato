@@ -96,10 +96,7 @@ export const ReviewForm = () => {
             rate={rate}
           />
         </div>
-        <Button
-          className="bg-yellow py-[13px] flex justify-center text-white text-ms font-semibold w-full rounded-lg"
-          type="submit"
-        >
+        <Button className="font-semibold" type="submit">
           Залишити відгук
         </Button>
       </form>

@@ -29,7 +29,7 @@ export const ProductsSection = () => {
             </li>
           ))}
         </ul>
-        <Button className="text-yellow text-ms font-semibold flex justify-center mx-auto ">
+        <Button className="font-semibold mx-auto !w-fit !bg-transparent text-yellow">
           Приховати підкатегорії
           <Icon name="double-up" className=" ml-2.5 " />
         </Button>

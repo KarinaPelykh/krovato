@@ -31,7 +31,7 @@ export const BlogSection = () => {
             </Link>
           ))}
         </ul>
-        <Button className="mx-auto gap-[15px]  p-[13px]  font-semibold  desktop:w-[300px]">
+        <Button className="mx-auto   font-semibold  desktop:w-[300px]">
           <Icon name="reload" className="size-[24px]" />
           Показати ще статті
         </Button>

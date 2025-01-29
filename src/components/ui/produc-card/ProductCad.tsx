@@ -61,14 +61,14 @@ export const ProductCard = ({
           {costs}
         </p>
         <div className="flex gap-2.5">
-          <Button className="!bg-transparent">
+          <Button className="!bg-transparent !p-0">
             <Icon
               className={clsx("size-[70px]", iconClassName && iconClassName)}
               name="obrane"
             />
           </Button>
 
-          <Button className="!bg-transparent">
+          <Button className="!bg-transparent !p-0">
             <Icon
               className={clsx("size-[70px]", iconClassName && iconClassName)}
               name="korzina"
