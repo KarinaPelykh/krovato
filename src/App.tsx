@@ -9,6 +9,7 @@ import { ReviewsPage } from "./pages/ReviewsPage";
 import { ContactPage } from "./pages/ContactPage";
 import { ProductPage } from "./pages/ProductPage";
 import { BlogPost } from "./components/blog-post/BlogPost";
+import { ProductInfo } from "./pages/ProductInfo";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -60,6 +61,11 @@ const App = () => {
         {
           path: "product",
           element: <ProductPage />,
+          errorElement: <div>sorry,now it is not working</div>,
+        },
+        {
+          path: "product/:id",
+          element: <ProductInfo />,
           errorElement: <div>sorry,now it is not working</div>,
         },
       ],

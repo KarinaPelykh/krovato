@@ -1,9 +1,44 @@
 import { Button, Icon } from "../ui";
 import { HeadingFilter } from "./HedingFilter";
+import { ItemFilter } from "./ItemFillter";
 
 export const FilterProduct = () => {
+  const enterprisers = [
+    " Corners",
+    "Estella",
+    "     Green Line",
+    "  Legko",
+    "     MiroMark",
+    "Novelty",
+    "Soft-line",
+    " Venger",
+    "Арбор Древ",
+    "Городок мебель",
+  ];
+
+  const typeOfBed = [
+    " Без узголов'я",
+    "З узголів'ям",
+    " Двоярусні",
+    "Розкладачки",
+    "    Шафи",
+  ];
+
+  const sizeOfBed = [
+    " 200x210 см",
+    "200x200 см",
+    "180x200 см",
+    " 160x200 см",
+    "110x190 см",
+    "160x190 см",
+    "150x200 см",
+    " 140x200 см",
+    "140x190 см",
+    " 120x200 см",
+  ];
+
   return (
-    <div className="w-[300px] border border-t-0 border-gray-light rounded-lg">
+    <div className="w-[300px] border border-t-0 border-gray-light rounded-lg h-fit">
       <div>
         <div className="flex items-center gap-2.5 bg-white p-5   border border-x-0 border-gray-light rounded-t-lg">
           <Icon className="mr-[15px]" name="filter" />
@@ -29,59 +64,19 @@ export const FilterProduct = () => {
       <div>
         <HeadingFilter title="Наявність" />
         <div className="bg-white p-5 flex flex-col">
-          <label className=" flex items-center gap-2.5 text-base text-black">
-            <input type="checkbox" />В наявності
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Під замовлення
-          </label>
+          {["В наявності", " Під замовлення"].map((item, i) => (
+            <ItemFilter key={i} item={item} />
+          ))}
         </div>
       </div>
 
       <div>
         <HeadingFilter title="Виробник" />
         <div className="bg-white p-5 flex flex-col">
-          <label className=" flex items-center gap-2.5 text-base text-black">
-            <input type="checkbox" />
-            Corners
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Estella
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Green Line
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Legko
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            MiroMark
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Novelty
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Soft-line
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Venger
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Арбор Древ
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Городок мебель
-          </label>
+          {enterprisers.map((item, i) => (
+            <ItemFilter key={i} item={item} />
+          ))}
+
           <Button className="text-yellow !bg-transparent text-start !w-fit">
             Показати всі
           </Button>
@@ -91,24 +86,9 @@ export const FilterProduct = () => {
       <div>
         <HeadingFilter title="Тип ліжка" />
         <div className="bg-white p-5 flex flex-col">
-          <label className=" flex items-center gap-2.5 text-base text-black">
-            <input type="checkbox" /> Без узголов'я
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />З узголів'ям
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Двоярусні
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Розкладачки
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            Шафи
-          </label>
+          {typeOfBed.map((item, i) => (
+            <ItemFilter key={i} item={item} />
+          ))}
         </div>
       </div>
 
@@ -119,42 +99,9 @@ export const FilterProduct = () => {
           iconClassName="mr-2.5"
         />
         <div className="bg-white p-5 flex flex-col">
-          <label className=" flex items-center gap-2.5 text-base text-black">
-            <input type="checkbox" /> 200x210 см
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            200x200 см
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            180x200 см
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            160x200 см
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            110x190 см
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            160x190 см
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" />
-            150x200 см
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" /> 140x200 см
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" /> 140x190 см
-          </label>
-          <label className=" flex items-center gap-2.5  text-base text-black">
-            <input type="checkbox" /> 120x200 см
-          </label>
+          {sizeOfBed.map((item, i) => (
+            <ItemFilter key={i} item={item} />
+          ))}
           <Button className="text-yellow text-start !w-fit !bg-transparent">
             Показати всі
           </Button>
