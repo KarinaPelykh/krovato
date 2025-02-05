@@ -34,11 +34,11 @@ export const ProductSlider = () => {
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
       >
-        <ul className="">
+        <ul>
           {[1, 2, 3, 4, 5].map(() => (
             <SwiperSlide>
               <img
-                className="size-[100px]"
+                className="size-[100px] rounded-lg"
                 src="/product-slider/img-main.png"
               />
             </SwiperSlide>

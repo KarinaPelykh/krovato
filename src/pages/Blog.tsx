@@ -1,3 +1,3 @@
-import { BlogSection } from "../components/blog-section/BlogSection";
+import { BlogSection } from "../components";
 
 export const BlogPage = () => <BlogSection />;

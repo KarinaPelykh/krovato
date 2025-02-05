@@ -17,7 +17,7 @@ export const NewsSection = () => {
           </h2>
 
           <Link
-            to="/"
+            to="/blog"
             className="text-yellow hidden desktop:flex gap-[10px] items-center"
           >
             {t("linkBlog")}

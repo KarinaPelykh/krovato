@@ -1,7 +1,8 @@
-import { ContactSection } from "../components/contact-section/ContactSection";
-import { ContactUsSection } from "../components/contact-us-section/ContactUsSection";
-import { DirectionSection } from "../components/direction-section/DirectionSection";
-
+import {
+  ContactSection,
+  DirectionSection,
+  ContactUsSection,
+} from "../components";
 export const ContactPage = () => {
   return (
     <>

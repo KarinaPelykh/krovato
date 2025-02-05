@@ -1,8 +1,13 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { ReviewSvgList } from "../reviews-section/RevievSvgList";
 import { Button, Icon } from "../ui";
+import clsx from "clsx";
 
-export const ReviewForm = () => {
+type ReviewFormProp = {
+  hiddenLogo?: string;
+};
+
+export const ReviewForm = ({ hiddenLogo }: ReviewFormProp) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
@@ -42,7 +47,12 @@ export const ReviewForm = () => {
 
   return (
     <div>
-      <div className="flex mb-[30px] justify-center desktop:justify-start">
+      <div
+        className={clsx(
+          "flex mb-[30px] justify-center desktop:justify-start",
+          hiddenLogo && hiddenLogo
+        )}
+      >
         <Icon className="size-[80px] mr-[30px]" name="ava" />
         <div>
           <p className=" text-base text-black tablet:text-xl mb-10 tablet:w-[300px]">

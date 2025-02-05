@@ -28,7 +28,7 @@ export const ReviewsSection = () => {
               <Icon className="mr-[17px]" name="add" />
               {t("writeReview")}
             </Button>
-            <Button className="!bg-transparent !w-fit ">
+            <Button className="!bg-transparent !p-0 !w-fit !text-gray ">
               <Icon name="chat" />
               {t("allReviews")}
             </Button>

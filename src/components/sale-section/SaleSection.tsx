@@ -11,7 +11,7 @@ export const SaleSection = () => {
     <section className="pb-[60px] desktop:pb-[70px]">
       <div className="container">
         <div className="desktop:flex desktop:justify-between mb-10">
-          <div className="  flex justify-between desktop:justify-start  desktop:gap-[30px]">
+          <div className="  flex justify-between desktop:justify-start desktop:items-center  desktop:gap-[30px]">
             <h2 className="text-black  text-1xl desktop:text-2xl">
               {t("title")}
             </h2>
