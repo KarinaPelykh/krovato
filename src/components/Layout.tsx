@@ -2,7 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { Footer } from "./footer/Footer";
 import { Header } from "./Header/Header";
 import { Breadcrumb } from "./Breadcrumb";
-import { OurServicesList } from "./our-advantages-section/OurServicesList";
+import { OurServicesList } from "../block-pages/home/our-advantages-section/OurServicesList";
 
 export const Layout = () => {
   const location = useLocation();

@@ -1,11 +1,10 @@
 import { useTranslation } from "react-i18next";
 import {
   DeliverSaleSection,
-  DeliveryInfoSection,
   DeliverySection,
-  FaqSection,
-  ServicesSection,
-} from "../components";
+  DeliveryInfoSection,
+} from "../block-pages/delivery";
+import { FaqSection, ServicesSection } from "../components";
 
 type ListQuestion = {
   question: string;

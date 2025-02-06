@@ -1,9 +1,9 @@
 import {
-  FaqSection,
   PaymentDeliveryList,
   PaymentInfoSection,
   PaymentRangeSection,
-} from "../components";
+} from "../block-pages/payment";
+import { FaqSection } from "../components";
 
 export const PaymentPage = () => {
   return (

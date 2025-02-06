@@ -3,7 +3,7 @@ import {
   AboutAsSection,
   KrovatoSection,
   InviteSection,
-} from "../components";
+} from "../block-pages/about-as";
 
 export const AboutAsPage = () => {
   return (
@@ -12,7 +12,6 @@ export const AboutAsPage = () => {
       <KrovatoSection />
       <ReviewsSection />
       <InviteSection />
-     
     </>
   );
 };

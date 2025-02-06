@@ -1,12 +1,11 @@
 import {
-  PopularGoodsSection,
   CategoriesSection,
-  ReviewsSection,
-  SaleSection,
   NewsSection,
   OurAdvantagesSection,
-} from "../components";
-
+  PopularGoodsSection,
+  ReviewsSection,
+  SaleSection,
+} from "../block-pages/home";
 export const MainPage = () => (
   <>
     <CategoriesSection />

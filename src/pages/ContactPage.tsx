@@ -2,7 +2,7 @@ import {
   ContactSection,
   DirectionSection,
   ContactUsSection,
-} from "../components";
+} from "../block-pages/contacts";
 export const ContactPage = () => {
   return (
     <>

@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import { ReviewSvgList } from "../../reviews-section/RevievSvgList";
 import { Icon } from "../Icon";
+import { ReviewSvgList } from "../../../block-pages/about-as/reviews-section/RevievSvgList";
 type CardProps = {
   name: string;
   product: string;
