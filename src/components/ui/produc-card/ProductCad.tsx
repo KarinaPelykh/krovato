@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { Button } from "../Button";
 import { Icon } from "../Icon";
+import { Link } from "react-router-dom";
 
 type ProductCardProps = {
   size: string;
@@ -12,6 +13,7 @@ type ProductCardProps = {
   imgClassName?: string;
   iconClassName?: string;
   subTitleClassName?: string;
+  index?: number;
 };
 
 export const ProductCard = ({
@@ -24,6 +26,7 @@ export const ProductCard = ({
   imgClassName,
   iconClassName,
   subTitleClassName,
+  index,
 }: ProductCardProps) => {
   return (
     <li
@@ -32,14 +35,17 @@ export const ProductCard = ({
         itemClassName && itemClassName
       )}
     >
-      <img
-        src="/sofa.png"
-        alt="furniture"
-        className={clsx(
-          "w-[370px] h-[220px]  desktop:w-full  rounded-xs mb-5",
-          imgClassName && imgClassName
-        )}
-      />
+      <Link to={`${index}`}>
+        <img
+          src="/sofa.png"
+          alt="furniture"
+          className={clsx(
+            "w-[370px] h-[220px]  desktop:w-full  rounded-xs mb-5",
+            imgClassName && imgClassName
+          )}
+        />
+      </Link>
+
       <p className=" mb-2.5 text-m desktop:text-xs">{size}</p>
       <p
         className={clsx(

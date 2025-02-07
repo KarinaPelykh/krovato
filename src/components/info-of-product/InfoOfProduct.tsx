@@ -2,6 +2,7 @@ import { ReviewSvgList } from "../../block-pages/about-as/reviews-section/Reviev
 import { ProductSlider } from "../product-slider/ProductSlider";
 
 import { Button, Icon } from "../ui";
+import { ColorListProduct } from "./ColorListProduct";
 
 export const InfoOfProduct = () => {
   return (
@@ -28,7 +29,7 @@ export const InfoOfProduct = () => {
 
             <div className="bg-white rounded-lg  p-5">
               <div className="border border-x-0 border-t-0 border-b-gray-light flex justify-between items-center mb-[30px]">
-                <p className="text-1xl font-semibold text-black">15 400 грн</p>{" "}
+                <p className="text-1xl font-semibold text-black">15 400 грн</p>
                 <p className="text-red text-ms font-semibold line-through ">
                   25 400 грн
                 </p>
@@ -62,60 +63,33 @@ export const InfoOfProduct = () => {
                 </label>
               </div>
 
-              <div>
-                <div className="flex gap-2.5 flex-col mb-[30px]">
-                  <div className="flex gap-2.5">
-                    <Icon name="help" className="size-6" />
-                    Виберіть тканину:
-                  </div>
-                  <ul className=" flex gap-5 items-center">
-                    {[
-                      "/colors-of-product/blue.png",
-                      "/colors-of-product/brown.png",
-                      "/colors-of-product/gray-green.png",
-                      ,
-                      "/colors-of-product/gray.png",
-                      ,
-                      "/public/colors-of-product/light-brown.png",
-                      ,
-                    ].map((img, i) => (
-                      <li key={i}>
-                        <img
-                          src={img}
-                          className="size-[70px]"
-                          alt="color of product"
-                        />
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <div className="flex justify-between items-center">
-                <div className="flex  gap-[15px] p-[13px] border border-gray-light w-[110px] rounded-lg">
-                  <Button className="!bg-transparent !p-0 !w-fit !text-black ">
+              <ColorListProduct />
+              <div className="flex justify-between gap-[30px] items-center">
+                <div className="flex gap-[15px] p-[13px] border border-gray-light rounded-lg">
+                  <Button className="!bg-transparent !p-0  !text-gray ">
                     -
                   </Button>
-                  <span className="">1</span>
-                  <Button className="!bg-transparent !p-0 !w-fit !text-black">
+                  <span className="text-black">1</span>
+                  <Button className="!bg-transparent !p-0  !text-gray">
                     +
                   </Button>
                 </div>
-                <Button className="!w-fit ">
-                  <Icon name="bas" /> Купити
+                <Button>
+                  <Icon name="bas" className="size-6" /> Купити
                 </Button>
-                <Button className="!bg-transparent !border-2 !border-yellow  !w-fit !text-black">
+                <Button className="!bg-transparent border-2 border-yellow font-semibold !text-nowrap !text-gray ">
                   <Icon name="credit" />
                   Купити в кредит
                 </Button>
               </div>
             </div>
 
-            <div className="flex justify-between">
+            <div className="flex justify-between py-2.5 px-5">
               <Button className="!bg-transparent !w-fit !text-gray-light">
-                <Icon className="size-[30px] mr-5" name="tel" />
+                <Icon className="size-[30px] mr-5" name="call" />
                 +380 -- --- -- --
               </Button>
-              <Button className="!bg-transparent !border-2 !border-gray  !w-fit !text-black">
+              <Button className="!bg-transparent !border-2 !border-gray h-[50px] !w-[212px] !text-gray">
                 Купити в 1 клік
               </Button>
             </div>

@@ -1,22 +1,27 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { FreeMode, Autoplay, Navigation, Thumbs } from "swiper/modules";
+import clsx from "clsx";
 export const ProductSlider = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
     <div className="w-[630px] overflow-hidden desktop:mr-10">
       <Swiper
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         loop={true}
         spaceBetween={10}
         navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
+        modules={[FreeMode, Autoplay, Navigation, Thumbs]}
         className="mb-[30px]"
       >
         <ul>
-          {[1, 2, 3, 4, 5].map(() => (
-            <SwiperSlide>
+          {[...Array(10)].map((_, i) => (
+            <SwiperSlide key={i}>
               <img
                 className="w-[630px] h-[538px]"
                 src="/product-slider/img-main.png"
@@ -29,18 +34,23 @@ export const ProductSlider = () => {
         onSwiper={setThumbsSwiper}
         loop={true}
         spaceBetween={10}
-        slidesPerView={4}
+        slidesPerView={5}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
       >
         <ul>
-          {[1, 2, 3, 4, 5].map(() => (
-            <SwiperSlide>
-              <img
-                className="size-[100px] rounded-lg"
-                src="/product-slider/img-main.png"
-              />
+          {[...Array(10)].map((_, i) => (
+            <SwiperSlide key={i}>
+              {({ isActive }) => (
+                <img
+                  className={clsx(
+                    "size-[100px] rounded-lg   border border-gray-light  ",
+                    isActive && "border-[3px] border-yellow"
+                  )}
+                  src="/product-slider/img-main.png"
+                />
+              )}
             </SwiperSlide>
           ))}
         </ul>
