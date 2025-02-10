@@ -1,7 +1,7 @@
 import { Button } from "../../../components";
 import { Icon } from "../../../components/ui";
-import { Card } from "../../../components/ui/Card/Card";
 import { ReviewForm } from "./ReviewForm";
+import { ReviewList } from "./ReviewList";
 
 export const Reviews = () => {
   return (
@@ -25,18 +25,7 @@ export const Reviews = () => {
               <div className="h-1 w-[102px] bg-yellow absolute top-0 left-0"></div>
             </div>
           </div>
-          <ul className="flex flex-col items-center mb-[30px]">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
-              <li key={i} className="mb-[30px]">
-                <Card
-                  textClassName=" h-auto desktop:w-full"
-                  name="Іван Стедниця"
-                  product="Крісло для геймерів AEROCOOL EARL Steel Blue"
-                  description="Покупали сыну игровое кресло в подарок. Качество супер, очень удобное и отлично поддерживает спину. В общем подарком более чем доволен) Отдельное спасибо магазину Мебельок за помощь в выборе кресла!"
-                />
-              </li>
-            ))}
-          </ul>
+          <ReviewList />
           <Button className="mx-auto  font-semibold  desktop:w-[300px]">
             <Icon name="reload" className="size-[24px]" />
             Показати ще відгуки
