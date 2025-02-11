@@ -1,9 +1,16 @@
+import { useState } from "react";
 import { ReviewSvgList } from "../../block-pages/about-as/reviews-section/RevievSvgList";
 import { Button, Icon } from "../ui";
 import { AnswerReviewFrom } from "./AnswerReviewFrom";
 import { CardReview } from "./CardReview";
 
 export const ProductReviews = () => {
+  const [isActive, setIsActive] = useState<null | number>(null);
+
+  const handleDisplayingForm = (index: number) => {
+    setIsActive((prevState) => (prevState === index ? null : index));
+  };
+
   return (
     <div className=" p-[30px] bg-white rounded-lg">
       <h2 className=" text-black font-semibold text-1xl ">
@@ -19,13 +26,15 @@ export const ProductReviews = () => {
         </div>
       </div>
       <ul className=" flex  flex-col gap-[30px]">
-        {[...Array(5)].map((el) => (
+        {[...Array(5)].map((_, index) => (
           <li
-            key={el}
+            key={index}
             className="border-[3px] pb-[30px] border-b-white-light border-t-0 border-x-0 last:border-0"
           >
-            <CardReview />
-            <AnswerReviewFrom />
+            <CardReview
+              handleDisplayingForm={() => handleDisplayingForm(index)}
+            />
+            {isActive === index && <AnswerReviewFrom />}
           </li>
         ))}
       </ul>

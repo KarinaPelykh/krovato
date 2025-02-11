@@ -1,11 +1,14 @@
 import { ReviewSvgList } from "../../block-pages/about-as/reviews-section/RevievSvgList";
 import { Button, Icon } from "../ui";
 
-export const CardReview = () => {
+type CardReviewProps = {
+  handleDisplayingForm: () => void;
+};
+export const CardReview = ({ handleDisplayingForm }: CardReviewProps) => {
   return (
     <>
       <div>
-        <div className="flex mb-[30px]">
+        <div className="flex mb-[30px] items-center">
           <Icon className="size-[50px] mr-5" name="avatar" />
           <div className="w-full desktop:relative">
             <div className="flex justify-between items-center w-full">
@@ -23,7 +26,10 @@ export const CardReview = () => {
         </p>
 
         <div className=" flex items-center gap-[30px]">
-          <Button className=" !w-fit !bg-transparent !p-0 m-0  !text-gray ">
+          <Button
+            className=" !w-fit !bg-transparent !p-0 m-0  !text-gray "
+            onClick={handleDisplayingForm}
+          >
             <Icon name="review-chat" />
             Відповісти
           </Button>
@@ -35,8 +41,6 @@ export const CardReview = () => {
           <Button className=" !w-fit !bg-transparent !p-0 m-0 !text-gray">
             <Icon name="Like" /> Корисний відгук:<span>0</span>
           </Button>
-
-          <div></div>
         </div>
       </div>
     </>

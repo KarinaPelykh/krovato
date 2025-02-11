@@ -15,8 +15,11 @@ export const Characteristic = () => {
     <div className="desktop:pb-[70px]">
       <p className="text-black font-semibold mb-10 text-1xl">Характеристики</p>
       <ul className="flex flex-col gap-[5px]">
-        {characteristics.map(({ characteristic, size }) => (
-          <li className="flex justify-center items-center py-2.5 px-[15px] rounded-lg bg-white">
+        {characteristics.map(({ characteristic, size }, i) => (
+          <li
+            className="flex justify-center items-center py-2.5 px-[15px] rounded-lg bg-white"
+            key={i}
+          >
             <span className="whitespace-nowrap">{characteristic}</span>
             <span className="w-full border-b border-dotted"></span>
             <span className="whitespace-nowrap">{size}</span>
