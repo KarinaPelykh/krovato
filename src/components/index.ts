@@ -1,5 +1,7 @@
 export * from "./ui/Button";
 export * from "./ui/Logo";
+export * from "./ui/Link";
+export * from "./ui/Icon";
 export * from "./Header/Header";
 export * from "./footer/Footer";
 export * from "./faq-section/FaqSection";

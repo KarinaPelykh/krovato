@@ -18,11 +18,14 @@ export const BurgerMenu = ({ isOpen, handleCloseMenu }: BurgerMenuProps) => {
     >
       <div className="bg-white max-h-[640px]  overflow-auto ">
         <div className="  flex justify-between py-[27px] px-[15px] border border-b-white-light border-t-0 border-l-0 border-r-0 ">
-          <Button onClick={handleCloseMenu} className="desktop:hidden">
+          <Button
+            onClick={handleCloseMenu}
+            className="desktop:hidden !bg-transparent !p-0"
+          >
             <Icon className="size-[50px]" name="close" />
           </Button>
           <Logo nameLogo="logo" className="!w-[215]" />
-          <Button>
+          <Button className="  !bg-transparent !p-0">
             <Icon className="size-[50px]" name="tel" />
           </Button>
         </div>

@@ -1,8 +1,8 @@
-import { Button, Icon } from "../../../components/ui";
+import { Button, Icon } from "../../../components";
 
 export const DirectionSection = () => {
   return (
-    <section className="py-[60px] desktop:py-[70px] bg-white">
+    <section className="py-17 desktop:py-18 bg-white">
       <div className="container">
         <h2 className="text-black text-1xl font-semibold desktop:text-center mb-10">
           Як дістатися до нашої виставки «Кровато» від метро:

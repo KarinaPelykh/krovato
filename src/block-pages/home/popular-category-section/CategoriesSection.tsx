@@ -7,7 +7,7 @@ export const CategoriesSection = () => {
   });
 
   return (
-    <section className="pb-[60px]  desktop:pb-[70px]">
+    <section className="pb-17 desktop:pb-18">
       <div className="container">
         <h1 className="text-1xl mb-10 text-dark desktop:text-2xl">
           {t("title")}

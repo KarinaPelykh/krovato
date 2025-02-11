@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { Button, Icon } from "../ui";
+import { Button, Icon, Link } from "../../components";
 
 export const BlogSection = () => {
   return (
@@ -9,8 +8,8 @@ export const BlogSection = () => {
           Блог
         </h1>
         <ul className="grid gap-[30px] tablet:grid-cols-2  tablet:grid-rows-6 desktop:grid-cols-3 desktop:grid-rows-4 mb-[30px]">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((i) => (
-            <Link key={i} to={`${i}`}>
+          {[...Array(12)].map((_, i) => (
+            <Link key={i} to={`${i}`} iconClassName="hidden">
               <li className="desktop:h-[454px] overflow-hidden  border-x-gray-light  group border-b-gray-light border-t-0    border-t-transparent   border  rounded-xs shadow-1xl  w-[calc((100% - 30px)/3)] ">
                 <img
                   src="/furniture.webp"

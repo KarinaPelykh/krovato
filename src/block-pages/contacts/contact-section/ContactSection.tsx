@@ -1,9 +1,9 @@
 import { ContactList } from "../../../components/Header/nav/ContactList";
-import { Icon } from "../../../components/ui";
+import { Icon } from "../../../components";
 
 export const ContactSection = () => {
   return (
-    <section className="py-[60px] desktop:py-[70px]">
+    <section className="py-17 desktop:py-18">
       <div className="container">
         <h1 className="text-black text-1xl font-semibold desktop:text-center mb-10">
           Контакти
@@ -59,13 +59,13 @@ export const ContactSection = () => {
         <div className=" desktop:flex  w-full">
           <img
             src="/contact-section/shop.png"
-            alt=""
+            alt="shop"
             className=" w-full desktop:w-1/2 h-auto"
           />
 
           <img
             src="/contact-section/location-shop.png"
-            alt=""
+            alt="location-shop"
             className="w-full desktop:w-1/2 h-auto"
           />
         </div>

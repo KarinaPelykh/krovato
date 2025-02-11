@@ -8,7 +8,7 @@ export const AdditionProduct = ({ title }: AdditionProductProps) => {
     <section>
       <div className="container py-[60px] desktop:py-[70px]  ">
         <h2 className="text-black text-1xl font-semibold mb-[30px]">{title}</h2>
-        <ul className="flex gap-5">
+        <ul className="flex flex-col gap-5 desktop:flex-row">
           {[1, 2, 3, 4].map((i) => (
             <li key={i}>
               <ProductCard

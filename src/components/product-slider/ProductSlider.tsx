@@ -2,11 +2,13 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Autoplay, Navigation, Thumbs } from "swiper/modules";
 import clsx from "clsx";
+import { Swiper as TypeSwiper } from "swiper";
+
 export const ProductSlider = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState<TypeSwiper | null>(null);
 
   return (
-    <div className="w-[630px] overflow-hidden desktop:mr-10">
+    <div className="desktop:w-[630px] overflow-hidden desktop:mr-10">
       <Swiper
         autoplay={{
           delay: 2500,
@@ -31,7 +33,9 @@ export const ProductSlider = () => {
         </ul>
       </Swiper>
       <Swiper
-        onSwiper={setThumbsSwiper}
+        onSwiper={(swiper) => {
+          setThumbsSwiper(swiper);
+        }}
         loop={true}
         spaceBetween={10}
         slidesPerView={5}

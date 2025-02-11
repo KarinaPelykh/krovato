@@ -29,10 +29,7 @@ export const DeliveryInfoSection = ({
 }: DeliveryInfoSectionProps) => {
   return (
     <section
-      className={clsx(
-        "pb-[60px] desktop:pb-[70px]",
-        bgClassName ? bgClassName : ""
-      )}
+      className={clsx("pb-17desktop:pb-18", bgClassName ? bgClassName : "")}
     >
       <div className="container">
         <div className=" desktop:flex desktop:justify-between ">

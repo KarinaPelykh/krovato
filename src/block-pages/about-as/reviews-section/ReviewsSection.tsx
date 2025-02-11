@@ -1,18 +1,19 @@
 import { useTranslation } from "react-i18next";
-import { Button, Icon } from "../../../components/ui";
+import { Button, Icon } from "../../../components";
 import { ReviewSvgList } from "./RevievSvgList";
 import { ReviewSlider } from "./ReviewSlider";
+
 export const ReviewsSection = () => {
   const { t } = useTranslation("translation", {
     keyPrefix: "HomePage.review-section",
   });
 
   return (
-    <section className="bg-[#E9E9E9]   overflow-hidden py-[60px] desktop:py-[70px]">
+    <section className="bg-[#E9E9E9]   overflow-hidden py-17 desktop:py-18">
       <div className="container  desktop:flex">
-        <div className="flex flex-col mb-10   desktop:mr-[55px] ">
+        <div className="flex flex-col mb-10 desktop:mr-[55px] ">
           <h2 className="mb-10 text-black text-2xl">{t("mainTitle")}</h2>
-          <div className="flex mb-[40px] justify-center desktop:justify-start">
+          <div className="flex mb-10 justify-center desktop:justify-start">
             <Icon className=" size-[80px] mr-[30px]" name="ava" />
             <div>
               <p className="text-black text-xl mb-10 w-[300px]">{t("title")}</p>

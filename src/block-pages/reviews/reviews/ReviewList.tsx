@@ -3,7 +3,7 @@ import { Card } from "../../../components/ui/Card/Card";
 export const ReviewList = () => {
   return (
     <ul className="flex flex-col items-center mb-[30px]">
-      {[...Array(10)].map((i) => (
+      {[...Array(10)].map((_, i) => (
         <li key={i} className="mb-[30px]">
           <Card
             textClassName=" h-auto desktop:w-full"

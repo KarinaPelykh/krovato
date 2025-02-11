@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Icon } from "../../../components/ui";
+import { Link, Icon } from "../../../components";
+
 export const CategoryItem = () => {
   const { t } = useTranslation("translation", {
     keyPrefix: "HomePage.categories-section",
   });
 
   return (
-    <Link to="product">
+    <Link to="product" iconClassName="hidden">
       <li className="relative bg-white w-full mobile:w-[180px] h-[240px]  desktop:w-[250px] desktop:h-[300px] rounded-xs shadow-xl">
         <div className="flex justify-between items-center  desktop:mb-[60px] p-[15px]  desktop:p-5">
           <span className="text-ms  desktop:mr-[126px] desktop:text-xl text-black">

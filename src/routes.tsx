@@ -22,7 +22,6 @@ const routerInformation = [
   { path: "contact", element: <ContactPage /> },
   { path: "product", element: <ProductPage /> },
   { path: "product/:id", element: <ProductInfo /> },
-  { path: "/:id", element: <ProductInfo /> },
 ];
 
 export const routes = routerInformation.map((route) => ({

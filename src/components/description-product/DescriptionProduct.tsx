@@ -18,16 +18,19 @@ export const DescriptionProduct = () => {
               виконані з бука. Подібна конструкція характеризується надійністю
               та привабливим зовнішнім виглядом.
             </p>
-            <div>
-              <img
-                src="/colors-of-product/products-color.png"
-                alt="products color"
-              />
-            </div>
+
+            <img
+              src="/colors-of-product/products-color.png"
+              alt="products color"
+              className="w-[320px] tablet:w-[410px] desktop:w-full h-auto object-contain"
+            />
+
             <Characteristic />
             <ProductReviews />
           </div>
-          <ReviewForm hiddenLogo="hidden" />
+          <div className="hidden desktop:flex">
+            <ReviewForm hiddenLogo="hidden" />
+          </div>
         </div>
       </div>
     </section>

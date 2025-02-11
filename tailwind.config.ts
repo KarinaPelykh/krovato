@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js,ts,tsx,mdx}"],
   theme: {
     extend: {
+      padding: {
+        "17": "60px",
+        "18": "70px",
+      },
       boxShadow: {
         "1xl": "-3px 4px 15px 0 rgba(0,0,0,0.6)",
       },

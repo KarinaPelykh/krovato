@@ -9,9 +9,8 @@ export const InfoOfProduct = () => {
     <section>
       <div className="container ">
         <div className=" desktop:flex desktop:justify-between">
-          <div>
-            <ProductSlider />
-          </div>
+          <ProductSlider />
+
           <div className="flex flex-col">
             <h1 className="text-black text-1xl font-semibold mb-[30px]">
               Ліжко двоспальне МК-1 з підйомним механізмом
@@ -28,24 +27,24 @@ export const InfoOfProduct = () => {
             </div>
 
             <div className="bg-white rounded-lg  p-5">
-              <div className="border border-x-0 border-t-0 border-b-gray-light flex justify-between items-center mb-[30px]">
+              <div className="border border-x-0 border-t-0 border-b-gray-light flex justify-between items-center mb-[30px] flex-col desktop:flex-row">
                 <p className="text-1xl font-semibold text-black">15 400 грн</p>
                 <p className="text-red text-ms font-semibold line-through ">
                   25 400 грн
                 </p>
-                <Button className="!bg-transparent !w-fit p-0 !text-gray font-semibold">
+                <Button className="hidden desktop:flex   !bg-transparent !w-fit p-0 !text-gray font-semibold">
                   <Icon name="liked" className="size-[50px]" /> В обране
                 </Button>
               </div>
 
-              <div className="flex justify-between mb-5 gap-[30px]">
-                <label className="">
+              <div className="tablet:flex tablet:justify-between mb-5 tablet:gap-[30px]">
+                <label>
                   <span className="flex gap-2.5 items-center mb-2.5">
                     <Icon name="help" className="size-6" />
                     Розмір
                   </span>
 
-                  <select className="px-[15px] w-[280px]  py-[10px] rounded-lg bg-[#F8F8F8]">
+                  <select className="px-[15px] w-[190px] desktop:w-[280px]  py-[10px] rounded-lg bg-[#F8F8F8]">
                     <option>Виберіть</option>
                     <option>120*220cm</option>
                   </select>
@@ -56,7 +55,7 @@ export const InfoOfProduct = () => {
                     Ламельний блок
                   </span>
 
-                  <select className="px-[15px]  py-[10px] w-[280px] rounded-lg bg-[#F8F8F8]">
+                  <select className="px-[15px]  py-[10px] w-[190px] desktop:w-[280px] rounded-lg bg-[#F8F8F8]">
                     <option>Виберіть</option>
                     <option>120*220cm</option>
                   </select>
@@ -64,13 +63,13 @@ export const InfoOfProduct = () => {
               </div>
 
               <ColorListProduct />
-              <div className="flex justify-between gap-[30px] items-center">
-                <div className="flex gap-[15px] p-[13px] border border-gray-light rounded-lg">
-                  <Button className="!bg-transparent !p-0  !text-gray ">
+              <div className="flex flex-col  desktop:flex-row desktop:justify-between gap-[30px] items-center">
+                <div className="flex justify-center gap-[15px] p-[13px] w-full desktop:w-fit border border-gray-light rounded-lg">
+                  <Button className="!bg-transparent !p-0 !w-fit  !text-gray ">
                     -
                   </Button>
                   <span className="text-black">1</span>
-                  <Button className="!bg-transparent !p-0  !text-gray">
+                  <Button className="!bg-transparent !p-0 !w-fit  !text-gray">
                     +
                   </Button>
                 </div>

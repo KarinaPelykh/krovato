@@ -4,12 +4,12 @@ import clsx from "clsx";
 import { OurServicesList } from "./OurServicesList";
 import { sizeWindow } from "../../../hook/sizeWIndow";
 import { useTranslation } from "react-i18next";
-import { Button } from "../../../components";
-import { Icon } from "../../../components/ui";
+import { Button, Icon } from "../../../components";
 
 type OurAdvantagesSectionProps = {
   className?: string;
 };
+
 export const OurAdvantagesSection = ({
   className,
 }: OurAdvantagesSectionProps) => {

@@ -1,7 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import clsx from "clsx";
 import { ReviewSvgList } from "../../about-as/reviews-section/RevievSvgList";
-import { Button, Icon } from "../../../components/ui";
+import { Button, Icon } from "../../../components";
 
 type ReviewFormProp = {
   hiddenLogo?: string;

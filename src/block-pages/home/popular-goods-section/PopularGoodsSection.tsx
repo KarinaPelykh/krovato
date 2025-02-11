@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { PopularGoodList } from "./PopularGoodsList";
-import { Icon } from "../../../components/ui";
+import { Link } from "../../../components";
 
 export const PopularGoodsSection = () => {
   const { t } = useTranslation("translation", {
@@ -9,16 +8,13 @@ export const PopularGoodsSection = () => {
   });
 
   return (
-    <section className="pb-[60px]  desktop:pb-[70px]">
+    <section className="pb-17  desktop:pb-18">
       <div className="container">
         <div className=" desktop:flex  mb-10 desktop:gap-[30px]  desktop:items-center">
           <h2 className="text-black  text-1xl desktop:text-2xl">
             {t("title")}
           </h2>
-          <Link to="/" className="text-yellow flex gap-[10px] items-center">
-            {t("linkSeeAll")}
-            <Icon className="fill-yellow" name="arrow-1" />
-          </Link>
+          <Link to="/">{t("linkSeeAll")}</Link>
         </div>
         <PopularGoodList />
       </div>

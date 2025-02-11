@@ -5,6 +5,7 @@ import { ProductCard } from "../../../components/ui/produc-card/ProductCad";
 type PopularGoodItemProps = {
   index: number;
 };
+
 export const PopularGoodItem = ({ index }: PopularGoodItemProps) => {
   const { t } = useTranslation("translation", {
     keyPrefix: "HomePage.popular-goods-section",

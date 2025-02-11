@@ -31,7 +31,7 @@ export const AdvantageList = () => {
   return (
     <section className="py-[60px] desktop:py-[70px]">
       <div className="container">
-        <ul className=" flex gap-[30px]">
+        <ul className=" flex flex-col gap-[30px] desktop:flex-row">
           {data.map(({ iconName, title, text, link }, i) => (
             <li key={i} className="flex gap-5 ">
               <Icon name={iconName} className="size-[80px]" isScenery={true} />

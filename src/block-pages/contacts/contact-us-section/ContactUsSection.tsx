@@ -2,7 +2,7 @@ import { FromFeedback } from "./FromFeedback";
 
 export const ContactUsSection = () => {
   return (
-    <section className="pt-[60px] desktop:pt-[70px]">
+    <section className="pt-17 desktop:pt-18">
       <div className="container desktop:bg-[url('/bg-form.png')] desktop:h-[530px] desktop:bg-contain desktop:bg-no-repeat desktop:bg-center desktop:min-h-full  desktop:flex desktop:justify-between">
         <div className=" mb-10 desktop:mb-0 desktop:w-[470px] desktop:my-auto">
           <h2 className=" text-black mb-10 font-semibold text-1xl desktop:text-2xl">

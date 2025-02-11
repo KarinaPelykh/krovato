@@ -7,7 +7,7 @@ export const KrovatoSection = () => {
   });
 
   return (
-    <section className="pb-[60px]">
+    <section className="pb-17">
       <div className="container">
         <h2 className="mb-5 text-2xl font-semibold text-black text-center">
           {t("title")}

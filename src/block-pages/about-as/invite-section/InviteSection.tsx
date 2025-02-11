@@ -1,10 +1,11 @@
 import { useTranslation } from "react-i18next";
-import { Button, Icon } from "../../../components/ui";
+import { Button, Icon } from "../../../components";
 
 export const InviteSection = () => {
   const { t } = useTranslation("translation", {
     keyPrefix: "AboutAsPage.initiation-section",
   });
+
   return (
     <section className="  pt-[60px] desktop:pt-[70px]">
       <div className="container  desktop:flex ">

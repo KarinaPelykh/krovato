@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { Icon } from "../../../components/ui";
+import { Icon } from "../../../components";
 
 export const PaymentRangeSection = () => {
   const { t } = useTranslation("translation", {
     keyPrefix: "PaymentPage.payment-range-section",
   });
   return (
-    <section className="pb-[60px] desktop:pb-[70px]  ">
+    <section className="pb-17 desktop:pb-18">
       <div className="container text-center">
         <h2 className="text-black font-semibold text-1xl mb-10">
           {t("title")}

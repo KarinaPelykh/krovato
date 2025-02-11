@@ -9,6 +9,7 @@ export const ReviewSlider = () => {
   const { t } = useTranslation("translation", {
     keyPrefix: "HomePage.review-section",
   });
+
   return (
     <div className="w-full  flex justify-center">
       <Swiper

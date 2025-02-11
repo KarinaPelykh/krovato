@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { Icon } from "../../../components/ui";
+import { Icon } from "../../../components";
 
 export const PaymentDeliveryList = () => {
   const { t } = useTranslation("translation", {
     keyPrefix: "PaymentPage.payment-delivery-list",
   });
   return (
-    <section className="bg-white py-[60px]  desktop:py-[70px]">
+    <section className="bg-white py-17  desktop:py-18">
       <div className="container">
         <ul className=" flex flex-col gap-[30px]">
           <li className="flex flex-col items-center gap-5 desktop:flex-row">

@@ -11,7 +11,7 @@ export const DeliverSaleSection = () => {
   }) as string[];
 
   return (
-    <section className="py-[60px] desktop:py-[70px]">
+    <section className="py-17 desktop:py-18">
       <div className="container">
         <h2 className="text-black text-1xl font-semibold mb-10 text-center">
           {t("title")}

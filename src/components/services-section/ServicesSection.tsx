@@ -17,7 +17,7 @@ export const ServicesSection = () => {
   }) as ServiceInformation[];
 
   return (
-    <section className="bg-white py-[60px] desktop:py-[70px]">
+    <section className="bg-white py-17 desktop:py-18">
       <div className="container">
         <ServiceList
           data={items}

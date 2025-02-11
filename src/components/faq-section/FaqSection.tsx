@@ -31,7 +31,7 @@ export const FaqSection = ({
   const isNotDesktop = size < 1440;
 
   return (
-    <section className="pt-[60px] desktop:pt-[70px]">
+    <section className="pt-17 desktop:pt-18">
       <div className="container">
         <h2 className="text-black font-semibold text-1xl desktop:text-2xl mb-10 text-center">
           {(title && isNotDesktop) || isProductPage ? title : t("title")}
