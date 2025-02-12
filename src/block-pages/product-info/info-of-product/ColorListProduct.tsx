@@ -1,4 +1,4 @@
-import { Icon } from "../ui";
+import { Icon } from "../../../components/ui";
 
 const colors = [
   "/colors-of-product/blue.png",
@@ -18,7 +18,11 @@ export const ColorListProduct = () => {
       <ul className="flex gap-5 items-center">
         {colors.map((color, i) => (
           <li key={i}>
-            <img src={color} className="size-[70px]" alt="color of product" />
+            <img
+              src={color}
+              className="size-[50px]  desktop:size-[70px]"
+              alt="color of product"
+            />
           </li>
         ))}
       </ul>

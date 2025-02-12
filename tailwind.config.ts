@@ -3,10 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js,ts,tsx,mdx}"],
   theme: {
     extend: {
-      padding: {
-        "17": "60px",
-        "18": "70px",
-      },
+      padding: { "13": "50px", "17": "60px", "18": "70px" },
       boxShadow: {
         "1xl": "-3px 4px 15px 0 rgba(0,0,0,0.6)",
       },
@@ -34,15 +31,8 @@ module.exports = {
         base: ["16px", { lineHeight: "30px", fontWeight: 400 }],
         m: ["15px", { lineHeight: "23px", fontWeight: 400 }],
         ms: ["19px", { lineHeight: "24px", fontWeight: 500 }],
-
         xl: ["20px", { lineHeight: "28px", fontWeight: 600 }],
-        lg: [
-          "26px",
-          {
-            lineHeight: "35px",
-            fontMeight: 600,
-          },
-        ],
+        lg: ["26px", { lineHeight: "35px", fontWeight: 600 }],
         "1xl": ["30px", { lineHeight: "40px", fontWeight: 600 }],
         "2xl": ["40px", { lineHeight: "48px", fontWeight: 600 }],
       },

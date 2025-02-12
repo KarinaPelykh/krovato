@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ReviewSvgList } from "../../block-pages/about-as/reviews-section/RevievSvgList";
-import { Button, Icon } from "../ui";
+import { ReviewSvgList } from "../../about-as/reviews-section/RevievSvgList";
+import { Button, Icon } from "../../../components/ui";
 import { AnswerReviewFrom } from "./AnswerReviewFrom";
 import { CardReview } from "./CardReview";
 
@@ -13,10 +13,10 @@ export const ProductReviews = () => {
 
   return (
     <div className=" p-[30px] bg-white rounded-lg">
-      <h2 className=" text-black font-semibold text-1xl ">
+      <h2 className=" text-black font-semibold text-1xl mb-5 desktop:m-0 ">
         Відгуки про Ліжко двоспальне МК-1 з підйомним механізмом
       </h2>
-      <div className=" flex gap-[41px] items-center mb-10">
+      <div className=" flex gap-[41px] desktop:items-center mb-10 flex-col desktop:flex-row">
         <p className="text-base text-gray">
           Всього відгуків:<span>93</span>
         </p>
@@ -29,7 +29,7 @@ export const ProductReviews = () => {
         {[...Array(5)].map((_, index) => (
           <li
             key={index}
-            className="border-[3px] pb-[30px] border-b-white-light border-t-0 border-x-0 last:border-0"
+            className="border-[3px] pb-[30px] border-b-yellow desktop:border-b-white-light border-t-0 border-x-0 last:border-0"
           >
             <CardReview
               handleDisplayingForm={() => handleDisplayingForm(index)}
@@ -39,7 +39,7 @@ export const ProductReviews = () => {
         ))}
       </ul>
       <Button className="mx-auto  font-semibold  desktop:w-[300px]">
-        <Icon name="reload" className="size-[24px]" />
+        <Icon name="reload" className="size-6" />
         Показати ще відгуки
       </Button>
     </div>

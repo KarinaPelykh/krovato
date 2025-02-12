@@ -1,5 +1,5 @@
 import { ChangeEvent, FormEvent, useState } from "react";
-import { Button, Icon } from "../ui";
+import { Button, Icon } from "../../../components/ui";
 
 export const AnswerReviewFrom = () => {
   const [name, setName] = useState("");
