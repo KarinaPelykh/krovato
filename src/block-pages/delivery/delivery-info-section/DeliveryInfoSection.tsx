@@ -1,19 +1,19 @@
-import clsx from "clsx";
-import { DeliveryInfoList } from "./DeliveryInfoList";
-import { DeliveryBgBlock } from "./DeliveryBgBlock";
+import clsx from 'clsx'
+import { DeliveryInfoList } from './DeliveryInfoList'
+import { DeliveryBgBlock } from './DeliveryBgBlock'
 
 type DeliveryInfoSectionProps = {
-  title: string;
-  list: string[];
-  text?: string;
-  description: string;
-  images: string;
-  textClassName?: string;
-  text2?: string;
-  text3?: string;
-  info?: string;
-  bgClassName?: string;
-};
+  title: string
+  list: string[]
+  text?: string
+  description: string
+  images: string
+  textClassName?: string
+  text2?: string
+  text3?: string
+  info?: string
+  bgClassName?: string
+}
 
 export const DeliveryInfoSection = ({
   title,
@@ -25,19 +25,18 @@ export const DeliveryInfoSection = ({
   text2,
   text3,
   info,
-  bgClassName,
+  bgClassName
 }: DeliveryInfoSectionProps) => {
   return (
     <section
-      className={clsx("pb-17desktop:pb-18", bgClassName ? bgClassName : "")}
-    >
-      <div className="container">
-        <div className=" desktop:flex desktop:justify-between ">
-          <div className="mb-10 desktop:w-[520px]">
-            <h2 className="text-black font-semibold mb-10 text-1xl">{title}</h2>
+      className={clsx('pb-17desktop:pb-18', bgClassName ? bgClassName : '')}>
+      <div className='container'>
+        <div className='desktop:flex desktop:justify-between'>
+          <div className='mb-10 desktop:w-[520px]'>
+            <h2 className='text-black font-semibold mb-10 text-1xl'>{title}</h2>
             <DeliveryInfoList list={list} />
-            <p className="mb-[30px] text-black text-xl font-semibold">{text}</p>
-            <p className="text-black text-xl font-semibold">{description}</p>
+            <p className='mb-[30px] text-black text-xl font-semibold'>{text}</p>
+            <p className='text-black text-xl font-semibold'>{description}</p>
           </div>
           <DeliveryBgBlock
             images={images}
@@ -48,13 +47,12 @@ export const DeliveryInfoSection = ({
         </div>
         <p
           className={clsx(
-            "text-black text-base mt-[104px] ",
-            textClassName ? textClassName : "hidden"
-          )}
-        >
+            'text-black text-base mt-[104px] ',
+            textClassName ? textClassName : 'hidden'
+          )}>
           {info}
         </p>
       </div>
     </section>
-  );
-};
+  )
+}
