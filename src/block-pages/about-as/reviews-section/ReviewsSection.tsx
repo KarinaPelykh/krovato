@@ -15,7 +15,7 @@ export const ReviewsSection = () => {
           <h2 className='mb-10 text-black text-2xl'>{t('mainTitle')}</h2>
           <div className='flex mb-10 justify-center desktop:justify-start'>
             <Icon
-              className='size-[80px] mr-[30px]'
+              className='size-[50px] mr-2.5 tablet:size-[80px] tablet:mr-[30px]'
               name='ava'
             />
             <div>
@@ -27,15 +27,17 @@ export const ReviewsSection = () => {
               <p> {t('reviews')}269</p>
             </div>
           </div>
-          <div className='flex justify-center desktop:justify-start'>
-            <Button className='mr-[30px] !w-fit gap-0'>
+          <div
+            className='flex gap-2.5 flex-col items-center tablet:flex-row tablet:justify-center
+              desktop:justify-start'>
+            <Button className='tablet:mr-[30px] !w-fit gap-0 whitespace-nowrap'>
               <Icon
                 className='mr-[17px]'
                 name='add'
               />
               {t('writeReview')}
             </Button>
-            <Button className='!bg-transparent !p-0 !w-fit !text-gray'>
+            <Button className='!bg-transparent !p-0 !w-fit !text-gray whitespace-nowrap'>
               <Icon name='chat' />
               {t('allReviews')}
             </Button>

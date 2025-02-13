@@ -1,144 +1,168 @@
-import { Button, Icon } from "../ui";
-import { HeadingFilter } from "./HedingFilter";
-import { ItemFilter } from "./ItemFillter";
+import { Button, Icon } from '../ui'
+import { HeadingFilter } from './HedingFilter'
+import { ItemFilter } from './ItemFillter'
 
 export const FilterProduct = () => {
   const enterprisers = [
-    " Corners",
-    "Estella",
-    "     Green Line",
-    "  Legko",
-    "     MiroMark",
-    "Novelty",
-    "Soft-line",
-    " Venger",
-    "Арбор Древ",
-    "Городок мебель",
-  ];
+    ' Corners',
+    'Estella',
+    '     Green Line',
+    '  Legko',
+    '     MiroMark',
+    'Novelty',
+    'Soft-line',
+    ' Venger',
+    'Арбор Древ',
+    'Городок мебель'
+  ]
 
   const typeOfBed = [
     " Без узголов'я",
     "З узголів'ям",
-    " Двоярусні",
-    "Розкладачки",
-    "    Шафи",
-  ];
+    ' Двоярусні',
+    'Розкладачки',
+    '    Шафи'
+  ]
 
   const sizeOfBed = [
-    " 200x210 см",
-    "200x200 см",
-    "180x200 см",
-    " 160x200 см",
-    "110x190 см",
-    "160x190 см",
-    "150x200 см",
-    " 140x200 см",
-    "140x190 см",
-    " 120x200 см",
-  ];
+    ' 200x210 см',
+    '200x200 см',
+    '180x200 см',
+    ' 160x200 см',
+    '110x190 см',
+    '160x190 см',
+    '150x200 см',
+    ' 140x200 см',
+    '140x190 см',
+    ' 120x200 см'
+  ]
 
   return (
-    <div className="w-[300px] border border-t-0 border-gray-light rounded-lg h-fit">
+    <div
+      className='mb-10 desktop:mb-0 tablet:w-[300px] border border-t-0 border-gray-light
+        rounded-lg h-fit'>
       <div>
-        <div className="flex items-center gap-2.5 bg-white p-5   border border-x-0 border-gray-light rounded-t-lg">
-          <Icon className="mr-[15px]" name="filter" />
-          <span className="text-black font-semibold text-ms">
+        <div
+          className='flex items-center gap-2.5 bg-white p-5 border border-x-0 border-gray-light
+            rounded-t-lg'>
+          <Icon
+            className='mr-4'
+            name='filter'
+          />
+          <span className='text-black font-semibold text-ms'>
             Фільтр пошуку
           </span>
         </div>
-        <HeadingFilter title="Ціна, грн" />
-        <div className="bg-white p-5">
-          <div className="flex justify-between items-center">
-            <span className=" text-black py-2 px-4 w-fit rounded-lg border border-gray">
+        <HeadingFilter title='Ціна, грн' />
+        <div className='bg-white p-5'>
+          <div className='flex justify-between items-center'>
+            <span className='text-black py-2 px-4 w-fit rounded-lg border border-gray'>
               0
             </span>
-            <span className=" text-black py-2 px-4 w-fit rounded-lg border border-gray">
+            <span className='text-black py-2 px-4 w-fit rounded-lg border border-gray'>
               0
             </span>
-            <Button className=" py-2 px-4 !w-fit ">OK</Button>
+            <Button className='py-2 px-4 !w-fit'>OK</Button>
           </div>
-          <input type="range" min="16" max="96" className="mt-[15px] w-full" />
+          <input
+            type='range'
+            min='16'
+            max='96'
+            className='mt-4 w-full'
+          />
         </div>
       </div>
 
       <div>
-        <HeadingFilter title="Наявність" />
-        <div className="bg-white p-5 flex flex-col">
-          {["В наявності", " Під замовлення"].map((item, i) => (
-            <ItemFilter key={i} item={item} />
+        <HeadingFilter title='Наявність' />
+        <div className='bg-white p-5 flex flex-col'>
+          {['В наявності', ' Під замовлення'].map((item, i) => (
+            <ItemFilter
+              key={i}
+              item={item}
+            />
           ))}
         </div>
       </div>
 
       <div>
-        <HeadingFilter title="Виробник" />
-        <div className="bg-white p-5 flex flex-col">
+        <HeadingFilter title='Виробник' />
+        <div className='bg-white p-5 flex flex-col'>
           {enterprisers.map((item, i) => (
-            <ItemFilter key={i} item={item} />
+            <ItemFilter
+              key={i}
+              item={item}
+            />
           ))}
 
-          <Button className="text-yellow !bg-transparent text-start !w-fit">
+          <Button className='text-yellow !bg-transparent text-start !w-fit'>
             Показати всі
           </Button>
         </div>
       </div>
 
       <div>
-        <HeadingFilter title="Тип ліжка" />
-        <div className="bg-white p-5 flex flex-col">
+        <HeadingFilter title='Тип ліжка' />
+        <div className='bg-white p-5 flex flex-col'>
           {typeOfBed.map((item, i) => (
-            <ItemFilter key={i} item={item} />
+            <ItemFilter
+              key={i}
+              item={item}
+            />
           ))}
         </div>
       </div>
 
       <div>
         <HeadingFilter
-          title="Розмір спального місця"
-          textClassName="block w-[234px]"
-          iconClassName="mr-2.5"
+          title='Розмір спального місця'
+          textClassName='block tablet:w-[234px]'
+          iconClassName='mr-2.5'
         />
-        <div className="bg-white p-5 flex flex-col">
+        <div className='bg-white p-5 flex flex-col'>
           {sizeOfBed.map((item, i) => (
-            <ItemFilter key={i} item={item} />
+            <ItemFilter
+              key={i}
+              item={item}
+            />
           ))}
-          <Button className="text-yellow text-start !w-fit !bg-transparent">
+          <Button className='text-yellow text-start !w-fit !bg-transparent'>
             Показати всі
           </Button>
         </div>
       </div>
       <HeadingFilter
-        textClassName="block w-[234px]"
-        title="Ширина спального місця"
+        textClassName='block tablet:w-[234px]'
+        title='Ширина спального місця'
         isBorder={true}
-        iconClassName="mr-2.5"
+        iconClassName='mr-2.5'
       />
       <HeadingFilter
-        textClassName=" block w-[234px]"
-        title="Довжина спального місця"
+        textClassName=' block tablet:w-[234px]'
+        title='Довжина спального місця'
         isBorder={true}
-        iconClassName="mr-2.5"
+        iconClassName='mr-2.5'
       />
       <HeadingFilter
-        textClassName=" block w-[234px]"
-        title="Форма"
+        textClassName=' block tablet:w-[234px]'
+        title='Форма'
         isBorder={true}
-        iconClassName="mr-2.5"
-      />
-
-      <HeadingFilter
-        textClassName="block w-[234px]"
-        title="Матеріал корпусу"
-        isBorder={true}
-        iconClassName="mr-2.5"
+        iconClassName='mr-2.5'
       />
 
       <HeadingFilter
-        textClassName="block w-[234px] "
-        title="Основа для матраца"
+        textClassName='block tablet:w-[234px]'
+        title='Матеріал корпусу'
         isBorder={true}
-        iconClassName="mr-2.5"
+        iconClassName='mr-2.5'
+      />
+
+      <HeadingFilter
+        textClassName='block tablet:w-[234px] '
+        title='Основа для матраца'
+        isBorder={true}
+        iconClassName='mr-2.5'
       />
     </div>
-  );
-};
+  )
+}
