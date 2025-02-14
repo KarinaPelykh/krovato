@@ -1,20 +1,20 @@
-import clsx from "clsx";
-import { Button } from "../Button";
-import { Icon } from "../Icon";
-import { Link } from "react-router-dom";
+import clsx from 'clsx'
+import { Button } from '../Button'
+import { Icon } from '../Icon'
+import { Link } from 'react-router-dom'
 
 type ProductCardProps = {
-  size: string;
-  subTitle: string;
-  isAvailable: string;
-  costsWithoutSale: string;
-  costs: string;
-  itemClassName?: string;
-  imgClassName?: string;
-  iconClassName?: string;
-  subTitleClassName?: string;
-  index?: number;
-};
+  size: string
+  subTitle: string
+  isAvailable: string
+  costsWithoutSale: string
+  costs: string
+  itemClassName?: string
+  imgClassName?: string
+  iconClassName?: string
+  subTitleClassName?: string
+  index?: number
+}
 
 export const ProductCard = ({
   size,
@@ -26,62 +26,58 @@ export const ProductCard = ({
   imgClassName,
   iconClassName,
   subTitleClassName,
-  index,
-}: ProductCardProps) => {
-  return (
-    <li
-      className={clsx(
-        "p-5 bg-white h-[488px] rounded-xs shadow-1xl",
-        itemClassName && itemClassName
-      )}
-    >
-      <Link to={`${index}`}>
-        <img
-          src="/sofa.png"
-          alt="furniture"
-          className={clsx(
-            "w-[370px] h-[220px]  desktop:w-full  rounded-xs mb-5",
-            imgClassName && imgClassName
-          )}
-        />
-      </Link>
-
-      <p className=" mb-2.5 text-m desktop:text-xs">{size}</p>
-      <p
+  index
+}: ProductCardProps) => (
+  <li
+    className={clsx(
+      'p-5 bg-white h-[488px] rounded-xs shadow-1xl',
+      itemClassName && itemClassName
+    )}>
+    <Link to={`${index}`}>
+      <img
+        src='/sofa.png'
+        alt='furniture'
         className={clsx(
-          "mb-2.5 text-black text-xl",
-          subTitleClassName && subTitleClassName
+          'w-[370px] h-[220px] desktop:w-full rounded-xs mb-5',
+          imgClassName && imgClassName
         )}
-      >
-        {subTitle}
-      </p>
-      <p className="mb-2.5  flex gap-[5px]">
-        <Icon name="check" />
-        {isAvailable}
-      </p>
-      <div className="flex items-center justify-between">
-        <p className="flex flex-col text-xl text-black">
-          <span className="inline-block text-red text-m line-through desktop:hidden">
-            {costsWithoutSale}
-          </span>
-          {costs}
-        </p>
-        <div className="flex gap-2.5">
-          <Button className="!bg-transparent !p-0">
-            <Icon
-              className={clsx("size-[70px]", iconClassName && iconClassName)}
-              name="obrane"
-            />
-          </Button>
+      />
+    </Link>
 
-          <Button className="!bg-transparent !p-0">
-            <Icon
-              className={clsx("size-[70px]", iconClassName && iconClassName)}
-              name="korzina"
-            />
-          </Button>
-        </div>
+    <p className='mb-2.5 text-m desktop:text-xs'>{size}</p>
+    <p
+      className={clsx(
+        'mb-2.5 text-black text-xl',
+        subTitleClassName && subTitleClassName
+      )}>
+      {subTitle}
+    </p>
+    <p className='mb-2.5 flex gap-[5px]'>
+      <Icon name='check' />
+      {isAvailable}
+    </p>
+    <div className='flex items-center justify-between'>
+      <p className='flex flex-col text-xl text-black'>
+        <span className='inline-block text-red text-m line-through desktop:hidden'>
+          {costsWithoutSale}
+        </span>
+        {costs}
+      </p>
+      <div className='flex gap-2.5'>
+        <Button className='!bg-transparent !p-0'>
+          <Icon
+            className={clsx('size-[70px]', iconClassName && iconClassName)}
+            name='obrane'
+          />
+        </Button>
+
+        <Button className='!bg-transparent !p-0'>
+          <Icon
+            className={clsx('size-[70px]', iconClassName && iconClassName)}
+            name='korzina'
+          />
+        </Button>
       </div>
-    </li>
-  );
-};
+    </div>
+  </li>
+)

@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Icon } from '../../components/ui'
+import { Headings } from '../../components/ui/Headings'
 
 export const DeliverSaleSection = () => {
   const { t } = useTranslation('translation', {
@@ -13,9 +14,11 @@ export const DeliverSaleSection = () => {
   return (
     <section className='py-17 desktop:py-18'>
       <div className='container'>
-        <h2 className='text-black text-1xl font-semibold mb-10 text-center'>
+        <Headings
+          as='h2'
+          className='mb-10 text-center'>
           {t('title')}
-        </h2>
+        </Headings>
         <ul className='flex flex-col gap-[30px] desktop:flex-row mb-10'>
           {list.map((text, i) => (
             <li
@@ -26,11 +29,11 @@ export const DeliverSaleSection = () => {
                 name='sale-icon'
                 className='size-[70px]'
               />
-              <p className='text-black text-xl font-semibold w-full'>{text}</p>
+              <p className='text-xl font-semibold w-full'>{text}</p>
             </li>
           ))}
         </ul>
-        <p className='text-black text-base text-center'>{t('detail')}</p>
+        <p className='text-center'>{t('detail')}</p>
       </div>
     </section>
   )

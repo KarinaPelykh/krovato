@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { Button, Icon } from '../../../components'
 import { ReviewSvgList } from './RevievSvgList'
 import { ReviewSlider } from './ReviewSlider'
+import { Headings } from '../../../components/ui/Headings'
 
 export const ReviewsSection = () => {
   const { t } = useTranslation('translation', {
@@ -12,14 +13,14 @@ export const ReviewsSection = () => {
     <section className='bg-[#E9E9E9] overflow-hidden py-17 desktop:py-18'>
       <div className='container desktop:flex'>
         <div className='flex flex-col mb-10 desktop:mr-[55px]'>
-          <h2 className='mb-10 text-black text-2xl'>{t('mainTitle')}</h2>
+          <Headings className='mb-10'>{t('mainTitle')}</Headings>
           <div className='flex mb-10 justify-center desktop:justify-start'>
             <Icon
-              className='size-[50px] mr-2.5 tablet:size-[80px] tablet:mr-[30px]'
+              className='size-[50px] mr-2.5 tablet:size-20 tablet:mr-[30px]'
               name='ava'
             />
             <div>
-              <p className='text-black text-xl mb-10 w-[300px]'>{t('title')}</p>
+              <p className='text-xl mb-10 w-[300px]'>{t('title')}</p>
               <div className='flex gap-2.5'>
                 <span className='text-yellow text-ms'>0.5</span>
                 <ReviewSvgList className='fill-yellow' />

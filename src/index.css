@@ -1,55 +1,39 @@
 @tailwind base;
 
 :root {
-  --text--gray: #535353;
+  --text--black: @apply text-black;
 }
 body {
-  font-family: "Montserrat";
-  background-color: #f8f8f8;
-  color: var(--text--gray);
+  @apply bg-[#f8f8f8] font-['Montserrat'] text-base text-[var(--text--black)];
 }
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  @apply box-border;
 }
 ol,
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @apply m-0 list-none p-0;
 }
 h1,
 h2,
 h3,
 h4,
 p {
-  margin: 0;
-  padding: 0;
+  @apply m-0 p-0;
 }
 button {
   cursor: pointer;
 }
 a {
-  text-decoration: none;
+  @apply no-underline;
 }
 @tailwind components;
 
 .container {
-  max-width: 410px;
-  padding: 0 15px 0 15px;
-  margin: 0 auto 0 auto;
+  @apply mx-auto max-w-[410px] px-[15px] tablet:max-w-[640px] desktop:max-w-[1290px];
 }
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 640px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1290px;
-  }
-}
+
 @tailwind utilities;
 
 /* active link*/

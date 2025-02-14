@@ -1,60 +1,59 @@
-import clsx from "clsx";
-import { Icon } from "../Icon";
-import { ReviewSvgList } from "../../../block-pages/about-as/reviews-section/RevievSvgList";
+import clsx from 'clsx'
+import { Icon } from '../Icon'
+import { ReviewSvgList } from '../../../block-pages/about-as/reviews-section/RevievSvgList'
 type CardProps = {
-  name: string;
-  product: string;
-  description: string;
-  textClassName?: string;
-};
+  name: string
+  product: string
+  description: string
+  textClassName?: string
+}
 
 export const Card = ({
   name,
   product,
   description,
-  textClassName,
-}: CardProps) => {
-  return (
+  textClassName
+}: CardProps) => 
     <article
       className={clsx(
-        "bg-white p-[20px] desktop:p-[30px] rounded-xs w-[320px] mobile:w-[350px] tablet:w-[450px]  h-[370px] desktop:w-fit shadow-1xl ",
-        textClassName ? "h-auto" : ""
-      )}
-    >
-      <div className="flex mb-[30px]">
-        <Icon className="size-[50px] mr-5" name="avatar" />
-        <div className="w-full desktop:relative">
-          <div className="flex justify-between items-center w-full">
-            <span className="text-black text-base">{name}</span>
+        `bg-white p-5 desktop:p-[30px] rounded-xs w-[320px] mobile:w-[350px]
+        tablet:w-[450px] h-[370px] desktop:w-fit shadow-1xl `,
+        textClassName ? 'h-auto' : ''
+      )}>
+      <div className='flex mb-[30px]'>
+        <Icon
+          className='size-[50px] mr-5'
+          name='avatar'
+        />
+        <div className='w-full desktop:relative'>
+          <div className='flex justify-between items-center w-full'>
+            <span>{name}</span>
             <span>20.12.2022</span>
           </div>
           <div
             className={clsx(
               textClassName
-                ? "desktop:absolute desktop:top-0 desktop:right-24"
-                : ""
-            )}
-          >
-            <ReviewSvgList className="fill-yellow" />
+                ? 'desktop:absolute desktop:top-0 desktop:right-24'
+                : ''
+            )}>
+            <ReviewSvgList className='fill-yellow' />
           </div>
         </div>
       </div>
       <p
         className={clsx(
-          "mb-[30px] text-base w-full  desktop:w-[370px]  h-[150px] overflow-y-auto text-ellipsis whitespace-wrap",
-          textClassName ? textClassName : ""
-        )}
-      >
+          `mb-[30px] text-base w-full desktop:w-[370px] h-[150px] overflow-y-auto
+          text-ellipsis whitespace-wrap`,
+          textClassName ? textClassName : ''
+        )}>
         {description}
       </p>
-      <div className="flex items-center">
+      <div className='flex items-center'>
         <img
-          className="rounded-full size-[50px] mr-2.5"
-          src="/sofa.png"
-          alt="sofa"
+          className='rounded-full size-[50px] mr-2.5'
+          src='/sofa.png'
+          alt='sofa'
         />
-        <p className="text-gray  text-xl desktop:text-xl">{product}</p>
+        <p className='text-gray text-xl desktop:text-xl'>{product}</p>
       </div>
     </article>
-  );
-};

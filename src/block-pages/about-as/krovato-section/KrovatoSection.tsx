@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { KrovatoList } from './KrovatoList'
+import { Headings } from '../../../components/ui/Headings'
 
 export const KrovatoSection = () => {
   const { t } = useTranslation('translation', {
@@ -9,9 +10,7 @@ export const KrovatoSection = () => {
   return (
     <section className='pb-17'>
       <div className='container'>
-        <h2 className='mb-5 text-2xl font-semibold text-black text-center'>
-          {t('title')}
-        </h2>
+        <Headings className='mb-5 !text-2xl text-center'>{t('title')}</Headings>
         <KrovatoList />
       </div>
     </section>

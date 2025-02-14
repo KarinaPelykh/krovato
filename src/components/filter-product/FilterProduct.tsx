@@ -49,17 +49,15 @@ export const FilterProduct = () => {
             className='mr-4'
             name='filter'
           />
-          <span className='text-black font-semibold text-ms'>
-            Фільтр пошуку
-          </span>
+          <span className='font-semibold text-ms'>Фільтр пошуку</span>
         </div>
         <HeadingFilter title='Ціна, грн' />
         <div className='bg-white p-5'>
           <div className='flex justify-between items-center'>
-            <span className='text-black py-2 px-4 w-fit rounded-lg border border-gray'>
+            <span className='py-2 px-4 w-fit rounded-lg border border-gray'>
               0
             </span>
-            <span className='text-black py-2 px-4 w-fit rounded-lg border border-gray'>
+            <span className='py-2 px-4 w-fit rounded-lg border border-gray'>
               0
             </span>
             <Button className='py-2 px-4 !w-fit'>OK</Button>

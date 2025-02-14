@@ -22,6 +22,7 @@ export const AnswerReviewFrom = () => {
     event.preventDefault()
     console.log({ name, email, text })
   }
+
   return (
     <form
       className='p-[30px] bg-white-light rounded-lg mt-[30px]'

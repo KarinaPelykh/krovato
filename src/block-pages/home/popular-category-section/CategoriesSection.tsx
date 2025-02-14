@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { PopularCategoriesList } from './PopularCategoriesList'
+import { Headings } from '../../../components/ui/Headings'
 
 export const CategoriesSection = () => {
   const { t } = useTranslation('translation', {
@@ -9,9 +10,11 @@ export const CategoriesSection = () => {
   return (
     <section className='pb-17 desktop:pb-18'>
       <div className='container'>
-        <h1 className='text-1xl mb-10 text-dark desktop:text-2xl'>
+        <Headings
+          as='h1'
+          className='mb-10'>
           {t('title')}
-        </h1>
+        </Headings>
         <PopularCategoriesList />
       </div>
     </section>

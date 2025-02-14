@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Icon } from '../../../components/ui'
+import { Headings } from '../../../components/ui/Headings'
 type List = { title: string; text: string }
 
 export const KrovatoList = () => {
@@ -22,8 +23,12 @@ export const KrovatoList = () => {
             name='success'
             className='size-[170px]'
           />
-          <h3 className='font-semibold text-black text-lg'>{title}</h3>
-          <p className='text-black'>{text}</p>
+          <Headings
+            as='h3'
+            className='text-lg'>
+            {title}
+          </Headings>
+          <p>{text}</p>
         </li>
       ))}
     </ul>

@@ -11,6 +11,7 @@ export const Characteristic = () => {
     { characteristic: 'Кількість ламелей', size: '36' },
     { characteristic: 'Основа під матрац', size: 'ламіль' }
   ]
+
   return (
     <div className='pb-17 desktop:pb-18 w-fit'>
       <p className='text-black font-semibold mb-10 text-1xl'>Характеристики</p>

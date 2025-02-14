@@ -1,17 +1,15 @@
 import {
   PaymentDeliveryList,
   PaymentInfoSection,
-  PaymentRangeSection,
-} from "../block-pages/payment";
-import { FaqSection } from "../components";
+  PaymentRangeSection
+} from '../block-pages/payment'
+import { FaqSection } from '../components'
 
-export const PaymentPage = () => {
-  return (
-    <>
-      <PaymentInfoSection />
-      <PaymentRangeSection />
-      <PaymentDeliveryList />
-      <FaqSection />
-    </>
-  );
-};
+export const PaymentPage = () => (
+  <>
+    <PaymentInfoSection />
+    <PaymentRangeSection />
+    <PaymentDeliveryList />
+    <FaqSection />
+  </>
+)
