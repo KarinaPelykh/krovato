@@ -19,18 +19,15 @@ export const NewsSection = () => {
             {t('linkBlog')}
           </Link>
           <div className='hidden desktop:flex ml-auto'>
-            <Button className='mr-[30px] !bg-transparent'>
-              <Icon
-                className='size-[50px]'
-                name='arrow-left'
-              />
-            </Button>
-            <Button className='!bg-transparent'>
-              <Icon
-                className='size-[50px] rotate-180'
-                name='arrow-left'
-              />
-            </Button>
+            <Button
+              buttonClassName='mr-[30px] !bg-transparent'
+              iconName='arrow-left'
+            />
+            <Button
+              buttonClassName='!bg-transparent '
+              iconName='arrow-left'
+              iconClassName=' size-[50px] rotate-180'
+            />
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { ReviewSvgList } from '../../about-as/reviews-section/RevievSvgList'
-import { Button, Icon } from '../../../components/ui'
+import { Button } from '../../../components/ui'
 import { AnswerReviewFrom } from './AnswerReviewFrom'
 import { CardReview } from './CardReview'
 
@@ -38,11 +38,11 @@ export const ProductReviews = () => {
           </li>
         ))}
       </ul>
-      <Button className='mx-auto font-semibold desktop:w-[300px]'>
-        <Icon
-          name='reload'
-          className='size-6'
-        />
+
+      <Button
+        buttonClassName='mx-auto font-semibold desktop:w-[300px] '
+        iconClassName='!size-6'
+        iconName='reload'>
         Показати ще відгуки
       </Button>
     </div>

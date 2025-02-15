@@ -110,8 +110,10 @@ export const ReviewForm = ({ hiddenLogo }: ReviewFormProp) => {
           />
         </div>
         <Button
-          className='font-semibold'
-          type='submit'>
+          buttonClassName='font-semibold '
+          iconName='reload'
+          type='submit'
+          iconClassName='hidden'>
           Залишити відгук
         </Button>
       </form>

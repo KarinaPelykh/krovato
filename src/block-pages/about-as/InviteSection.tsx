@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Button, Icon } from '../../components'
+import { Button } from '../../components'
 import { Headings } from '../../components/ui/Headings'
 
 export const InviteSection = () => {
@@ -14,12 +14,12 @@ export const InviteSection = () => {
           <Headings className='mb-[30px]'>{t('title')}</Headings>
           <p className='font-semibold mb-5 text-lg'>{t('subtitle')}</p>
           <p className='font-semibold mb-10 text-ms'>{t('description')}</p>
-          <Button className='py-[13px] px-5 mx-auto desktop:m-0'>
+
+          <Button
+            buttonClassName='py-[13px] px-5 mx-auto desktop:m-0'
+            iconName='arrow-1'
+            iconClassName='ml-2.5 fill-white !size-6'>
             {t('button')}
-            <Icon
-              className='ml-2.5 fill-white'
-              name='arrow-1'
-            />
           </Button>
         </article>
         <img

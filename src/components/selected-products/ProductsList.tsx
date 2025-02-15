@@ -1,4 +1,4 @@
-import { Button, Icon } from '../ui'
+import { Button } from '../ui'
 import { ProductCard } from '../ui/produc-card/ProductCad'
 
 export const ProductsList = () => (
@@ -22,11 +22,10 @@ export const ProductsList = () => (
         />
       ))}
     </ul>
-    <Button className='mx-auto font-semibold desktop:w-[300px]'>
-      <Icon
-        name='reload'
-        className='size-6'
-      />
+    <Button
+      buttonClassName='mx-auto font-semibold desktop:w-[300px]'
+      iconName='reload'
+      iconClassName='!size-6'>
       Показати ще відгуки
     </Button>
   </>

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Button, Icon, Link } from '../../../components'
+import { Button, Link } from '../../../components'
 import { NewCard } from '../../../components/ui/NewCard'
 
 export const NewsList = () => {
@@ -21,11 +21,11 @@ export const NewsList = () => {
           </Link>
         ))}
       </ul>
-      <Button className='gap-3 items-center h-[50px] tablet:hidden'>
-        <Icon
-          className='fill-white'
-          name='read'
-        />
+
+      <Button
+        buttonClassName='gap-3 items-center h-[50px] tablet:hidden'
+        iconName='read'
+        iconClassName=' fill-white !size-6'>
         {t('linkBlog')}
       </Button>
     </>

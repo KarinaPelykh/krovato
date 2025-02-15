@@ -28,18 +28,23 @@ export const CardReview = ({ handleDisplayingForm }: CardReviewProps) => (
 
     <div className='flex flex-col desktop:items-center gap-2.5 desktop:gap-[30px] desktop:flex-row'>
       <Button
-        className='!w-fit !bg-transparent !p-0 m-0 !text-gray'
-        onClick={handleDisplayingForm}>
-        <Icon name='review-chat' />
+        buttonClassName='!w-fit !bg-transparent !p-0 m-0 !text-gray'
+        onClick={handleDisplayingForm}
+        iconName='review-chat'
+        iconClassName='!size-6'>
         Відповісти
       </Button>
-      <Button className='!w-fit !bg-transparent !p-0 m-0 !text-gray'>
-        <Icon name='Close' />
+      <Button
+        buttonClassName='!w-fit !bg-transparent !p-0 m-0 !text-gray'
+        iconName='Close'
+        iconClassName='!size-6'>
         Приховати відповіді
       </Button>
 
-      <Button className='!w-fit !bg-transparent !p-0 m-0 !text-gray'>
-        <Icon name='Like' /> Корисний відгук:<span>0</span>
+      <Button
+        buttonClassName='!w-fit !bg-transparent !p-0 m-0 !text-gray'
+        iconName='Like'>
+        Корисний відгук:<span>0</span>
       </Button>
     </div>
   </>

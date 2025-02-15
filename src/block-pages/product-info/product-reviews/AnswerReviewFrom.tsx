@@ -62,8 +62,14 @@ export const AnswerReviewFrom = () => {
       <div
         className='flex flex-col justify-center items-center tablet:flex-row tablet:justify-start
           gap-[30px]'>
-        <Button className='!w-fit !bg-yellow !text-white'>Відправити</Button>
-        <Button className='!w-fit !bg-transparent !text-yellow !border !border-yellow'>
+        <Button
+          buttonClassName='!w-fit !bg-yellow !text-white'
+          iconClassName='hidden'>
+          Відправити
+        </Button>
+        <Button
+          buttonClassName='!w-fit !bg-transparent !text-yellow !border !border-yellow'
+          iconClassName='hidden'>
           Відмінити
         </Button>
       </div>

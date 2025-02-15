@@ -60,7 +60,12 @@ export const FilterProduct = () => {
             <span className='py-2 px-4 w-fit rounded-lg border border-gray'>
               0
             </span>
-            <Button className='py-2 px-4 !w-fit'>OK</Button>
+
+            <Button
+              buttonClassName='py-2 px-4 !w-fit'
+              iconClassName='hidden'>
+              OK
+            </Button>
           </div>
           <input
             type='range'
@@ -93,7 +98,9 @@ export const FilterProduct = () => {
             />
           ))}
 
-          <Button className='text-yellow !bg-transparent text-start !w-fit'>
+          <Button
+            buttonClassName='text-yellow !bg-transparent text-start !w-fit'
+            iconClassName='hidden'>
             Показати всі
           </Button>
         </div>
@@ -124,7 +131,9 @@ export const FilterProduct = () => {
               item={item}
             />
           ))}
-          <Button className='text-yellow text-start !w-fit !bg-transparent'>
+          <Button
+            buttonClassName='text-yellow !bg-transparent text-start !w-fit '
+            iconClassName='hidden'>
             Показати всі
           </Button>
         </div>

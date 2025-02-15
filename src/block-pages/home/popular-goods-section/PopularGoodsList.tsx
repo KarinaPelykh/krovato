@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Button, Icon } from '../../../components'
+import { Button } from '../../../components'
 import { PopularGoodItem } from './PopularGoodItem'
 
 export const PopularGoodList = () => {
@@ -21,8 +21,11 @@ export const PopularGoodList = () => {
           />
         ))}
       </ul>
-      <Button className='h-[50px] tablet:hidden'>
-        <Icon name='reload' />
+
+      <Button
+        buttonClassName='h-[50px] tablet:hidden'
+        iconName='reload'
+        iconClassName='!size-6'>
         {t('showGoods')}
       </Button>
     </>

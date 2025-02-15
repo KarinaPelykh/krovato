@@ -49,17 +49,16 @@ export const OurAdvantagesSection = ({
                 'absolute z-0 bottom-0 left-0 h-36 w-full',
                 isOpen ? 'bg-transparent' : 'bg-md'
               )}></div>
+
             <Button
-              className={clsx(
+              onClick={() => setOpen(!isOpen)}
+              buttonClassName={clsx(
                 'transition-all duration-300 flex mx-auto !bg-transparent',
                 isOpen ? 'rotate-180' : 'rotate-0 '
               )}
-              onClick={() => setOpen(!isOpen)}>
-              <Icon
-                className='size-[60px]'
-                name='arrow-down'
-              />
-            </Button>
+              iconName='arrow-down'
+              iconClassName=' size-[60px]'
+            />
           </div>
         </div>
         <div className={clsx(className)}>

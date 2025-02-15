@@ -1,4 +1,4 @@
-import { Button, Icon, Link } from '../../components'
+import { Button, Link } from '../../components'
 import { Headings } from '../ui/Headings'
 import { NewCard } from '../ui/NewCard'
 
@@ -22,11 +22,10 @@ export const BlogSection = () => (
           </Link>
         ))}
       </ul>
-      <Button className='mx-auto font-semibold desktop:w-[300px]'>
-        <Icon
-          name='reload'
-          className='size-6'
-        />
+      <Button
+        buttonClassName='mx-auto font-semibold desktop:w-[300px]'
+        iconName='reload'
+        iconClassName='!size-6'>
         Показати ще статті
       </Button>
     </div>

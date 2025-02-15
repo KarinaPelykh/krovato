@@ -1,29 +1,29 @@
-import { useNavigate, useParams } from "react-router-dom";
-import { Button, Icon } from "../ui";
+import { useNavigate, useParams } from 'react-router-dom'
+import { Button, Icon } from '../ui'
 
 export const BlogPost = () => {
-  const { id } = useParams();
+  const { id } = useParams()
 
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
-  const currentBlog = Number(id);
+  const currentBlog = Number(id)
 
   const handelNavigation = (path: number) => {
-    if (path >= 0) navigate(`/blog/${path}`);
-  };
+    if (path >= 0) navigate(`/blog/${path}`)
+  }
 
   return (
     <section>
-      <div className="container desktop:w-[1070px] ">
-        <h1 className="text-black text-1xl font-semibold mb-10">
+      <div className='container desktop:w-[1070px]'>
+        <h1 className='text-black text-1xl font-semibold mb-10'>
           Оформлення вітальні. Які м'які меблі краще вибрати?
         </h1>
         <img
-          src="/news.jpg"
-          alt="furniture"
-          className="w-full rounded-lg h-[380px] mb-10 object-cover"
+          src='/news.jpg'
+          alt='furniture'
+          className='w-full rounded-lg h-[380px] mb-10 object-cover'
         />
-        <p className="text-black text-base mb-10">
+        <p className='text-black text-base mb-10'>
           Вітальня – це основна кімната у кожному будинку. Саме вона служить для
           прийому гостей, проведення часу всією сім'єю та просто для відпочинку
           у приємній теплій атмосфері. Оформляючи свій будинок та вітальню
@@ -38,15 +38,18 @@ export const BlogPost = () => {
           краще оформити свою вітальню, щоб вам було комфортно, а гості хотіли
           приходити до вас знову та знову?
         </p>
-        <h2 className="text-black text-lg font-semibold mb-[30px]">
+        <h2 className='text-black text-lg font-semibold mb-[30px]'>
           На сайті інтернет магазину Кровато представлено велику різноманітність
           м'яких меблів для вітальні, серед яких кожен зможе вибрати для себе
           найбільш вдалий варіант. У нас ви знайдете:
         </h2>
-        <ul className="flex flex-col  gap-5 mb-10">
-          <li className="flex gap-3.5">
-            <Icon className="size-8" name="icon-mark" />
-            <p className="text-black text-base w-11/12 ">
+        <ul className='flex flex-col gap-5 mb-10'>
+          <li className='flex gap-3.5'>
+            <Icon
+              className='size-8'
+              name='icon-mark'
+            />
+            <p className='text-black text-base w-11/12'>
               Прямі дивани. Такі дивани вважаються класикою. Вони підходять для
               віталень будь-яких форм та розмірів. Прямий диван виглядає стильно
               та лаконічно, на ньому зручно відпочивати, приймати гостей або
@@ -57,9 +60,12 @@ export const BlogPost = () => {
               зберігання;
             </p>
           </li>
-          <li className="flex gap-3.5">
-            <Icon className="size-8" name="icon-mark" />
-            <p className="text-black text-base w-11/12 ">
+          <li className='flex gap-3.5'>
+            <Icon
+              className='size-8'
+              name='icon-mark'
+            />
+            <p className='text-black text-base w-11/12'>
               Кутові дивани Кутові дивани вважаються найзручнішими та
               комфортнішими. Вони ідеально підійдуть для приємного проведення
               часу в колі сім'ї або друзів. Кутові дивани в основному
@@ -68,9 +74,12 @@ export const BlogPost = () => {
               підійдуть;
             </p>
           </li>
-          <li className="flex gap-3.5">
-            <Icon className="size-8" name="icon-mark" />
-            <p className="text-black text-base w-11/12 ">
+          <li className='flex gap-3.5'>
+            <Icon
+              className='size-8'
+              name='icon-mark'
+            />
+            <p className='text-black text-base w-11/12'>
               Тахти. Тахта - це одна з варіацій дивана, але стильніша і
               мінімалістична. Виглядають тахти дуже незвично і можуть підійти
               для будь-якого інтер'єру. Також тахти більше ніж звичайні дивани
@@ -78,9 +87,12 @@ export const BlogPost = () => {
               дерев'яні ламелі або ортопедичні матраци;
             </p>
           </li>
-          <li className="flex gap-3.5">
-            <Icon className="size-8" name="icon-mark" />
-            <p className="text-black text-base w-11/12 ">
+          <li className='flex gap-3.5'>
+            <Icon
+              className='size-8'
+              name='icon-mark'
+            />
+            <p className='text-black text-base w-11/12'>
               Крісла. Крісло – це особливий предмет інтер'єру. Сучасні дизайнери
               не часто використовують його, вважаючи застарілим, проте саме
               крісла створюють особливий затишок та комфорт у будь-якій кімнаті.
@@ -89,9 +101,12 @@ export const BlogPost = () => {
               свого будинку;
             </p>
           </li>
-          <li className="flex gap-3.5">
-            <Icon className="size-8" name="icon-mark" />
-            <p className="text-black text-base w-11/12 ">
+          <li className='flex gap-3.5'>
+            <Icon
+              className='size-8'
+              name='icon-mark'
+            />
+            <p className='text-black text-base w-11/12'>
               Набір меблів. Комплект м'яких меблів – це відмінне рішення для
               тих, хто хоче меблювати свою вітальню не лише диваном, а й
               кріслами. Існують набори з одним або двома кріслами, із прямими
@@ -102,29 +117,30 @@ export const BlogPost = () => {
             </p>
           </li>
         </ul>
-        <p className="text-black text-base mb-10">
+        <p className='text-black text-base mb-10'>
           Підбір м'яких меблів для вітальні – це заняття непросте. Однак при
           виборі та покупці меблів для своєї вітальні пам'ятайте, що якісні
           м'які меблі повинні бути не тільки красивими, але й зручними для вас і
           всіх мешканців вашого будинку.
         </p>
-        <div className="flex flex-col gap-10 desktop:gap-0 items-center desktop:justify-between desktop:flex-row ">
+        <div
+          className='flex flex-col gap-10 desktop:gap-0 items-center desktop:justify-between
+            desktop:flex-row'>
           <Button
             onClick={() => handelNavigation(currentBlog - 1)}
-            className="font-semibold  !w-[300px]"
-          >
-            <Icon name="arrow-1" className="rotate-[225deg] fill-white" />
+            buttonClassName='font-semibold  !w-[300px] '
+            iconClassName='rotate-[225deg] fill-white !size-6'>
             Попередня стаття
           </Button>
+
           <Button
             onClick={() => handelNavigation(currentBlog + 1)}
-            className=" font-semibold  !w-[300px]"
-          >
+            buttonClassName='font-semibold  !w-[300px] '
+            iconClassName='rotate-45 fill-white !size-6'>
             Наступна стаття
-            <Icon name="arrow-1" className="rotate-45 fill-white" />
           </Button>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

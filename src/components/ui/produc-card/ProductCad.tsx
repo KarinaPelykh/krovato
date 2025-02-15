@@ -47,7 +47,7 @@ export const ProductCard = ({
     <p className='mb-2.5 text-m desktop:text-xs'>{size}</p>
     <p
       className={clsx(
-        'mb-2.5 text-black text-xl',
+        'mb-2.5 text-xl',
         subTitleClassName && subTitleClassName
       )}>
       {subTitle}
@@ -57,26 +57,24 @@ export const ProductCard = ({
       {isAvailable}
     </p>
     <div className='flex items-center justify-between'>
-      <p className='flex flex-col text-xl text-black'>
+      <p className='flex flex-col text-xl'>
         <span className='inline-block text-red text-m line-through desktop:hidden'>
           {costsWithoutSale}
         </span>
         {costs}
       </p>
       <div className='flex gap-2.5'>
-        <Button className='!bg-transparent !p-0'>
-          <Icon
-            className={clsx('size-[70px]', iconClassName && iconClassName)}
-            name='obrane'
-          />
-        </Button>
+        <Button
+          buttonClassName='!bg-transparent !p-0'
+          iconName='obrane'
+          iconClassName={clsx('!size-[70px]', iconClassName && iconClassName)}
+        />
 
-        <Button className='!bg-transparent !p-0'>
-          <Icon
-            className={clsx('size-[70px]', iconClassName && iconClassName)}
-            name='korzina'
-          />
-        </Button>
+        <Button
+          buttonClassName='!bg-transparent !p-0'
+          iconName='korzina'
+          iconClassName={clsx('!size-[70px]', iconClassName && iconClassName)}
+        />
       </div>
     </div>
   </li>

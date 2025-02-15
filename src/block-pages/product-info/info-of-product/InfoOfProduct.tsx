@@ -50,11 +50,9 @@ export const InfoOfProduct = () => (
             <p className='text-red text-ms font-semibold line-through desktop:mr-auto'>
               25 400 грн
             </p>
-            <Button className='hidden desktop:flex !bg-transparent !w-fit p-0 !text-gray font-semibold'>
-              <Icon
-                name='liked'
-                className='size-[50px]'
-              />
+            <Button
+              buttonClassName='hidden desktop:flex !bg-transparent !w-fit p-0 !text-gray font-semibold'
+              iconName='liked'>
               В обране
             </Button>
           </div>
@@ -66,14 +64,15 @@ export const InfoOfProduct = () => (
         </div>
 
         <div className='flex justify-between py-2.5 px-5'>
-          <Button className='!bg-transparent !w-fit !text-gray-light'>
-            <Icon
-              className='size-[30px] mr-5'
-              name='call'
-            />
+          <Button
+            buttonClassName='!bg-transparent !flex-row-reverse  !w-fit !text-gray-light'
+            iconClassName='!size-[30px] mr-5'
+            iconName='call'>
             +380 -- --- -- --
           </Button>
-          <Button className='!bg-transparent !border-2 !border-gray h-[50px] !w-[212px] !text-gray'>
+          <Button
+            buttonClassName='!bg-transparent  !border-2 !border-gray h-[50px] !w-[212px] !text-gray'
+            iconClassName='hidden'>
             Купити в 1 клік
           </Button>
         </div>

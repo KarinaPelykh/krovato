@@ -1,4 +1,4 @@
-import { Button, Icon } from '../ui'
+import { Button } from '../ui'
 import { Headings } from '../ui/Headings'
 
 export const ProductsSection = () => (
@@ -34,12 +34,12 @@ export const ProductsSection = () => (
           </li>
         ))}
       </ul>
-      <Button className='font-semibold mx-auto !w-fit !bg-transparent text-yellow'>
+
+      <Button
+        buttonClassName='font-semibold mx-auto !w-fit !bg-transparent text-yellow'
+        iconClassName='!size-6 ml-2.5'
+        iconName='double-up'>
         Приховати підкатегорії
-        <Icon
-          name='double-up'
-          className='ml-2.5'
-        />
       </Button>
     </div>
   </section>

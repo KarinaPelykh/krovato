@@ -31,15 +31,17 @@ export const ReviewsSection = () => {
           <div
             className='flex gap-2.5 flex-col items-center tablet:flex-row tablet:justify-center
               desktop:justify-start'>
-            <Button className='tablet:mr-[30px] !w-fit gap-0 whitespace-nowrap'>
-              <Icon
-                className='mr-[17px]'
-                name='add'
-              />
+            <Button
+              buttonClassName='tablet:mr-[30px] !w-fit gap-0 whitespace-nowrap'
+              iconName='add'
+              iconClassName='mr-[17px] !size-6'>
               {t('writeReview')}
             </Button>
-            <Button className='!bg-transparent !p-0 !w-fit !text-gray whitespace-nowrap'>
-              <Icon name='chat' />
+
+            <Button
+              buttonClassName='!bg-transparent !p-0 !w-fit !text-gray whitespace-nowrap'
+              iconName='chat'
+              iconClassName=' !size-6'>
               {t('allReviews')}
             </Button>
           </div>

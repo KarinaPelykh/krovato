@@ -1,4 +1,4 @@
-import { Icon, Button } from '../../ui'
+import { Button } from '../../ui'
 
 const data = ['poisk', 'favorite', 'basket']
 
@@ -17,13 +17,10 @@ export const ButtonsControls = ({
         key={i}
         className='desktop:first:hidden'>
         <Button
-          className='!bg-transparent !p-0'
-          onClick={icon === 'poisk' ? onClick : undefined}>
-          <Icon
-            className='size-[50px]'
-            name={isOpenCatalog && icon === 'poisk' ? 'close-1' : icon}
-          />
-        </Button>
+          onClick={icon === 'poisk' ? onClick : undefined}
+          buttonClassName='!bg-transparent !p-0'
+          iconName={isOpenCatalog && icon === 'poisk' ? 'close-1' : icon}
+        />
       </li>
     ))}
   </ul>

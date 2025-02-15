@@ -1,5 +1,5 @@
 import { SaleSlider } from './SaleSlider'
-import { Button, Icon, Link } from '../../../components'
+import { Button, Link } from '../../../components'
 import { useTranslation } from 'react-i18next'
 import { Headings } from '../../../components/ui/Headings'
 
@@ -23,18 +23,15 @@ export const SaleSection = () => {
             </Link>
           </div>
           <div className='hidden desktop:flex'>
-            <Button className='mr-[30px] !bg-transparent'>
-              <Icon
-                className='size-[50px]'
-                name='arrow-left'
-              />
-            </Button>
-            <Button className='!bg-transparent'>
-              <Icon
-                className='size-[50px] rotate-180'
-                name='arrow-left'
-              />
-            </Button>
+            <Button
+              buttonClassName='mr-[30px] !bg-transparent'
+              iconName='arrow-left'
+            />
+            <Button
+              buttonClassName='!bg-transparent '
+              iconName='arrow-left'
+              iconClassName=' size-[50px] rotate-180'
+            />
           </div>
         </div>
         <SaleSlider />

@@ -1,5 +1,4 @@
 import { Button, Link } from '../../../components'
-import { Icon } from '../../../components/ui'
 import { Headings } from '../../../components/ui/Headings'
 import { ReviewForm } from './ReviewForm'
 import { ReviewList } from './ReviewList'
@@ -13,10 +12,12 @@ export const Reviews = () => (
           className='text-center desktop:text-start mb-5 desktop:mb-10'>
           Відгуки
         </Headings>
-
-        <Button className='mx-auto gap-[15px] mb-[60px] p-[13px] font-semibold desktop:hidden'>
+        <Button
+          buttonClassName='mx-auto gap-[15px] mb-[60px] p-[13px] font-semibold desktop:hidden '
+          iconClassName='hidden'>
           Залишити відгук
         </Button>
+
         <div className='mb-10'>
           <ul className='text-xs tablet:text-base flex gap-[30px] mb-5'>
             <Link iconClassName='hidden'>Всі відгуки</Link>
@@ -36,11 +37,11 @@ export const Reviews = () => (
           </div>
         </div>
         <ReviewList />
-        <Button className='mx-auto font-semibold desktop:w-[300px]'>
-          <Icon
-            name='reload'
-            className='size-6'
-          />
+
+        <Button
+          buttonClassName='mx-auto font-semibold desktop:w-[300px] '
+          iconName='reload'
+          iconClassName='!size-6'>
           Показати ще відгуки
         </Button>
       </div>
