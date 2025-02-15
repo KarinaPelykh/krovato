@@ -14,7 +14,6 @@ type ButtonProps = {
 
 export const Button = ({
   children,
-  // className,
   buttonClassName,
   iconName = 'arrow-1',
   iconClassName,
@@ -25,7 +24,6 @@ export const Button = ({
     className={clsx(
       `bg-yellow flex gap-[15px] p-[13px] justify-center w-full items-center text-white
       text-ms rounded-xs `,
-      // className && className,
       buttonClassName
     )}
     onClick={onClick}

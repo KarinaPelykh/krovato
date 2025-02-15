@@ -1,4 +1,5 @@
 import { Button } from '../../ui'
+import { Link } from '../../ui/Link'
 
 const data = ['poisk', 'favorite', 'basket']
 
@@ -14,13 +15,17 @@ export const ButtonsControls = ({
   <ul className='items-center flex gap-5'>
     {data.map((icon, i) => (
       <li
-        key={i}
-        className='desktop:first:hidden'>
-        <Button
-          onClick={icon === 'poisk' ? onClick : undefined}
-          buttonClassName='!bg-transparent !p-0'
-          iconName={isOpenCatalog && icon === 'poisk' ? 'close-1' : icon}
-        />
+        className='desktop:first:hidden'
+        key={i}>
+        <Link
+          to={icon === 'basket' ? '/purchase' : '/'}
+          iconClassName='hidden'>
+          <Button
+            onClick={icon === 'poisk' ? onClick : undefined}
+            buttonClassName='!bg-transparent !p-0'
+            iconName={isOpenCatalog && icon === 'poisk' ? 'close-1' : icon}
+          />
+        </Link>
       </li>
     ))}
   </ul>
