@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import { OurServicesList } from './OurServicesList'
 import { sizeWindow } from '../../../hook/sizeWIndow'
 import { useTranslation } from 'react-i18next'
-import { Button, Icon } from '../../../components'
+import { Button } from '../../../components'
 import { Headings } from '../../../components/ui/Headings'
 
 type OurAdvantagesSectionProps = {

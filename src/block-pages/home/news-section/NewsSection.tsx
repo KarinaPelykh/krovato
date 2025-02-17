@@ -1,6 +1,6 @@
 import { NewsList } from './NewsList'
 import { useTranslation } from 'react-i18next'
-import { Button, Icon, Link } from '../../../components'
+import { Button, Link } from '../../../components'
 import { Headings } from '../../../components/ui/Headings'
 
 export const NewsSection = () => {
