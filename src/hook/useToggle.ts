@@ -9,7 +9,5 @@ export const useToggle = () => {
 
   const toggle = () => setIsOpen(!isOpen)
 
-  // document.body.style.overflow = isOpen ? "hidden" : "auto";
-
   return { isOpen, toggle, open, close }
 }

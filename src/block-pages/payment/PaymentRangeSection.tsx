@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
-import { Icon } from '../../../components'
-import { Headings } from '../../../components/ui/Headings'
+import { Icon } from '../../components'
+import { Headings } from '../../components/ui/Headings'
 
 export const PaymentRangeSection = () => {
   const { t } = useTranslation('translation', {

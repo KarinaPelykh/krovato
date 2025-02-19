@@ -1,6 +1,6 @@
-import { ReviewForm } from '../../reviews/reviews/ReviewForm'
-import { Characteristic } from '../Characteristic'
-import { ProductReviews } from '../product-reviews/ProductReviews'
+import { ReviewForm } from '../reviews/reviews/ReviewForm'
+import { Characteristic } from './Characteristic'
+import { ProductReviews } from './product-reviews/ProductReviews'
 
 export const DescriptionProduct = () => (
   <section>

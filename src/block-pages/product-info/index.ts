@@ -1,4 +1,4 @@
-export * from "./AdvantageList";
+export * from './AdvantageList'
 
-export * from "./description-product/DescriptionProduct";
-export * from "./info-of-product/InfoOfProduct";
+export * from './DescriptionProduct'
+export * from './info-of-product/InfoOfProduct'

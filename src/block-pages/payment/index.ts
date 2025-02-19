@@ -1,3 +1,3 @@
-export * from "./payment-delivery-list/PaymentDeliveryList";
-export * from "./payment-info-section/PaymentInfoSection";
-export * from "./payment-range-section/PaymentRangeSection";
+export * from './PaymentDeliveryList'
+export * from './PaymentInfoSection'
+export * from './PaymentRangeSection'

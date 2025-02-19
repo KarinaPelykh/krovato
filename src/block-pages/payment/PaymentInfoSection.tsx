@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { InfoSection } from '../../../components/ui/info-section/InfoSection'
+import { InfoSection } from '../../components/ui/info-section/InfoSection'
 
 export const PaymentInfoSection = () => {
   const { t } = useTranslation('translation', {
