@@ -1,7 +1,13 @@
-@import url("swiper/css");
-@import url("swiper/css/pagination");
+/* @import url('swiper/css');
+@import url('swiper/css/pagination');
+@import url('swiper/css/navigation');
 
 .slider {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  height: 320px;
   .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
@@ -11,5 +17,86 @@
   .swiper-pagination-bullet-active {
     border: 2px solid #ffffff;
     background-color: #ffbc57;
+  }
+
+  .swiper-button-next {
+    background-color: #ffffff;
+    color: #ffbc57;
+    position: absolute;
+    top: -60px;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+  }
+  .swiper-button-prev {
+    background-color: #ffffff;
+    color: #ffbc57;
+    position: absolute;
+    top: -60px;
+    left: 88%;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+  }
+} */
+@import url('swiper/css');
+@import url('swiper/css/pagination');
+@import url('swiper/css/navigation');
+
+.sale-slider .slider {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  height: 320px;
+}
+.sale-slider .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #535353;
+  background-color: #f8f8f8;
+}
+
+.sale-slider .swiper-pagination-bullet-active {
+  border: 2px solid #ffffff;
+  background-color: #ffbc57;
+}
+
+.sale-slider .swiper-button-next {
+  background-color: #ffffff;
+  color: #ffbc57;
+  position: absolute;
+  top: -60px;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.sale-slider .swiper-button-prev {
+  background-color: #ffffff;
+  color: #ffbc57;
+  position: absolute;
+  top: -60px;
+  left: 88%;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.sale-slider .swiper-button-next:after,
+.sale-slider .swiper-button-prev:after {
+  font-size: 16px;
+}
+@media (min-width: 320px) and (max-width: 1440px) {
+  .sale-slider .swiper-button-next,
+  .sale-slider .swiper-button-prev {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .sale-slider .swiper-pagination {
+    display: none !important;
   }
 }
