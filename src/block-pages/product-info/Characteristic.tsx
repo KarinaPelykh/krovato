@@ -13,7 +13,7 @@ export const Characteristic = () => {
   ]
 
   return (
-    <div className='pb-17 desktop:pb-18 w-fit'>
+    <div className='pb-17 w-fit desktop:pb-18 desktop:w-full'>
       <p className='text-black font-semibold mb-10 text-1xl'>Характеристики</p>
       <ul className='flex flex-col gap-[5px]'>
         {characteristics.map(({ characteristic, size }, i) => (

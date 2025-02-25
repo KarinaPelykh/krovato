@@ -43,6 +43,7 @@ export const CardReview = ({ handleDisplayingForm }: CardReviewProps) => (
 
       <Button
         buttonClassName='!w-fit !bg-transparent !p-0 m-0 !text-gray'
+        iconClassName='!size-6'
         iconName='Like'>
         Корисний відгук:<span>0</span>
       </Button>

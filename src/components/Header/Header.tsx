@@ -1,4 +1,4 @@
-import { MainControls } from './main-controls/MainControls'
+import { MainControls } from './main-controls/modal-contact/MainControls'
 import { Nav } from './nav/Nav'
 import { CategoriesList } from './CategoriesList'
 import { SpecialOfferList } from './SpecialOfferList'
@@ -8,6 +8,7 @@ import clsx from 'clsx'
 export const Header = () => {
   const location = useLocation()
   const isHome = location.pathname === '/'
+
   return (
     <header className={clsx(isHome ? 'pb-[70px] ' : '')}>
       <Nav />

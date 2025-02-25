@@ -1,17 +1,16 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from 'react-router-dom'
 
-import { Layout } from "./components/Layout";
-import { routes } from "./routes";
-
+import { Layout } from './components/Layout'
+import { routes } from './routes'
 const App = () => {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: '/',
       element: <Layout />,
       errorElement: <div>sorry, now it is not working</div>,
-      children: routes,
-    },
-  ]);
-  return router;
-};
-export const routers = App();
+      children: routes
+    }
+  ])
+  return router
+}
+export const routers = App()

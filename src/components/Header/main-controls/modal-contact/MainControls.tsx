@@ -1,10 +1,10 @@
-import { Button, Logo } from '../../ui'
-import { ButtonsControls } from './ButtonsControls'
-import { Form } from './Form'
-import { Select } from './Select'
+import { Logo } from '../../../ui'
+import { ButtonsControls } from '../ButtonsControls'
+import { Form } from '../Form'
+import { ContactModal } from '../ContactModal'
 import { useState } from 'react'
-import { BurgerMenu } from '../BurgerMenu'
-import { CatalogMenu } from '../catalog-menu/CatalogMenu'
+import { BurgerMenu } from '../../BurgerMenu'
+import { CatalogMenu } from '../../catalog-menu/CatalogMenu'
 
 export const MainControls = () => {
   const [isOpenCatalog, setIsOpenCatalog] = useState(false)
@@ -24,10 +24,7 @@ export const MainControls = () => {
           className='!w-[215]'
         />
 
-        <Button
-          buttonClassName='desktop:hidden !bg-transparent !p-0'
-          iconName='tel'
-        />
+        <ContactModal divClassName='desktop:hidden' />
       </div>
       <div
         className='flex items-center py-[12px] border border-t-white-light border-b-0 border-x-0
@@ -44,7 +41,7 @@ export const MainControls = () => {
           </div>
         )}
 
-        <Select />
+        <ContactModal divClassName='hidden desktop:flex' />
 
         <ButtonsControls
           isOpenCatalog={isOpenCatalog}
