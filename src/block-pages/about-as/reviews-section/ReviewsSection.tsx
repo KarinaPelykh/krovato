@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Button, Icon } from '../../../components'
+import { Button, Icon, Link } from '../../../components'
 import { ReviewSvgList } from './RevievSvgList'
 import { ReviewSlider } from './ReviewSlider'
 import { Headings } from '../../../components/ui/Headings'
@@ -38,12 +38,13 @@ export const ReviewsSection = () => {
               {t('writeReview')}
             </Button>
 
-            <Button
-              buttonClassName='!bg-transparent !p-0 !w-fit !text-gray whitespace-nowrap'
+            <Link
+              linkClassName=' !text-gray whitespace-nowrap'
               iconName='chat'
-              iconClassName=' !size-6'>
+              iconClassName=' !size-6'
+              to='/reviews'>
               {t('allReviews')}
-            </Button>
+            </Link>
           </div>
         </div>
         <ReviewSlider />

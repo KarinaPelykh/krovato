@@ -1,6 +1,6 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { SwiperSlide } from 'swiper/react'
+import { Slider } from '../../../components/ui/Slider/Slider'
 import { Pagination, Navigation, Autoplay } from 'swiper/modules'
-import './slider.css'
 
 export const SaleSlider = () => {
   const images = [
@@ -12,25 +12,18 @@ export const SaleSlider = () => {
   const slides = new Array(2).fill(images).flat()
 
   return (
-    <div className='sale-slider'>
-      <Swiper
-        className='slider'
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false
-        }}
-        pagination={{ clickable: true }}
-        modules={[Pagination, Navigation, Autoplay]}
-        spaceBetween={30}
-        navigation={true}
-        breakpoints={{
+    <div className='reusable-slider'>
+      <Slider
+        modulesConfiguration={[Pagination, Navigation, Autoplay]}
+        breakpoint={{
           320: {
             slidesPerView: 1
           },
           1440: {
             slidesPerView: 3
           }
-        }}>
+        }}
+        sliderClassName='h-80'>
         <ul className='flex'>
           {slides.map((img, i) => (
             <SwiperSlide key={i}>
@@ -44,7 +37,7 @@ export const SaleSlider = () => {
             </SwiperSlide>
           ))}
         </ul>
-      </Swiper>
+      </Slider>
     </div>
   )
 }

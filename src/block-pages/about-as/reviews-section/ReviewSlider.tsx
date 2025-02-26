@@ -1,7 +1,10 @@
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation, Pagination, Scrollbar } from 'swiper/modules'
 import { useTranslation } from 'react-i18next'
+
 import { Card } from '../../../components/ui/Card/Card'
+import { Slider } from '../../../components/ui/Slider/Slider'
+
 import './reviews-slider.css'
 
 export const ReviewSlider = () => {
@@ -13,27 +16,19 @@ export const ReviewSlider = () => {
 
   return (
     <div className='w-full flex justify-center'>
-      <Swiper
-        navigation={true}
-        breakpoints={{
+      <Slider
+        sliderClassName='review'
+        paginationSetting={{ el: '.swiper-pagination', type: 'progressbar' }}
+        modulesConfiguration={[Autoplay, Navigation, Pagination, Scrollbar]}
+        breakpoint={{
           320: {
-            slidesPerView: 1,
-            spaceBetween: 20
+            slidesPerView: 1
           },
 
           1440: {
-            slidesPerView: 3,
-            spaceBetween: 130
+            slidesPerView: 3
           }
-        }}
-        pagination={{ el: '.swiper-pagination', type: 'progressbar' }}
-        className='review'
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false
-        }}
-        scrollbar={{ draggable: true }}
-        modules={[Autoplay, Navigation, Pagination, Scrollbar]}>
+        }}>
         <ul className='flex justify-center items-center desktop:justify-start'>
           {slides.map(i => (
             <SwiperSlide
@@ -53,7 +48,7 @@ export const ReviewSlider = () => {
             rounded-full z-20 left-[65px]'
         />
         <div className='swiper-pagination'></div>
-      </Swiper>
+      </Slider>
     </div>
   )
 }
