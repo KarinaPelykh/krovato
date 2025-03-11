@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Button, Icon, Link } from '../../../components'
+import {Icon, Link } from '../../../components'
 import { ReviewSvgList } from './RevievSvgList'
 import { ReviewSlider } from './ReviewSlider'
 import { Headings } from '../../../components/ui/Headings'
@@ -31,12 +31,13 @@ export const ReviewsSection = () => {
           <div
             className='flex gap-2.5 flex-col items-center tablet:flex-row tablet:justify-center
               desktop:justify-start'>
-            <Button
-              buttonClassName='tablet:mr-[30px] !w-fit gap-0 whitespace-nowrap'
-              iconName='add'
-              iconClassName='mr-[17px] !size-6'>
+<Link
+              linkClassName='tablet:mr-[30px] !w-fit !bg-yellow py-[13px] px-5 whitespace-nowrap rounded-lg !text-white'
+               iconName='add'
+              iconClassName='mr-[17px] !size-6'
+              to='/reviews'>
               {t('writeReview')}
-            </Button>
+            </Link>
 
             <Link
               linkClassName=' !text-gray whitespace-nowrap'

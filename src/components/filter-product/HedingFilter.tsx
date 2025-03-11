@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { Icon } from '../ui'
+import { Button } from '../ui'
 type HeadingFilterProps = {
   title: string
   wrapperClassName?: string
@@ -27,9 +27,11 @@ export const HeadingFilter = ({
       )}>
       {title}
     </span>
-    <Icon
-      className={clsx('mr-[15px]', iconClassName)}
-      name='close'
+    <Button
+      buttonClassName='!bg-transparent !p-0    gap-0  !w-fit  
+      text-ms rounded-xs'
+      iconName='close'
+      iconClassName={clsx(' !size-6', iconClassName)}
     />
   </div>
 )
