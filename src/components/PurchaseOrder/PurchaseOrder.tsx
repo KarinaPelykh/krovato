@@ -10,22 +10,21 @@ export const PurchaseOrder = () => (
     <div className='container'>
       <Headings
         as='h1'
-        className='mb-10'>
+        className='mb-[30px] desktop:mb-10'>
         Оформлення замовлення
       </Headings>
       <div className='desktop:flex desktop:justify-between'>
-        <div className='mr-[30px]'>
-          <div className='bg-white p-[27px] mb-[5px] rounded-lg'>
+        <div className=' mb-[60px] desktop:mr-[30px]'>
             <CustomerForm />
-          </div>
+     
           <DeliverySelection />
           <Payment />
           <div className='bg-white p-[27px] mb-[5px]'>
             <form>
-              <p className='mb-[30px] flex gap-[15px] text-lg items-center'>
+              <p className='mb-[30px] flex gap-[15px] text-xl  desktop:text-lg items-center'>
                 <Icon
                   name='comment'
-                  className='size-[60px]'
+                  className='!size-10 desktop:!size-[60px]'
                 />
                 Коментар до замовлення
               </p>

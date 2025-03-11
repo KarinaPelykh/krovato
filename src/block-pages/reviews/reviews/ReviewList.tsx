@@ -2,15 +2,15 @@ import { Card } from '../../../components/ui/Card/Card'
 
 export const ReviewList = () => (
   <ul className='flex flex-col items-center mb-[30px]'>
-    {[...Array(10)].map((_, i) => (
+    {[...Array(10)].map((_,index) => (
       <li
-        key={i}
+        key={index}
         className='mb-[30px]'>
         <Card
-          textClassName=' h-auto desktop:w-full'
+          textClassName='h-auto desktop:w-full'
           name='Іван Стедниця'
           product='Крісло для геймерів AEROCOOL EARL Steel Blue'
-          description='Покупали сыну игровое кресло в подарок. Качество супер, очень удобное и отлично поддерживает спину. В общем подарком более чем доволен) Отдельное спасибо магазину Мебельок за помощь в выборе кресла!'
+          description='Купували синові ігрове крісло в подарунок. Якість супер, дуже зручне і чудово підтримує спину. В цілому, подарунком більш ніж задоволені. Окреме спасибі магазину "Мебельок" за допомогу у виборі крісла!'
         />
       </li>
     ))}

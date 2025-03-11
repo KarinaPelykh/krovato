@@ -2,10 +2,10 @@ import { Icon } from '../ui'
 
 export const Payment = () => (
   <div className='bg-white p-[27px] mb-[5px]'>
-    <p className='mb-[30px] flex gap-[15px] text-lg items-center'>
+    <p className='mb-[30px] flex gap-[15px] text-xl  desktop:text-lg items-center'>
       <Icon
         name='pay'
-        className='size-[60px]'
+        className='!size-10 desktop:!size-[60px]'
       />
       Вибір способу оплати
     </p>

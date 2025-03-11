@@ -77,7 +77,7 @@ export const ReviewForm = ({ hiddenLogo }: ReviewFormProp) => {
         <input
           type='text'
           name='name'
-          value={name}
+          value={name} required
           placeholder="Ваше ім'я прізвище"
           onChange={handleName}
           className='bg-transparent border outline-none border-gray-light rounded-lg py-2.5 px-5
@@ -89,12 +89,13 @@ export const ReviewForm = ({ hiddenLogo }: ReviewFormProp) => {
           value={email}
           placeholder='E-mail'
           onChange={handleEmail}
+          required
           className='bg-transparent border outline-none border-gray-light rounded-lg py-2.5 px-5
             w-full mb-5 placeholder:text-gray'
         />
         <textarea
           name='text'
-          value={text}
+          value={text} required
           onChange={handelText}
           placeholder='Відгук'
           className='bg-transparent border outline-none border-gray-light rounded-lg py-2.5 px-5

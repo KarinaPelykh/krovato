@@ -3,13 +3,13 @@ import { Button, Icon } from '../ui'
 import { PurchaseList } from './PurchaseList'
 
 export const GroceryBasket = () => (
-  <div className='p-[30px] bg-white rounded-lg h-fit'>
-    <div>
+  <div className='desktop:p-[30px] desktop:bg-white desktop:rounded-lg h-fit'>
+  
       <p className='text-lg mb-10'>
         Ваш кошик <span className='text-yellow'>4</span>
       </p>
       <PurchaseList />
-    </div>
+
     <div
       className='flex justify-between py-[30px] border border-x-0 border-t-0 border-b-gray
         items-center bg-white'>

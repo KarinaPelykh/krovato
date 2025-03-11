@@ -1,11 +1,11 @@
 import { Icon } from '../ui'
 
 export const CustomerForm = () => (
-  <form>
-    <p className='mb-[30px] flex gap-[15px] text-lg items-center'>
+  <form className='bg-white p-[30px]  desktop:p-[27px] mb-[5px] rounded-lg'>
+    <p className='mb-[30px] flex gap-[15px] text-xl desktop:text-lg items-center'>
       <Icon
         name='info'
-        className='size-[60px]'
+        className='!size-10 desktop:!size-[60px]'
       />
       Інформація про покупця
     </p>

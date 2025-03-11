@@ -8,9 +8,9 @@ export const PurchaseList = () => (
         border-t-0 border-b-gray-light'>
       <div>
         <img
-          className='w-[120px] h-[100px ] mb-[15px]'
+          className='w-[120px] h-[100px] mb-[15px]'
           src='/sofa.png'
-          alt=' sofa product in  basket'
+          alt='sofa product in  basket'
           width={120}
           height={100}
         />
@@ -31,7 +31,7 @@ export const PurchaseList = () => (
         </div>
       </div>
       <div className='flex flex-col'>
-        <p className='text-gray mb-1'>Розмір: 61 x 184 x 2130 мм</p>
+        <p className=' text-xs desktop:text-gray mb-1'>Розмір: 61 x 184 x 2130 мм</p>
         <Headings
           as='h3'
           className='!text-ms mb-1 !font-semibold'>
