@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const instance = axios.create({
+export const instance = axios.create({
   baseURL: 'https://krovato-backend.onrender.com/api'
 })
 // categories
@@ -22,10 +22,10 @@ export const getBlogs = async () => {
 }
 //product
 
-export const getProduct = async () => {
-  const { data } = await instance.get('/products')
-  return data
-}
+// export const getProduct = async () => {
+//   const { data } = await instance.get('/products')
+//   return data
+// }
 //review
 export const getReviews = async () => {
   const { data } = await instance.get('/reviews')

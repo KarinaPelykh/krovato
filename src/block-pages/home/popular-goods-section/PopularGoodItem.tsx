@@ -1,23 +1,36 @@
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 
 import { ProductCard } from '../../../components/ui/produc-card/ProductCad'
 
-type PopularGoodItemProps = {
-  index: number
+type Product = {
+  image: string
+  isAvailable: string
+  price: string
+  sale: string
+  size: string
+  title: string
+  _id: string
 }
 
-export const PopularGoodItem = ({ index }: PopularGoodItemProps) => {
-  const { t } = useTranslation('translation', {
-    keyPrefix: 'HomePage.popular-goods-section'
-  })
+type PopularGoodItemProps = {
+  index: number
+  products: Product
+}
+
+export const PopularGoodItem = ({ index, products }: PopularGoodItemProps) => {
+  const { image, isAvailable, price, sale, size, title } = products
+  // const { t } = useTranslation('translation', {
+  //   keyPrefix: 'HomePage.popular-goods-section'
+  // })
 
   return (
     <ProductCard
-      size={t('size')}
-      subTitle={t('subTitle')}
-      isAvailable={t('isAvailable')}
-      costsWithoutSale={t('costsWithoutSale')}
-      costs={t('costs')}
+      image={image}
+      size={size}
+      title={title}
+      isAvailable={isAvailable}
+      price={price}
+      sale={sale}
       index={index}
     />
   )

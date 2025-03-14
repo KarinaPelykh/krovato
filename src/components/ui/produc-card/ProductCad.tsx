@@ -4,11 +4,13 @@ import { Icon } from '../Icon'
 import { Link } from 'react-router-dom'
 
 type ProductCardProps = {
+  image: string
   size: string
-  subTitle: string
+  title: string
   isAvailable: string
-  costsWithoutSale: string
-  costs: string
+
+  sale: string | null
+  price: string
   itemClassName?: string
   imgClassName?: string
   iconClassName?: string
@@ -17,11 +19,12 @@ type ProductCardProps = {
 }
 
 export const ProductCard = ({
+  image,
   size,
-  subTitle,
+  title,
   isAvailable,
-  costsWithoutSale,
-  costs,
+  price,
+  sale,
   itemClassName,
   imgClassName,
   iconClassName,
@@ -35,7 +38,7 @@ export const ProductCard = ({
     )}>
     <Link to={`${index}`}>
       <img
-        src='/sofa.png'
+        src={image}
         alt='furniture'
         className={clsx(
           'w-[370px] h-[220px] desktop:w-full rounded-xs mb-5',
@@ -50,7 +53,7 @@ export const ProductCard = ({
         'mb-2.5 text-xl',
         subTitleClassName && subTitleClassName
       )}>
-      {subTitle}
+      {title}
     </p>
     <p className='mb-2.5 flex gap-[5px]'>
       <Icon name='check' />
@@ -59,9 +62,9 @@ export const ProductCard = ({
     <div className='flex items-center justify-between'>
       <p className='flex flex-col text-xl'>
         <span className='inline-block text-red text-m line-through desktop:hidden'>
-          {costsWithoutSale}
+          {price}
         </span>
-        {costs}
+        {sale}
       </p>
       <div className='flex gap-2.5'>
         <Button
