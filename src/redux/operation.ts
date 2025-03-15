@@ -9,6 +9,7 @@ export const getCategoryOfProduct = createAsyncThunk(
       const { data } = await instance.get('/categories')
 
       return data
+      console.log(rejectWithValue)
     } catch (error) {}
   }
 )
@@ -19,6 +20,8 @@ export const getProduct = createAsyncThunk(
       const { data } = await instance.get('/products')
 
       return data
-    } catch (error) {}
+    } catch (error) {
+      console.log(rejectWithValue)
+    }
   }
 )

@@ -15,7 +15,7 @@ type ProductCardProps = {
   imgClassName?: string
   iconClassName?: string
   subTitleClassName?: string
-  index: string
+  index?: string
 }
 
 export const ProductCard = ({
