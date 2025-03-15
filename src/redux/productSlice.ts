@@ -1,7 +1,21 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { getProduct } from './operation'
 
-const initialState = {
+export type Product = {
+  _id: string
+  image: string
+  size: string
+  title: string
+  isAvailable: string
+  price: string
+  sale: string
+}
+
+export interface productState {
+  product: Product[]
+}
+
+const initialState: productState = {
   product: []
 }
 

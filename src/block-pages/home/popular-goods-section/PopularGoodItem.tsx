@@ -13,7 +13,7 @@ type Product = {
 }
 
 type PopularGoodItemProps = {
-  index: number
+  index: string
   products: Product
 }
 

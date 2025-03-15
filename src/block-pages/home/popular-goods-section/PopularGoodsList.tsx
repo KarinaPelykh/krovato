@@ -7,8 +7,6 @@ import { productSelector } from '../../../redux/selector'
 import { getProduct } from '../../../redux/operation'
 
 export const PopularGoodList = () => {
-  // const list = [...Array(8)]
-
   const { t } = useTranslation('translation', {
     keyPrefix: 'HomePage.popular-goods-section'
   })
@@ -27,15 +25,15 @@ export const PopularGoodList = () => {
       <ul
         className='grid justify-center mb-[30px] desktop:mb-0 tablet:grid-cols-2 gap-3
           desktop:grid-rows-2 desktop:grid-cols-4 desktop:gap-[30px]'>
-        {products.map(products => (
+        {products.slice(0, 8).map(product => (
           <Link
-            to={`product/${products._id}`}
+            to={`product/${product._id}`}
             linkClassName='!text-black gap-0 items-center flex'
             iconClassName='hidden'>
             <PopularGoodItem
-              key={products._id}
-              index={products._id}
-              products={products}
+              key={product._id}
+              index={product._id}
+              products={product}
             />
           </Link>
         ))}
