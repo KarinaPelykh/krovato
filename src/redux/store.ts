@@ -25,7 +25,6 @@ import { productReducer } from './productSlice'
 // export type AppDispatch = typeof store.dispatch
 
 import {
-  persistStore,
   persistReducer,
   FLUSH,
   REHYDRATE,

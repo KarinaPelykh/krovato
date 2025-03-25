@@ -27,8 +27,7 @@ export const ProductCard = ({
   itemClassName,
   imgClassName,
   iconClassName,
-  subTitleClassName,
-  index
+  subTitleClassName
 }: ProductCardProps) => {
   return (
     <li
