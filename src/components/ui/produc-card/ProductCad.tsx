@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 import { Button } from '../Button'
 import { Icon } from '../Icon'
-import { Link } from 'react-router-dom'
 
 type ProductCardProps = {
   image?: string
@@ -38,16 +37,16 @@ export const ProductCard = ({
         flex flex-col justify-between`,
         itemClassName && itemClassName
       )}>
-      <Link to={`${index}`}>
-        <img
-          src={image}
-          alt='furniture'
-          className={clsx(
-            'w-[370px] h-[220px] desktop:w-full rounded-xs mb-5',
-            imgClassName && imgClassName
-          )}
-        />
-      </Link>
+      {/* <Link to={`${index}`}> */}
+      <img
+        src={image}
+        alt='furniture'
+        className={clsx(
+          'w-[370px] h-[220px] desktop:w-full rounded-xs mb-5',
+          imgClassName && imgClassName
+        )}
+      />
+      {/* </Link> */}
 
       <p className='text-m desktop:text-xs'>{size}</p>
       <p className={clsx(' text-xl', subTitleClassName && subTitleClassName)}>

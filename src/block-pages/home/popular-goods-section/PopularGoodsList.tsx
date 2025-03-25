@@ -12,13 +12,12 @@ export const PopularGoodList = () => {
   })
 
   const products = useAppSelector(productSelector)
-  console.log(products)
 
   const dispatch = useAppDispatch()
 
   useEffect(() => {
     dispatch(getProduct())
-  }, [])
+  }, [dispatch])
 
   return (
     <>
@@ -27,7 +26,7 @@ export const PopularGoodList = () => {
           desktop:grid-rows-2 desktop:grid-cols-4 desktop:gap-[30px]'>
         {products.slice(0, 8).map(product => (
           <Link
-            to={`product/${product._id}`}
+            to='/'
             linkClassName='!text-black gap-0 items-center flex'
             iconClassName='hidden'>
             <PopularGoodItem

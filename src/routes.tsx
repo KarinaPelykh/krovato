@@ -21,7 +21,7 @@ const routerInformation = [
   { path: 'delivery', element: <DeliveryPage /> },
   { path: 'reviews', element: <ReviewsPage /> },
   { path: 'contact', element: <ContactPage /> },
-  { path: 'product', element: <ProductPage /> },
+  { path: 'product/category/:id', element: <ProductPage /> },
   { path: 'product/:id', element: <ProductInfo /> },
   { path: '/purchase', element: <UserBasket /> }
 ]

@@ -11,19 +11,21 @@ export const PopularCategoriesList = () => {
 
   useEffect(() => {
     dispatch(getCategoryOfProduct())
-  }, [])
+  }, [dispatch])
 
   return (
     <ul
       className='grid justify-center grid-cols-2 tablet:grid-cols-3 gap-3 desktop:grid-rows-2
         desktop:grid-cols-5 desktop:gap-x-2.5 desktop:gap-y-6'>
       {categories.map(({ _id, quantity, image, title }) => (
-        <CategoryItem
-          key={_id}
-          quantity={quantity}
-          image={image}
-          title={title}
-        />
+        <li key={_id}>
+          <CategoryItem
+            quantity={quantity}
+            image={image}
+            title={title}
+            id={_id}
+          />
+        </li>
       ))}
     </ul>
   )

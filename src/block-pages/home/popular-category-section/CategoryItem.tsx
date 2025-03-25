@@ -1,20 +1,26 @@
 // import { useTranslation } from 'react-i18next'
-import { Link, Icon } from '../../../components'
+import { Icon, Link } from '../../../components'
 type CategoryItemProps = {
   quantity: string
   image: string
   title: string
+  id: string
 }
-export const CategoryItem = ({ quantity, image, title }: CategoryItemProps) => {
+export const CategoryItem = ({
+  quantity,
+  image,
+  title,
+  id
+}: CategoryItemProps) => {
   // const { t } = useTranslation('translation', {
   //   keyPrefix: 'HomePage.categories-section'
   // })
 
   return (
     <Link
-      to='product'
+      to={`product/category/${id}`}
       iconClassName='hidden'>
-      <li
+      <div
         className='relative bg-white w-full mobile:w-[180px] h-60 desktop:w-[250px]
           desktop:h-[300px] rounded-xs shadow-xl'>
         <div className='flex justify-between items-center desktop:mb-[60px] p-[15px] desktop:p-5'>
@@ -33,7 +39,7 @@ export const CategoryItem = ({ quantity, image, title }: CategoryItemProps) => {
           className='size-[50px] absolute right-5 bottom-5'
           name='arrow'
         />
-      </li>
+      </div>
     </Link>
   )
 }

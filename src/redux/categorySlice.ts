@@ -6,6 +6,7 @@ type Categories = {
   quantity: string
   image: string
   title: string
+  product: []
 }
 
 export interface categoryState {
