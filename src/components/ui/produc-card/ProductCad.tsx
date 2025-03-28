@@ -15,6 +15,8 @@ type ProductCardProps = {
   iconClassName?: string
   subTitleClassName?: string
   index?: string
+  id?: string
+  addToBasket: (id: string) => void
 }
 
 export const ProductCard = ({
@@ -27,7 +29,9 @@ export const ProductCard = ({
   itemClassName,
   imgClassName,
   iconClassName,
-  subTitleClassName
+  subTitleClassName,
+  id,
+  addToBasket
 }: ProductCardProps) => {
   return (
     <li
@@ -70,6 +74,7 @@ export const ProductCard = ({
           />
 
           <Button
+            onClick={() => addToBasket(id)}
             buttonClassName='!bg-transparent !p-0'
             iconName='korzina'
             iconClassName={clsx(iconClassName && iconClassName)}

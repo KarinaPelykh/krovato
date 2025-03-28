@@ -2,28 +2,6 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import { categoryReducer } from './categorySlice'
 import { productReducer } from './productSlice'
 
-// import { persistReducer } from 'redux-persist'
-// import storage from 'redux-persist/lib/storage'
-
-// const persistConfig = {
-//   key: 'root',
-//   storage
-// }
-
-// const reducer = combineReducers({
-//   category: categoryReducer,
-//   product: productReducer
-// })
-
-// const persistedReducer = persistReducer(persistConfig, reducer)
-
-// export const store = configureStore({
-//   reducer: persistedReducer
-// })
-
-// export type RootState = ReturnType<typeof store.getState>
-// export type AppDispatch = typeof store.dispatch
-
 import {
   persistReducer,
   FLUSH,
@@ -34,6 +12,7 @@ import {
   REGISTER
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
+import { basketReducer } from './basketSlice'
 
 const persistConfig = {
   key: 'root',
@@ -43,7 +22,8 @@ const persistConfig = {
 
 const reducer = combineReducers({
   category: categoryReducer,
-  product: productReducer
+  product: productReducer,
+  basket: basketReducer
 })
 
 const persistedReducer = persistReducer(persistConfig, reducer)
