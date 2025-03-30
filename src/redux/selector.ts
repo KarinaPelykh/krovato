@@ -11,3 +11,7 @@ export const productSelector = (state: { product: ArrayOfProduct }) =>
 
 export const basketSelector = (state: { basket: ArrayOfProduct }) =>
   state.basket.product
+/// product added to  favorite
+
+export const favoriteSelector = (state: { product: ArrayOfProduct }) =>
+  state.product.favorite

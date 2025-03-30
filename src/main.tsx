@@ -5,14 +5,17 @@ import './i18next.ts'
 import './stylesheet/fonts.css'
 import { RouterProvider } from 'react-router-dom'
 import { routers } from './App.tsx'
-import { store } from './redux/store.ts'
+import { store, persistor } from './redux/store.ts'
 import { Provider } from 'react-redux'
 import { ToastContainer } from 'react-toastify'
+import { PersistGate } from 'redux-persist/integration/react'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
-      <RouterProvider router={routers} />
-      <ToastContainer />
+      <PersistGate persistor={persistor}>
+        <RouterProvider router={routers} />
+        <ToastContainer />
+      </PersistGate>
     </Provider>
   </StrictMode>
 )

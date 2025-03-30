@@ -3,8 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { FreeMode, Autoplay, Navigation, Thumbs } from 'swiper/modules'
 import { Swiper as TypeSwiper } from 'swiper'
 import clsx from 'clsx'
+type ProductSliderProps = {
+  image: string
+}
 
-export const ProductSlider = () => {
+export const ProductSlider = ({ image }: ProductSliderProps) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<TypeSwiper | null>(null)
 
   return (
@@ -25,7 +28,7 @@ export const ProductSlider = () => {
             <SwiperSlide key={i}>
               <img
                 className='desktop:w-[630px] desktop:h-[538px]'
-                src='/product-slider/img-main.png'
+                src={image}
               />
             </SwiperSlide>
           ))}
@@ -42,7 +45,7 @@ export const ProductSlider = () => {
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}>
         <ul>
-          {[...Array(10)].map((_, i) => (
+          {[...Array(20)].map((_, i) => (
             <SwiperSlide key={i}>
               {({ isActive }) => (
                 <img
@@ -50,7 +53,7 @@ export const ProductSlider = () => {
                     ' size-[50px] desktop:size-[100px] rounded-lg border border-gray-light',
                     isActive && 'border-[3px] border-yellow'
                   )}
-                  src='/product-slider/img-main.png'
+                  src={image}
                 />
               )}
             </SwiperSlide>

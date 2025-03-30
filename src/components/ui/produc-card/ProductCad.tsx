@@ -1,38 +1,81 @@
 import clsx from 'clsx'
 import { Button } from '../Button'
 import { Icon } from '../Icon'
+import { Link } from '../Link'
+import { useAppDispatch, useAppSelector } from '../../../hook/hooks'
+import { productSelector } from '../../../redux/selector'
+import {
+  addProductInFavoriteThunk,
+  addProductToBasketThunk
+} from '../../../redux/operation'
+import { Product } from '../../../redux/type'
+import { toast } from 'react-toastify'
 
 type ProductCardProps = {
-  image?: string
-  size: string
-  title: string
-  isAvailable: string
+  product: Product
 
-  sale: string | null
-  price: string
   itemClassName?: string
   imgClassName?: string
   iconClassName?: string
   subTitleClassName?: string
-  index?: string
-  id?: string
-  addToBasket: (id: string) => void
 }
 
 export const ProductCard = ({
-  image,
-  size,
-  title,
-  isAvailable,
-  price,
-  sale,
+  product,
   itemClassName,
   imgClassName,
   iconClassName,
-  subTitleClassName,
-  id,
-  addToBasket
+  subTitleClassName
 }: ProductCardProps) => {
+  const { image, size, title, isAvailable, sale, price, _id } = product
+
+  const productsAll = useAppSelector(productSelector)
+
+  const dispatch = useAppDispatch()
+
+  const findProductById = productsAll?.find(product => product._id === _id)
+
+  const addToBasket = () => {
+    if (!findProductById) {
+      return
+    }
+
+    dispatch(addProductToBasketThunk(findProductById))
+      .then(() =>
+        toast.success(`Add Product to basket`, {
+          position: 'top-right',
+          hideProgressBar: true,
+          theme: 'dark'
+        })
+      )
+      .catch(error =>
+        toast.error(`${error.message}`, {
+          position: 'top-right',
+          hideProgressBar: true,
+          theme: 'dark'
+        })
+      )
+  }
+
+  const addToFavorite = () => {
+    if (!findProductById) return
+    dispatch(addProductInFavoriteThunk(findProductById))
+      .then(() =>
+        toast.success(`Add Product to favorite`, {
+          position: 'top-right',
+          hideProgressBar: true,
+          theme: 'dark'
+        })
+      )
+      .catch(error =>
+        toast.error(`${error.message}`, {
+          position: 'top-right',
+          hideProgressBar: true,
+          theme: 'dark'
+        })
+      )
+  }
+
   return (
     <li
       className={clsx(
@@ -40,16 +83,17 @@ export const ProductCard = ({
         flex flex-col justify-between`,
         itemClassName && itemClassName
       )}>
-      {/* <Link to={`${index}`}> */}
-      <img
-        src={image}
-        alt='furniture'
-        className={clsx(
-          'w-[370px] h-[220px] desktop:w-full rounded-xs mb-5',
-          imgClassName && imgClassName
-        )}
-      />
-      {/* </Link> */}
+      <Link to={`/product/${_id}`}>
+        <img
+          src={image}
+          alt='furniture'
+          className={clsx(
+            `w-[370px] h-[220px] desktop:w-full rounded-xs mb-5 cursor-pointer
+            hover:shadow-4xl`,
+            imgClassName && imgClassName
+          )}
+        />
+      </Link>
 
       <p className='text-m desktop:text-xs'>{size}</p>
       <p className={clsx(' text-xl', subTitleClassName && subTitleClassName)}>
@@ -68,16 +112,19 @@ export const ProductCard = ({
         </p>
         <div className='flex gap-2.5'>
           <Button
-            buttonClassName='!bg-transparent !p-0'
-            iconName='obrane'
-            iconClassName={clsx(iconClassName && iconClassName)}
+            onClick={addToFavorite}
+            variant='secondary'
+            iconName='like'
+            buttonClassName='bg-white-light active:hover:shadow-1xl'
+            iconClassName={clsx(iconClassName, 'fill-gray-light')}
           />
 
           <Button
-            onClick={() => addToBasket(id)}
-            buttonClassName='!bg-transparent !p-0'
+            onClick={addToBasket}
+            variant='secondary'
+            buttonClassName='bg-yellow hover:!shadow-1xl active:hover:shadow-5xl'
             iconName='korzina'
-            iconClassName={clsx(iconClassName && iconClassName)}
+            iconClassName={clsx(iconClassName, 'fill-white')}
           />
         </div>
       </div>

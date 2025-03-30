@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       padding: { '13': '50px', '17': '60px', '18': '70px' },
       boxShadow: {
-        '1xl': '-3px 4px 15px 0 rgba(0,0,0,0.6)'
+        '1xl': '-3px 4px 15px 0 rgba(0,0,0,0.6)',
+        '4xl': ' 2px 15px 63px -6px rgba(255,188,87,1);',
+        '5xl': '0px 5px 15px 5px  rgba(255,188,87,1);'
       },
       screens: {
         mobile: '410px',

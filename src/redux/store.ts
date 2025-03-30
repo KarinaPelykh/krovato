@@ -9,7 +9,8 @@ import {
   PAUSE,
   PERSIST,
   PURGE,
-  REGISTER
+  REGISTER,
+  persistStore
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import { basketReducer } from './basketSlice'
@@ -20,13 +21,13 @@ const persistConfig = {
   storage
 }
 
-const reducer = combineReducers({
+const rootReducer = combineReducers({
   category: categoryReducer,
   product: productReducer,
   basket: basketReducer
 })
 
-const persistedReducer = persistReducer(persistConfig, reducer)
+const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 export const store = configureStore({
   reducer: persistedReducer,
@@ -39,3 +40,4 @@ export const store = configureStore({
 })
 export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch
+export const persistor = persistStore(store)

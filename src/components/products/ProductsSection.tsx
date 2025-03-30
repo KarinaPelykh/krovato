@@ -13,7 +13,7 @@ export const ProductsSection = () => {
 
   const categories = useAppSelector(categoriesSelector)
 
-  const filterByID = categories.filter(category => category._id === id)
+  const filterByID = categories.find(category => category._id === id)
 
   return (
     <section className='desktop:pb-18 relative'>
@@ -21,16 +21,16 @@ export const ProductsSection = () => {
         <Headings
           as='h1'
           className='mb-10 flex items-center'>
-          Ліжка
+          {filterByID?.title}
           <span className='ml-2.5 text-gray-light text-ms font-semibold'>
-            1 147 товарів
+            {filterByID?.product.length} товарів
           </span>
         </Headings>
         <div className={clsx(isHidden && 'h-[150px] overflow-hidden')}>
           <ul
             className='grid justify-center grid-cols-2 grid-rows-5 gap-2.5 desktop:grid-cols-5
               desktop:grid-rows-2'>
-            {filterByID[0].product.map(({ _id, title, image }) => (
+            {filterByID?.product.map(({ _id, title, image }) => (
               <li
                 className='p-5 relative bg-white rounded-lg min-h-[130px] tablet:w-60 tablet:h-[180px]'
                 key={_id}>

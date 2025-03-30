@@ -5,9 +5,10 @@ export interface Product {
   title: string
   isAvailable: string
   price: string
-  sale: string
+  sale: string | null
 }
 
 export type ArrayOfProduct = {
   product: Product[]
+  favorite?: Product[]
 }
