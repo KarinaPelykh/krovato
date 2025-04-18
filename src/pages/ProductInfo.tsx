@@ -4,7 +4,7 @@ import {
   DescriptionProduct,
   InfoOfProduct
 } from '../block-pages/product-info'
-import { AdditionProduct } from '../components/ui/addition-products/AdditionProduct'
+import { AdditionProduct } from '../components/addition-products/AdditionProduct'
 
 export const ProductInfo = () => {
   const { id } = useParams()

@@ -2,13 +2,14 @@ import { useTranslation } from 'react-i18next'
 import { useEffect } from 'react'
 
 import { Button } from '../../../components'
-import { ProductCard } from '../../../components/ui/produc-card/ProductCad'
 
 import { useAppDispatch, useAppSelector } from '../../../hook/hooks'
 
 import { productSelector } from '../../../redux/selector'
 import { getProduct } from '../../../redux/operation'
 import clsx from 'clsx'
+
+import { PopularProductItem } from './PopularProductItem'
 
 export const PopularGoodList = () => {
   const { t } = useTranslation('translation', {
@@ -31,7 +32,7 @@ export const PopularGoodList = () => {
           desktop:grid-rows-2 desktop:grid-cols-4 desktop:gap-[30px]`
         )}>
         {products.slice(0, 8).map(product => (
-          <ProductCard
+          <PopularProductItem
             key={product._id}
             product={product}
           />

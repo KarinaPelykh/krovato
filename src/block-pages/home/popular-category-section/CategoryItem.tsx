@@ -1,4 +1,3 @@
-// import { useTranslation } from 'react-i18next'
 import { Icon, Link } from '../../../components'
 type CategoryItemProps = {
   quantity: string
@@ -12,10 +11,6 @@ export const CategoryItem = ({
   title,
   id
 }: CategoryItemProps) => {
-  // const { t } = useTranslation('translation', {
-  //   keyPrefix: 'HomePage.categories-section'
-  // })
-
   return (
     <Link
       to={`product/category/${id}`}
