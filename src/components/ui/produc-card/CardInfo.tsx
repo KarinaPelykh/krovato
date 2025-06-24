@@ -16,18 +16,18 @@ export const CardInfo = ({
 }: CardInfoProps) => {
   return (
     <>
-      <p className='text-m desktop:text-xs'>{size}</p>
+      <p className='text-m mb-2.5 desktop:text-xs text-gray'>{size}</p>
       <p
         className={clsx(
-          ' text-xl',
+          ' text-xl mb-2.5',
           isAltView && 'text-ms font-semibold w-0 min-w-[260px]'
         )}>
         {title}
       </p>
-      <p className='flex gap-[5px]'>
+      <div className='flex items-center gap-[5px] mb-5 text-[13px] font-light'>
         <Icon name='check' />
         {isAvailable}
-      </p>
+      </div>
     </>
   )
 }

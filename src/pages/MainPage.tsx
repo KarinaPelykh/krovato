@@ -1,18 +1,20 @@
 import {
-  CategoriesSection,
   NewsSection,
   OurAdvantagesSection,
-  PopularGoodsSection,
   ReviewsSection,
-  SaleSection,
-} from "../block-pages/home";
+  SaleSection
+} from '../block-pages/home'
+
+import { PopularCategories } from '../block/home/popular-category/PopularCategories'
+import { PopularGoodsSection } from '../block/home/popular-goods/PopularGoodsSection'
+
 export const MainPage = () => (
   <>
-    <CategoriesSection />
+    <PopularCategories />
     <PopularGoodsSection />
     <SaleSection />
     <ReviewsSection />
     <NewsSection />
     <OurAdvantagesSection />
   </>
-);
+)

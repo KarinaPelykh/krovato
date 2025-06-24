@@ -31,7 +31,7 @@ a {
 @tailwind components;
 
 .container {
-  @apply mx-auto max-w-[410px] px-[15px] tablet:max-w-[640px] desktop:max-w-[1290px];
+  @apply mx-auto max-w-[440px] px-[15px] tablet:max-w-[640px] desktop:max-w-[1290px];
 }
 
 @tailwind utilities;

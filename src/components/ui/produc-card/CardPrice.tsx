@@ -11,7 +11,7 @@ export const CardPrice = ({
 }: PropsWithChildren & CardPriceProps) => {
   return (
     <div className='flex items-center justify-between'>
-      <p className='flex flex-col text-xl h-[50px]'>
+      <p className='flex flex-col text-lg desktop:text-xl'>
         <span className='inline-block !text-red text-m line-through'>
           {sale ?? ''}
         </span>

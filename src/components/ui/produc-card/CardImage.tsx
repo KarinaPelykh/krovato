@@ -11,9 +11,8 @@ export const CardImage = ({ image, isAltView }: CardImage) => {
       src={image}
       alt='furniture'
       className={clsx(
-        `w-[370px] h-[220px] desktop:w-full rounded-xs mb-5 cursor-pointer
-        hover:shadow-4xl`,
-        isAltView && '!w-full desktop:!w-[260px]'
+        'h-[220px] w-full rounded-xs mb-5 cursor-pointer hover:shadow-4xl object-cover',
+        isAltView && 'desktop:w-[260px]'
       )}
     />
   )

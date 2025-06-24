@@ -23,13 +23,14 @@ export const Button = ({
 }: ButtonProps) => (
   <button
     className={clsx(
-      ' flex justify-center items-center group ',
+      'flex justify-center items-center group ',
       buttonClassName,
       variant === 'base' &&
         `bg-yellow flex gap-[15px] p-[13px] justify-center w-full items-center text-white
         text-ms rounded-xs group`,
       variant === 'secondary' &&
-        'hover:shadow-5xl rounded-full transition-all active:!bg-black'
+        'hover:shadow-5xl rounded-full transition-all active:!bg-black size-[70px]',
+      variant === 'third' && ''
     )}
     onClick={onClick}
     type={type}>

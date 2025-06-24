@@ -23,8 +23,7 @@ export const Card = ({
     <CardContext.Provider value={product}>
       <li
         className={clsx(
-          `p-5 bg-white h-[488px] rounded-xs shadow-1xl desktop:h-[468px] desktop:w-[300px]
-          flex flex-col justify-between`,
+          'p-5 bg-white rounded-xs shadow-1xl flex flex-col justify-between',
           itemClassName
         )}>
         {children}
