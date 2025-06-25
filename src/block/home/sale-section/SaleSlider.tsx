@@ -24,19 +24,19 @@ export const SaleSlider = () => {
           }
         }}
         sliderClassName='h-80'>
-        <ul className='flex'>
-          {slides.map((img, i) => (
-            <SwiperSlide key={i}>
-              <li className='flex justify-center'>
-                <img
-                  src={img}
-                  alt='sale'
-                  className='desktop:w-[410px] desktop:h-[280px] object-contain block'
-                />
-              </li>
-            </SwiperSlide>
-          ))}
-        </ul>
+        {/* <ul className='flex'> */}
+        {slides.map((img, i) => (
+          <SwiperSlide key={i}>
+            {/* <li className='flex justify-center'> */}
+            <img
+              src={img}
+              alt='sale'
+              className='desktop:w-[410px] desktop:h-[280px] object-contain block'
+            />
+            {/* </li> */}
+          </SwiperSlide>
+        ))}
+        {/* </ul> */}
       </Slider>
     </div>
   )

@@ -27,16 +27,16 @@ export const Button = ({
       buttonClassName,
       variant === 'base' &&
         `bg-yellow flex gap-[15px] p-[13px] justify-center w-full items-center text-white
-        text-ms rounded-xs group`,
+        text-ms rounded-xs group font-semibold`,
       variant === 'secondary' &&
-        'hover:shadow-5xl rounded-full transition-all active:!bg-black size-[70px]',
+        'hover:shadow-5xl rounded-full transition-all active:!bg-black ',
       variant === 'third' && ''
     )}
     onClick={onClick}
     type={type}>
     {children}
     <Icon
-      className={clsx('size-[50px] active:fill-yellow', iconClassName)}
+      className={clsx(' active:fill-yellow', iconClassName)}
       name={iconName}
     />
   </button>

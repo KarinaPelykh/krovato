@@ -69,16 +69,16 @@ export const CardBtnControls = ({ iconClassName }: CardBtnControlsProps) => {
         onClick={addToFavorite}
         variant='secondary'
         iconName='like'
-        buttonClassName='bg-white-light active:hover:shadow-1xl'
-        iconClassName={clsx(iconClassName, 'fill-gray-light')}
+        buttonClassName='bg-white-light active:hover:shadow-1xl  size-[70px]   desktop:size-[50px]'
+        iconClassName={clsx(iconClassName, 'fill-gray-light size-[50px]')}
       />
 
       <Button
         onClick={addToBasket}
         variant='secondary'
-        buttonClassName='bg-yellow hover:!shadow-1xl active:hover:shadow-5xl'
+        buttonClassName='bg-yellow hover:!shadow-1xl active:hover:shadow-5xl  size-[70px]   desktop:size-[50px]      '
         iconName='korzina'
-        iconClassName={clsx(iconClassName, 'fill-white')}
+        iconClassName={clsx(iconClassName, 'fill-white size-[50px]')}
       />
     </div>
   )

@@ -40,10 +40,10 @@ export const PopularGoodsList = () => {
       </ul>
 
       <Button
-        variant='third'
-        buttonClassName='desktop:h-[50px] tablet:hidden'
+        variant='base'
+        buttonClassName='flex-row-reverse tablet:hidden '
         iconName='reload'
-        iconClassName='!size-[70px]'>
+        iconClassName='size-10'>
         {t('showGoods')}
       </Button>
     </>

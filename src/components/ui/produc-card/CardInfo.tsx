@@ -19,7 +19,7 @@ export const CardInfo = ({
       <p className='text-m mb-2.5 desktop:text-xs text-gray'>{size}</p>
       <p
         className={clsx(
-          ' text-xl mb-2.5',
+          ' text-xl mb-2.5 h-[52px] overflow-hidden',
           isAltView && 'text-ms font-semibold w-0 min-w-[260px]'
         )}>
         {title}
