@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { Icon } from '../../../components/ui'
+import { Icon } from '../../components/ui'
 
 type ReviewSvgListProps = {
   className?: string

@@ -15,19 +15,19 @@ export const NewsSection = () => {
   })
 
   return (
-    <section className='py-17 desktop:py-18 overflow-hidden'>
-      <div className='container'>
+    <section className='py-17 desktop:py-18'>
+      <div className='container overflow-hidden'>
         <div className='desktop:flex mb-10 desktop:gap-[30px] desktop:items-center'>
-          <Headings>{t('title')}</Headings>
+          <Headings className='mb-[27px] desktop:mb-0'>{t('title')}</Headings>
           <Link
             to='/blog'
-            linkClassName='hidden desktop:flex '>
+            linkClassName='hidden desktop:flex'>
             {t('linkBlog')}
           </Link>
         </div>
         <div className='reusable-slider hidden desktop:flex'>
           <Slider modulesConfiguration={[Navigation, Autoplay]}>
-            <ul className='flex w-full h-fit'>
+            <ul>
               {[...Array(10)].map((_, i) => (
                 <SwiperSlide key={i}>
                   <ItemList id={i} />
@@ -36,7 +36,7 @@ export const NewsSection = () => {
             </ul>
           </Slider>
         </div>
-        <div className='flex flex-col desktop:hidden'>
+        <div className='desktop:hidden'>
           <NewsList />
         </div>
       </div>

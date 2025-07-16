@@ -1,6 +1,6 @@
 import { Button, Link } from '../../components'
 import { Headings } from '../ui/Headings'
-import { NewCard } from '../ui/NewCard'
+// import { NewCard } from '../ui/NewCard'
 
 export const BlogSection = () => (
   <section>
@@ -18,7 +18,7 @@ export const BlogSection = () => (
             key={i}
             to={`${i}`}
             iconClassName='hidden'>
-            <NewCard />
+            {/* <NewCard /> */}
           </Link>
         ))}
       </ul>

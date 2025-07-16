@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ReviewSvgList } from '../../about-as/reviews-section/RevievSvgList'
+import { ReviewSvgList } from '../../../shared/reviews-section/RevievSvgList'
 import { Button } from '../../../components/ui'
 import { AnswerReviewFrom } from './AnswerReviewFrom'
 import { CardReview } from './CardReview'

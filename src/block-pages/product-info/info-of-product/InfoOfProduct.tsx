@@ -1,4 +1,4 @@
-import { ReviewSvgList } from '../../about-as/reviews-section/RevievSvgList'
+import { ReviewSvgList } from '../../../shared/reviews-section/RevievSvgList'
 import { ProductSlider } from '../ProductSlider'
 
 import { Button, Icon } from '../../../components/ui'

@@ -2,8 +2,8 @@ import { SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation, Pagination, Scrollbar } from 'swiper/modules'
 import { useTranslation } from 'react-i18next'
 
-import { Card } from '../../../components/ui/Card/Card'
-import { Slider } from '../../../components/ui/Slider/Slider'
+import { Card } from '../../components/ui/Card/Card'
+import { Slider } from '../../components/ui/Slider/Slider'
 
 import './reviews-slider.css'
 

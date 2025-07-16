@@ -1,5 +1,6 @@
-import clsx from 'clsx'
-import { Icon } from '../Icon'
+import { CardSize } from './CardSize'
+import { CardTitle } from './CardTitle'
+import { CardDetail } from './CardDetails'
 
 type CardInfoProps = {
   isAltView?: boolean
@@ -16,18 +17,12 @@ export const CardInfo = ({
 }: CardInfoProps) => {
   return (
     <>
-      <p className='text-m mb-2.5 desktop:text-xs text-gray'>{size}</p>
-      <p
-        className={clsx(
-          ' text-xl mb-2.5 h-[52px] overflow-hidden',
-          isAltView && 'text-ms font-semibold w-0 min-w-[260px]'
-        )}>
-        {title}
-      </p>
-      <div className='flex items-center gap-[5px] mb-5 text-[13px] font-light'>
-        <Icon name='check' />
-        {isAvailable}
-      </div>
+      <CardSize size={size} />
+      <CardTitle
+        title={title}
+        isAltView={isAltView}
+      />
+      <CardDetail isAvailable={isAvailable} />
     </>
   )
 }

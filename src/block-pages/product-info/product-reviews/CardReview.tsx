@@ -1,4 +1,4 @@
-import { ReviewSvgList } from '../../about-as/reviews-section/RevievSvgList'
+import { ReviewSvgList } from '../../../shared/reviews-section/RevievSvgList'
 import { Button, Icon } from '../../../components/ui'
 
 type CardReviewProps = {

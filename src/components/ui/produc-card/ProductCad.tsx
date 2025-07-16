@@ -6,7 +6,7 @@ import { CardContext } from './context'
 import { PropsWithChildren } from 'react'
 
 export type ProductCardProps = {
-  product: Product
+  product?: Product
 
   itemClassName?: string
   imgClassName?: string

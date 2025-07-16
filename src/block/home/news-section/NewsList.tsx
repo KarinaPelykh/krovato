@@ -11,7 +11,7 @@ export const NewsList = () => {
 
   return (
     <>
-      <ul className='flex gap-10 flex-wrap desktop:flex-nowrap mb-5 desktop:mb-0'>
+      <ul className='flex gap-[26px] flex-wrap mb-5 justify-center desktop:flex-nowrap desktop:mb-0'>
         {list.map(i => (
           <ItemList key={i} />
         ))}

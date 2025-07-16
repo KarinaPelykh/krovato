@@ -1,6 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from 'react'
 import clsx from 'clsx'
-import { ReviewSvgList } from '../../about-as/reviews-section/RevievSvgList'
+import { ReviewSvgList } from '../../../shared/reviews-section/RevievSvgList'
 import { Button, Icon } from '../../../components'
 
 type ReviewFormProp = {
@@ -77,7 +77,8 @@ export const ReviewForm = ({ hiddenLogo }: ReviewFormProp) => {
         <input
           type='text'
           name='name'
-          value={name} required
+          value={name}
+          required
           placeholder="Ваше ім'я прізвище"
           onChange={handleName}
           className='bg-transparent border outline-none border-gray-light rounded-lg py-2.5 px-5
@@ -95,7 +96,8 @@ export const ReviewForm = ({ hiddenLogo }: ReviewFormProp) => {
         />
         <textarea
           name='text'
-          value={text} required
+          value={text}
+          required
           onChange={handelText}
           placeholder='Відгук'
           className='bg-transparent border outline-none border-gray-light rounded-lg py-2.5 px-5

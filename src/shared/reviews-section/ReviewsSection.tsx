@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next'
-import {Icon, Link } from '../../../components'
+import { Icon, Link } from '../../components'
 import { ReviewSvgList } from './RevievSvgList'
 import { ReviewSlider } from './ReviewSlider'
-import { Headings } from '../../../components/ui/Headings'
+import { Headings } from '../../components/ui/Headings'
 
 export const ReviewsSection = () => {
   const { t } = useTranslation('translation', {
@@ -10,7 +10,7 @@ export const ReviewsSection = () => {
   })
 
   return (
-    <section className='bg-[#E9E9E9] overflow-hidden py-17 desktop:py-18'>
+    <section className='bg-while-gray overflow-hidden py-17 desktop:py-18'>
       <div className='container desktop:flex'>
         <div className='flex flex-col mb-10 desktop:mr-[55px]'>
           <Headings className='mb-10'>{t('mainTitle')}</Headings>
@@ -31,9 +31,9 @@ export const ReviewsSection = () => {
           <div
             className='flex gap-2.5 flex-col items-center tablet:flex-row tablet:justify-center
               desktop:justify-start'>
-<Link
+            <Link
               linkClassName='tablet:mr-[30px] !w-fit !bg-yellow py-[13px] px-5 whitespace-nowrap rounded-lg !text-white'
-               iconName='add'
+              iconName='add'
               iconClassName='mr-[17px] !size-6'
               to='/reviews'>
               {t('writeReview')}
