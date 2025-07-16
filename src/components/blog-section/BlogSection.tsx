@@ -18,6 +18,7 @@ export const BlogSection = () => (
             key={i}
             to={`${i}`}
             iconClassName='hidden'>
+            <div />
             {/* <NewCard /> */}
           </Link>
         ))}
